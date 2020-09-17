@@ -127,3 +127,4 @@ hs_err_pid*
 
 # leetcode plugin
 all.json
+*.txt
