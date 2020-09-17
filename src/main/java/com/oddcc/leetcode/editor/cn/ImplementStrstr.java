@@ -43,7 +43,8 @@ public class ImplementStrstr {
 //        System.out.println(solution.strStr("hello", "ll"));
 //        System.out.println(solution.strStr("aaaaa", "bba"));
 //        System.out.println(solution.strStr("a", ""));
-        System.out.println(solution.strStr("mississippi", "sippia"));
+        System.out.println(solution.strStr("mississippi", "sippi"));
+        System.out.println(solution.strStr("", ""));
 //        System.out.println(solution.strStr("aaa", "aaaa"));
     }
 
@@ -52,39 +53,30 @@ public class ImplementStrstr {
         public int strStr(String haystack, String needle) {
             if (haystack.equals(needle)) return 0;
             if (needle.isEmpty()) return 0;
-            if (needle.length() > haystack.length()) return -1;
             if (haystack.isEmpty()) return -1;
-            char[] stackArray = haystack.toCharArray();
-            char[] needleArray = needle.toCharArray();
-            // 找第一个所在
+            if (haystack.length() < needle.length()) return -1;
+
             int result = -1;
-            for (int i = 0; i < stackArray.length; i++) {
-                if (stackArray[i] == needleArray[0]) {
-                    if (isMatch(stackArray, needleArray, i)) {
+            // 如果剩下的都不够needl那么长了，就不用判断了
+            for (int i = 0; i < haystack.length() - needle.length() + 1; i++) {
+                if (haystack.charAt(i) == needle.charAt(0)) {
+                    int n = 0;
+                    for (int h = 0; h < needle.length(); h++) {
+                        // 相同的话，移动两个指针，不同的直接放弃
+                        if (haystack.charAt(h + i) == needle.charAt(n)) {
+                            n++;
+                        } else {
+                            break;
+                        }
+                    }
+                    // 如果最后指针n停留在最后，说明找到了
+                    if (n == needle.length()) {
                         result = i;
                         break;
                     }
                 }
             }
             return result;
-        }
-
-        /**
-         * 从a的start位置开始向后找b.length位，是否与b匹配
-         * @param a
-         * @param b
-         * @param start
-         * @return
-         */
-        private boolean isMatch(char[] a, char[] b, int start) {
-            if (start > a.length - 1) return false;
-            if (b.length > a.length - start) return false;
-            for (int i = 0; i < b.length; i++) {
-                if (a[i + start] != b[i]) {
-                    return false;
-                }
-            }
-            return true;
         }
 
     }
