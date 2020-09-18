@@ -47,9 +47,6 @@
 
 package com.oddcc.leetcode.editor.cn;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class CountAndSay {
     public static void main(String[] args) {
         Solution solution = new CountAndSay().new Solution();
@@ -65,33 +62,33 @@ public class CountAndSay {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        private final Map<String, String> mapping = init();
-
-        private Map<String, String> init() {
-            Map<String, String> m = new HashMap<>(4);
-            m.put("22", "22");
-            m.put("2", "12");
-            m.put("11", "21");
-            m.put("1", "11");
-            return m;
-        }
-
         public String countAndSay(int n) {
             if (n == 1) return "1";
             return convert(countAndSay(n - 1));
         }
 
         private String convert(String s) {
-            if (mapping.containsKey(s)) return mapping.get(s);
-            // 到这里s的长度一定大于等于2
-            String firstTwo = s.substring(0, 2);
-            String firstOne = s.substring(0, 1);
-            if (mapping.containsKey(firstTwo)) {
-                return mapping.get(firstTwo) + convert(s.substring(2));
+            char tmp = s.charAt(0);
+            int count = 0;
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i <= s.length(); i++) {
+                // 等于s.length()时，说明结束了，需要进行输出
+                if (i == s.length()) {
+                    sb.append(count).append(tmp);
+                    break;
+                }
+                // 当前跟tmp一样时，计数+1
+                if (tmp == s.charAt(i)) {
+                    count++;
+                }
+                // 不一样时，输出，并把计数设为1，因为当前已经指向了一个不同的
+                else {
+                    sb.append(count).append(tmp);
+                    tmp = s.charAt(i);
+                    count = 1;
+                }
             }
-            else {
-                return mapping.get(firstOne) + convert((s.substring(1)));
-            }
+            return sb.toString();
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
