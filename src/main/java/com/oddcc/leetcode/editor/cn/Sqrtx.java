@@ -31,23 +31,27 @@ public class Sqrtx {
     public static void main(String[] args) {
         Solution solution = new Sqrtx().new Solution();
         System.out.println(solution.mySqrt(2147395599));
+        System.out.println(solution.mySqrt(6));
+        System.out.println(solution.mySqrt(0));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        // 直接从1枚举会超时
-        // i * i会溢出
+        // 0 <= sqrt(x) < x
         public int mySqrt(int x) {
-            if (x <= 1) return x;
-            long i = 1;
-            // 不满足条件时，i *= 2，退出循环后，再从i *= 2的结果中往回找
-            while (i * i < x) {
-                i *= 2;
+            long left = 0;
+            long right = x;
+            long r = 0;
+            while (left <= right) {
+                long mid = (right - left) / 2 + left;
+                if (mid * mid <= x) {
+                    r = mid;
+                    left = mid + 1;
+                } else {
+                    right = mid - 1;
+                }
             }
-            while (i * i > x) {
-                i--;
-            }
-            return (int) i;
+            return (int) r;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
