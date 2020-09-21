@@ -52,14 +52,17 @@ public class ClimbingStairs {
         public int climbStairs(int n) {
             if (n == 0) return 1;
             if (n == 1) return 1;
-            int[] tmpArr = new int[]{1, 1, -1};
-            // 计算结果，并向前滚动数组，即n -> n - 1, n - 1 -> n - 2
+            // n1表示n-1，n2表示n-2
+            int n1 = 1;
+            int n2 = 1;
+            int r = 0;
+            // 计算结果，并向前滚动数组，即r -> n1, n1 -> n2
             for (int i = 2; i <= n; i++) {
-                tmpArr[2] = tmpArr[0] + tmpArr[1];
-                tmpArr[0] = tmpArr[1];
-                tmpArr[1] = tmpArr[2];
+                r = n2 + n1;
+                n2 = n1;
+                n1 = r;
             }
-            return tmpArr[2];
+            return r;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
