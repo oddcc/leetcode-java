@@ -47,28 +47,19 @@ public class ClimbingStairs {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        private Map<Integer, Integer> cache = new HashMap<>();
+        // 因为每一项只与之前两项有关，所以不用存储所有的中间计算结果
+        // 存储固定个数个结果，可以用滚动数组法
         public int climbStairs(int n) {
+            if (n == 0) return 1;
             if (n == 1) return 1;
-            if (n == 2) return 2;
-            int n1 = 0;
-            int k1 = n - 1;
-            if (cache.containsKey(k1)) {
-                n1 = cache.get(k1);
-            } else {
-                n1 = climbStairs(k1);
-                cache.put(k1, n1);
+            int[] tmpArr = new int[]{1, 1, -1};
+            // 计算结果，并向前滚动数组，即n -> n - 1, n - 1 -> n - 2
+            for (int i = 2; i <= n; i++) {
+                tmpArr[2] = tmpArr[0] + tmpArr[1];
+                tmpArr[0] = tmpArr[1];
+                tmpArr[1] = tmpArr[2];
             }
-
-            int n2 = 0;
-            int k2 = 0;
-            if (cache.containsKey(k2)) {
-                n2 = cache.get(k2);
-            } else {
-                n2 = climbStairs(k2);
-                cache.put(k2, n2);
-            }
-            return n1 + n2;
+            return tmpArr[2];
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
