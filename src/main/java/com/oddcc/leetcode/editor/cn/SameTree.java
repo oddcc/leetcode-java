@@ -69,7 +69,10 @@ public class SameTree {
         );
 //        TreeNode.leftWalk(n);
 //        TreeNode.midWalk(n);
-//        TreeNode.rightWalk(n);
+        TreeNode.rightWalk(n);
+//        TreeNode.midWalkRecursion(n);
+//        TreeNode.leftWalkRecursion(n);
+//        TreeNode.rightWalkRecursion(n);
 
 //        TreeNode t1 = new TreeNode(1, new TreeNode(2), new TreeNode(3));
 //        TreeNode t2 = new TreeNode(1, new TreeNode(2), new TreeNode(3));
@@ -83,7 +86,7 @@ public class SameTree {
 //        TreeNode t6 = new TreeNode(1, new TreeNode(2), new TreeNode(1));
 //        System.out.println(solution.isSameTree(t5, t6));
 
-        System.out.println(solution.isSameTree(new TreeNode(1), null));
+//        System.out.println(solution.isSameTree(new TreeNode(1), null));
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 
@@ -152,6 +155,7 @@ public class SameTree {
                         // 没有子树，栈也为空，说明遍历完成了
                         else {
                             p = null;
+                            q = null;
                         }
                     }
                 }
@@ -184,8 +188,8 @@ public class SameTree {
             this.right = right;
         }
 
-        // 前序遍历一棵树
-        public static void leftWalk(TreeNode n) {
+        // 中序遍历一棵树
+        public static void midWalk(TreeNode n) {
             Deque<TreeNode> stack = new LinkedList<>();
             while (n != null) {
                 // 有左子树时，当前结点入栈，然后遍历左子树
@@ -217,9 +221,15 @@ public class SameTree {
                 }
             }
         }
+        public static void midWalkRecursion(TreeNode n) {
+            if (n == null) return;
+            midWalkRecursion(n.left);
+            System.out.println(n.val);
+            midWalkRecursion(n.right);
+        }
 
-        // 中序遍历一棵树
-        public static void midWalk(TreeNode n) {
+        // 前序遍历一棵树
+        public static void leftWalk(TreeNode n) {
             Deque<TreeNode> stack = new LinkedList<>();
             while (n != null) {
                 // 先输出当前结点
@@ -250,32 +260,50 @@ public class SameTree {
                 }
             }
         }
+        public static void leftWalkRecursion(TreeNode n) {
+            if (n == null) return;
+            System.out.println(n.val);
+            leftWalkRecursion(n.left);
+            leftWalkRecursion(n.right);
+        }
 
         // 后序遍历一棵树 todo
         public static void rightWalk(TreeNode n) {
             Deque<TreeNode> stack = new LinkedList<>();
-            stack.push(n);
-            while (!stack.isEmpty()) {
-                TreeNode t = stack.pop();
-                if (t.left != null) {
-                    stack.push(t);
-                    n = n.left;
-                }
-                else if (n.right != null) {
+            Deque<Integer> result = new LinkedList<>();
+            while (n != null) {
+                result.push(n.val);
+                if (n.right != null) {
                     stack.push(n);
                     n = n.right;
                 }
                 else {
-                    System.out.println(n.val);
-                    if (stack.peek() != null) {
-                        TreeNode tmp = stack.pop();
-                        n = tmp;
+                    if (n.left != null) {
+                        n = n.left;
                     }
                     else {
-                        n = null;
+                        if (stack.peek() != null) {
+                            TreeNode tmp = stack.pop();
+                            result.push(n.val);
+                            if (tmp.left != null) {
+                                n = tmp.left;
+                            }
+                        }
+                        else {
+                            n = null;
+                        }
                     }
                 }
             }
+            while (!result.isEmpty()) {
+                System.out.println(result.pop());
+            }
+        }
+        public static void rightWalkRecursion(TreeNode n) {
+            if (n == null) return;
+            rightWalkRecursion(n.left);
+            rightWalkRecursion(n.right);
+            System.out.println(n.val);
         }
     }
 }
