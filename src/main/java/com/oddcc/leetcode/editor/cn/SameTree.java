@@ -69,22 +69,22 @@ public class SameTree {
         );
 //        TreeNode.leftWalk(n);
 //        TreeNode.midWalk(n);
-        TreeNode.rightWalk(n);
+//        TreeNode.rightWalk(n);
 //        TreeNode.midWalkRecursion(n);
 //        TreeNode.leftWalkRecursion(n);
 //        TreeNode.rightWalkRecursion(n);
 
-//        TreeNode t1 = new TreeNode(1, new TreeNode(2), new TreeNode(3));
-//        TreeNode t2 = new TreeNode(1, new TreeNode(2), new TreeNode(3));
-//        System.out.println(solution.isSameTree(t1, t2));
+        TreeNode t1 = new TreeNode(1, new TreeNode(2), new TreeNode(3));
+        TreeNode t2 = new TreeNode(1, new TreeNode(2), new TreeNode(3));
+        System.out.println(solution.isSameTree(t1, t2));
 
-//        TreeNode t3 = new TreeNode(1, new TreeNode(2), null);
-//        TreeNode t4 = new TreeNode(1, null, new TreeNode(2));
-//        System.out.println(solution.isSameTree(t3, t4));
+        TreeNode t3 = new TreeNode(1, new TreeNode(2), null);
+        TreeNode t4 = new TreeNode(1, null, new TreeNode(2));
+        System.out.println(solution.isSameTree(t3, t4));
 
-//        TreeNode t5 = new TreeNode(1, new TreeNode(2), new TreeNode(1));
-//        TreeNode t6 = new TreeNode(1, new TreeNode(2), new TreeNode(1));
-//        System.out.println(solution.isSameTree(t5, t6));
+        TreeNode t5 = new TreeNode(1, new TreeNode(2), new TreeNode(1));
+        TreeNode t6 = new TreeNode(1, new TreeNode(2), new TreeNode(1));
+        System.out.println(solution.isSameTree(t5, t6));
 
 //        System.out.println(solution.isSameTree(new TreeNode(1), null));
     }
@@ -107,60 +107,9 @@ public class SameTree {
      */
     class Solution {
         public boolean isSameTree(TreeNode p, TreeNode q) {
-            // 前序遍历，因为要同时遍历两棵树，所以要用非递归的实现
-            // 用栈来实现，遇到一个结点先入栈，然后依次访问左子树、右子树；当
-            Deque<TreeNode> stackP = new LinkedList<>();
-            Deque<TreeNode> stackQ = new LinkedList<>();
             if (!valid(p, q)) return false;
-            boolean result = true;
-            while (p != null && q != null) {
-                if (p.val != q.val) {
-                    result = false;
-                    break;
-                }
-                if (!valid(p.left, q.left)) {
-                    result = false;
-                    break;
-                }
-                if (!valid(p.right, q.right)) {
-                    result = false;
-                    break;
-                }
-                // 有左子树时，当前结点入栈，然后遍历左子树
-                if (p.left != null && q.left != null) {
-                    stackP.push(p);
-                    stackQ.push(q);
-                    p = p.left;
-                    q = q.left;
-                }
-                // 没有左子树时，输出当前结点
-                else {
-                    // 没有左子树，有右子树时，遍历右子树
-                    if (p.right != null && q.right != null) {
-                        p = p.right;
-                        q = q.right;
-                    }
-                    else {
-                        // 没有左子树和右子树，出栈，并遍历出栈结点的右子树
-                        if (stackP.peek() != null && stackQ.peek() != null) {
-                            TreeNode tP = stackP.pop();
-                            if (tP.right != null) {
-                                p = tP.right;
-                            }
-                            TreeNode tQ = stackQ.pop();
-                            if (tQ.right != null) {
-                                q = tQ.right;
-                            }
-                        }
-                        // 没有子树，栈也为空，说明遍历完成了
-                        else {
-                            p = null;
-                            q = null;
-                        }
-                    }
-                }
-            }
-            return result;
+            if (p == null) return true;
+            return (p.val == q.val) && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
         }
 
         private boolean valid(TreeNode t1, TreeNode t2) {
@@ -221,6 +170,7 @@ public class SameTree {
                 }
             }
         }
+
         public static void midWalkRecursion(TreeNode n) {
             if (n == null) return;
             midWalkRecursion(n.left);
@@ -260,6 +210,7 @@ public class SameTree {
                 }
             }
         }
+
         public static void leftWalkRecursion(TreeNode n) {
             if (n == null) return;
             System.out.println(n.val);
@@ -299,6 +250,7 @@ public class SameTree {
                 System.out.println(result.pop());
             }
         }
+
         public static void rightWalkRecursion(TreeNode n) {
             if (n == null) return;
             rightWalkRecursion(n.left);
