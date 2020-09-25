@@ -32,8 +32,7 @@
 
 package com.oddcc.leetcode.editor.cn;
 
-import java.util.Deque;
-import java.util.LinkedList;
+import com.oddcc.leetcode.editor.cn.common.TreeNode;
 
 public class SymmetricTree {
     public static void main(String[] args) {

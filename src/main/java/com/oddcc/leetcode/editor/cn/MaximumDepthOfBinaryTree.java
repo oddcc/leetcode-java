@@ -23,6 +23,8 @@
 
 package com.oddcc.leetcode.editor.cn;
 
+import com.oddcc.leetcode.editor.cn.common.TreeNode;
+
 public class MaximumDepthOfBinaryTree {
     public static void main(String[] args) {
         Solution solution = new MaximumDepthOfBinaryTree().new Solution();
