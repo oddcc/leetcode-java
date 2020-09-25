@@ -49,8 +49,10 @@ public class BinaryTreeLevelOrderTraversalIi {
             queue.add(root);
             while (!queue.isEmpty()) {
                 List<Integer> row = new ArrayList<>();
+                // 要把当前层要处理的结点数量记下来
                 int size = queue.size();
                 for (int i = 0; i < size; i++) {
+                    // 取出一个结点，就输出，如果结点有子结点，则放入队列
                     TreeNode node = queue.remove();
                     row.add(node.val);
                     if (node.left != null) {
@@ -60,6 +62,7 @@ public class BinaryTreeLevelOrderTraversalIi {
                         queue.add(node.right);
                     }
                 }
+                // 一层处理完了，把输出放到结果里面，再继续处理下一层
                 result.add(0, row);
             }
             return result;
