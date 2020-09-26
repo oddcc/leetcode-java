@@ -44,7 +44,12 @@ public class PascalsTriangle {
             for (int i = 0; i < numRows; i++) {
                 List<Integer> row = new ArrayList<>();
                 for (int j = 0; j <= i; j++) {
-                    row.add(getSumFromLast(lastRow, j));
+                    if (j == 0 || j == i) {
+                        row.add(1);
+                    }
+                    else {
+                        row.add(getSumFromLast(lastRow, j));
+                    }
                 }
                 lastRow = row;
                 result.add(row);
