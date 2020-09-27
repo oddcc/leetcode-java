@@ -44,23 +44,26 @@ public class BestTimeToBuyAndSellStock {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 题意可以概括成，左边小，右边大，求最大的差值
-        // 先确定买入x，再确定卖出y
         public int maxProfit(int[] prices) {
             if (prices.length <= 1) return 0;
             int max = 0;
-            int x = 0;
-            int y = 1;
-            while (x < prices.length && y < prices.length) {
-                if (prices[x] >= prices[y]) {
-                    x = y;
-                    y++;
+            int buy = 0;
+            int sell = 1;
+            // 先找买入位置buy，再找卖出位置sell；如果buy和sell都到末尾了，过程结束
+            // 正常情况是sell先到末尾，但在整个都是降序的时候，buy会先到末尾，因为并不能找到一个合适的买入时机
+            while (buy < prices.length && sell < prices.length) {
+                // 如果buy>= sell说明sell处买入是更好的选择，所以buy指向这里，sell++
+                if (prices[buy] >= prices[sell]) {
+                    buy = sell;
+                    sell++;
                 }
+                // 如果 buy < sell说明buy买入，sell卖出有的赚，所以算一下利润，如果比最大值更大，就记下来，sell继续++
                 else {
-                    int sub = prices[y] - prices[x];
+                    int sub = prices[sell] - prices[buy];
                     if (sub > max) {
                         max = sub;
                     }
-                    y++;
+                    sell++;
                 }
             }
             return max;
