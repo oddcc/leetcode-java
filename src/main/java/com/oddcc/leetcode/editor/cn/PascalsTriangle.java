@@ -33,6 +33,7 @@ public class PascalsTriangle {
         System.out.println(solution.generate(5));
         System.out.println(solution.generate(0));
         System.out.println(solution.generate(1));
+        System.out.println(solution.generate(40));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
