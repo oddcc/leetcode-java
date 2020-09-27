@@ -66,33 +66,33 @@ public class BestTimeToBuyAndSellStockIi {
         // 每次降低时就是新的买入时机，降低之前就是卖出时机
         public int maxProfit(int[] prices) {
             if (prices.length <= 1) return 0;
+            // 记录最终结果
             int result = 0;
-            int max = 0;
+            // 每次交易的最大利润
+            int maxProfit = 0;
             int buy = 0;
             int sell = 1;
             while (buy < prices.length && sell < prices.length) {
-                if (prices[buy] >= prices[sell]) {
+                // 说明sell点更适合买入
+                if (prices[buy] >= prices[sell] ||
+                        // 说明开始下降了，应该止盈，开始可能的下次交易
+                        prices[sell - 1] > prices[sell]) {
                     buy = sell;
                     sell++;
-                    result += max;
-                    max = 0;
-                }
-                else if (prices[sell - 1] > prices[sell]) {
-                    buy = sell;
-                    sell++;
-                    result += max;
-                    max = 0;
+                    result += maxProfit;
+                    maxProfit = 0;
                 }
                 else {
                     int profit = prices[sell] - prices[buy];
-                    if (profit > max) {
-                        max = profit;
+                    if (profit > maxProfit) {
+                        maxProfit = profit;
                     }
                     sell++;
                 }
             }
-            if (max != 0) {
-                result += max;
+            // 因为每次交易结束时都把maxProfit清零了，如果循环外还有，说明是在最后卖出的，也要算进来
+            if (maxProfit != 0) {
+                result += maxProfit;
             }
             return result;
         }
