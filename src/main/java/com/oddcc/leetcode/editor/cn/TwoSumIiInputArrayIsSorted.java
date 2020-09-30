@@ -55,59 +55,33 @@ import java.util.Arrays;
 public class TwoSumIiInputArrayIsSorted {
     public static void main(String[] args) {
         Solution solution = new TwoSumIiInputArrayIsSorted().new Solution();
-//        int[] n1 = {2,7,11,15};
-//        int t1 = 9;
-//        System.out.println(Arrays.toString(solution.twoSum(n1, t1)));
-//        int[] n2 = {2,3,4};
-//        int t2 = 6;
-//        System.out.println(Arrays.toString(solution.twoSum(n2, t2)));
-//        int[] n3 = {-1,0};
-//        int t3 = -1;
-//        System.out.println(Arrays.toString(solution.twoSum(n3, t3)));
-        int[] n3 = {1,2,3,4,4,9,56,90};
-        int t3 = 8;
+        int[] n1 = {2,7,11,15};
+        int t1 = 9;
+        System.out.println(Arrays.toString(solution.twoSum(n1, t1)));
+        int[] n2 = {2,3,4};
+        int t2 = 6;
+        System.out.println(Arrays.toString(solution.twoSum(n2, t2)));
+        int[] n3 = {-1,0};
+        int t3 = -1;
         System.out.println(Arrays.toString(solution.twoSum(n3, t3)));
-//        System.out.println(solution.search(n3, 0, 1, 0));
+        int[] n4 = {1,2,3,4,4,9,56,90};
+        int t4 = 8;
+        System.out.println(Arrays.toString(solution.twoSum(n4, t4)));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        // 动态规划，一个left指针，一个right指针，当sum小于target时，应该左侧指针向右移，当sum大于target时，应该右侧指针向左移动
         public int[] twoSum(int[] numbers, int target) {
-            // 先排除大于target的范围
-//            int smallIndex = search(numbers, 0, numbers.length - 1, target);
-            int smallIndex = numbers.length - 1;
-            for (int i = 0; i <= smallIndex; i++) {
-                int a = numbers[i];
-                int want = target - a;
-                int found = search(numbers, i, smallIndex, want);
-                if (a + numbers[found] == target) {
-                    if (i == found) return new int[]{i + 1, found + 2};
-                    return new int[]{i + 1, found + 1};
-                }
+            int left = 0;
+            int right = numbers.length - 1;
+            while (left < right) {
+                int sum = numbers[left] + numbers[right];
+                if (sum == target) return new int[]{left + 1, right + 1};
+                if (sum < target) left++;
+                if (sum > target) right--;
             }
-            return new int[]{};
-        }
-
-        // 找target或小于target的第一个数
-        private int search(int[] numbers, int left, int right, int target) {
-            if (numbers.length == 0) return -1;
-            if (left >= right) {
-                if (numbers[left] <= target) {
-                    return left;
-                }
-                return -1;
-            }
-            int mid = left + (right - left) / 2;
-            if (numbers[mid] == target) return mid;
-            if (numbers[mid] > target) {
-                return search(numbers, left, mid - 1, target);
-            }
-            else {
-                if (numbers[mid + 1] <= target) {
-                    return search(numbers, mid + 1, right, target);
-                }
-                return mid;
-            }
+            return new int[]{-1, -1};
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
