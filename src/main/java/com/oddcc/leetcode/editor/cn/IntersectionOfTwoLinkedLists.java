@@ -72,72 +72,34 @@ import com.oddcc.leetcode.editor.cn.common.ListNode;
 public class IntersectionOfTwoLinkedLists {
     public static void main(String[] args) {
         Solution solution = new IntersectionOfTwoLinkedLists().new Solution();
-
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     public class Solution {
-        // 两个链表找交点，需要遍历3次
-        // 此种思路参考：https://www.raychase.net/6104
+        // 链表连接法，只是逻辑上的连接，实际还是要记录每个链表的终点，用于判断结果
+        // 当两个链表有交点时，假设A、B分别为起点，交点在N，终点在E；
+        // 按照链表连接法，A走过的路径为 AN + NE + BN + NE，B走过的路径为 BN + NE + AN + NE；可以看到，最后一段NE不用走，两个指针会在N处相遇
+        // 当两个链表没有交点时，假设A、B为起点，E、F为对应的终点
+        // A走过的路径为 AE + BF，B走过的路径为 BF + AE，最后两个链表都走到了终点，但还没有遇到交点，这种情况就是没有交点
         public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
             if (headA == null || headB == null) return null;
-            ListNode nA = headA;
-            int cA = 0;
-            // 因为题中说到链表没有环，所以先算A的长度
-            while (nA != null) {
-                nA = nA.next;
-                cA++;
-            }
-            ListNode nB = headB;
-            int cB = 0;
-            // 再算B的长度
-            while (nB != null) {
-                nB = nB.next;
-                cB++;
-            }
-            nA = headA;
-            nB = headB;
-            // 得到长度之后，分三种情况
-            // 长度相同，AB一起往后走，如果遇到交点就返回，如果走完了还没遇到，就说明没有交点
-            if (cA == cB) {
-                while (cA >= 0) {
-                    if (nA == nB) {
-                        return nA;
-                    }
-                    nA = nA.next;
-                    nB = nB.next;
-                    cA--;
+            boolean aEnd = false;
+            boolean bEnd = false;
+            ListNode a = headA;
+            ListNode b = headB;
+            while (a != null && b != null) {
+                if (a == b) {
+                    return a;
                 }
-            }
-            // A长于B，A先走 cA - cB步，然后AB一起走，如果有交点就返回，没有就说明没有交点；
-            // 主要理解是，如果相交了，则链表的终点一定是相同的，画个图就可以看出来，长出来的那一段一定是没有交点的
-            // B长于A，同理
-            else if (cA > cB) {
-                while (cA > cB) {
-                    cA--;
-                    nA = nA.next;
+                a = a.next;
+                if (a == null && !aEnd) {
+                    a = headB;
+                    aEnd = true;
                 }
-                while (cA >= 0) {
-                    if (nA == nB) {
-                        return nA;
-                    }
-                    nA = nA.next;
-                    nB = nB.next;
-                    cA--;
-                }
-            }
-            else {
-                while (cB > cA) {
-                    cB--;
-                    nB = nB.next;
-                }
-                while (cB >= 0) {
-                    if (nA == nB) {
-                        return nA;
-                    }
-                    nA = nA.next;
-                    nB = nB.next;
-                    cB--;
+                b = b.next;
+                if (b == null && !bEnd) {
+                    b = headA;
+                    bEnd = true;
                 }
             }
             return null;
