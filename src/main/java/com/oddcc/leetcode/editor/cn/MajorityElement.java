@@ -28,7 +28,7 @@ public class MajorityElement {
     public static void main(String[] args) {
         Solution solution = new MajorityElement().new Solution();
         System.out.println(solution.majorityElement(new int[]{3, 2, 3}));
-        System.out.println(solution.majorityElement(new int[]{2, 2, 1, 1, 1, 2, 2}));
+        System.out.println(solution.majorityElement(new int[]{2, 2, 1, 1, 1, 3}));
         System.out.println(solution.majorityElement(new int[]{2}));
     }
 
@@ -36,31 +36,10 @@ public class MajorityElement {
     class Solution {
         // 1. 暴力计数法，时间复杂度O(n)空间复杂度O(n)
         // 2. 先排序，再遍历计数，如果碰到了可以提前返回，时间复杂度O(n)空间复杂度O(1)
+        // 3. 先排序，然后直接返回，数组⌊ n/2 ⌋位置的数必定是结果，就好像一个滑动窗口
         public int majorityElement(int[] nums) {
-            if (nums.length == 1) return nums[0];
             Arrays.sort(nums);
-            int majorityCount = nums.length % 2 == 0 ? nums.length / 2 : nums.length / 2 + 1;
-            int last = 0;
-            int count = 0;
-            for (int i = 0; i < nums.length; i++) {
-                if (i == 0) {
-                    last = nums[i];
-                    count++;
-                }
-                else {
-                    if (nums[i] == last) {
-                        count++;
-                        if (count >= majorityCount) {
-                            return nums[i];
-                        }
-                    }
-                    else {
-                        last = nums[i];
-                        count = 1;
-                    }
-                }
-            }
-            return -1;
+            return nums[nums.length / 2];
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
