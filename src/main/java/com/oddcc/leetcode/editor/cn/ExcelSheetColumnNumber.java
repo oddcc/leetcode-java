@@ -61,10 +61,10 @@ public class ExcelSheetColumnNumber {
         // 跟168题正好相反，从字母到数字的计算比较简单，跟普通的进制转换没有区别
         public int titleToNumber(String s) {
             int total = 0;
-            for (int i = 0; i <= s.length() - 1; i++) {
-                int a = s.charAt(i) - 'A' + 1;
-                int b = (int) Math.pow(26, s.length() - i - 1);
-                total += a * b;
+            char[] chars = s.toCharArray();
+            for (int i = 0; i <= chars.length - 1; i++) {
+                int a = chars[i] - 'A' + 1;
+                total = 26 * total + a;
             }
             return total;
         }
