@@ -20,6 +20,8 @@
 
 package com.oddcc.leetcode.editor.cn;
 
+import com.oddcc.leetcode.editor.cn.common.ListNode;
+
 public class RemoveDuplicatesFromSortedList {
     public static void main(String[] args) {
         Solution solution = new RemoveDuplicatesFromSortedList().new Solution();
@@ -63,18 +65,4 @@ public class RemoveDuplicatesFromSortedList {
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 }
