@@ -56,7 +56,7 @@ public class AddTwoNumbers {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        // 模拟手动加法
+        // 模拟手动加法，需要注意的有几个，1是循环结束后，如果还有carry要记得处理，2是空指针的处理，3是循环开始和循环结束的条件
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
             int carry = 0;
             ListNode ans = null;
