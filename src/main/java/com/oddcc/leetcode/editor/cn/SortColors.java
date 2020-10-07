@@ -59,20 +59,15 @@ public class SortColors {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        // 统计0、1、2各自的数量，然后重写整个数组，需要两次遍历，一次为了统计数量，一次为了重写数组
+        // 交换元素，因为题目中只有0、1、2，遍历时，遇到0就交换到开头，遇到1就交换到0之后的位置，需要遍历两次
         public void sortColors(int[] nums) {
-            if (nums.length <= 1) return;
-            int red = 0;
-            int white = 0;
-            int blue = 0;
-            for (int i: nums) {
-                if (i == 0) red++;
-                if (i == 1) white++;
-                if (i == 2) blue++;
+            int insert = 0;
+            for (int i = 0; i < nums.length; i++) {
+                if (nums[i] == 0) exchange(nums, i, insert++);
             }
-            Arrays.fill(nums, 0, red, 0);
-            Arrays.fill(nums, red, red + white, 1);
-            Arrays.fill(nums, red + white, red + white + blue, 2);
+            for (int i = insert; i < nums.length; i++) {
+                if (nums[i] == 1) exchange(nums, i, insert++);
+            }
         }
 
         private void exchange(int[] nums, int a, int b) {
