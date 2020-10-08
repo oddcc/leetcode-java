@@ -59,15 +59,33 @@ public class SortColors {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        // 交换元素，因为题目中只有0、1、2，遍历时，遇到0就交换到开头，遇到1就交换到0之后的位置，需要遍历两次
+        // 直接排序，多种排序方法中，必有快速排序比较符合需求
         public void sortColors(int[] nums) {
-            int insert = 0;
-            for (int i = 0; i < nums.length; i++) {
-                if (nums[i] == 0) exchange(nums, i, insert++);
+            sort(nums, 0, nums.length - 1);
+        }
+
+        private void sort(int[] nums, int low, int high) {
+            if (low >= high) return;
+            int i = low;
+            int j = high + 1;
+            int pivot = nums[low];
+            while (true) {
+                while (nums[++i] < pivot) {
+                    if (i == high) {
+                        break;
+                    }
+                }
+                while (nums[--j] > pivot) {
+                    if (j == low) {
+                        break;
+                    }
+                }
+                if (i >= j) break;
+                exchange(nums, i, j);
             }
-            for (int i = insert; i < nums.length; i++) {
-                if (nums[i] == 1) exchange(nums, i, insert++);
-            }
+            exchange(nums, low, j);
+            sort(nums, low, j - 1);
+            sort(nums, j + 1, high);
         }
 
         private void exchange(int[] nums, int a, int b) {
