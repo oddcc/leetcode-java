@@ -90,9 +90,10 @@ public class LongestPalindromicSubstring {
                     Arrays.fill(ints, 0);
                 }
             }
-            if (i >= j) return true;
+            if (i == j) return true;
             boolean equal = chars[i] == chars[j];
             if (!equal) return false;
+            if (j - i == 1) return chars[i] == chars[j];
             if (cache[i + 1][j - 1] == 0) {
                 cache[i + 1][j - 1] = isPalindromic(chars, i + 1, j - 1) ? 1 : 2;
             }
