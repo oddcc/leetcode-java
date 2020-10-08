@@ -92,10 +92,11 @@ public class LongestPalindromicSubstring {
             }
             if (i >= j) return true;
             boolean equal = chars[i] == chars[j];
+            if (!equal) return false;
             if (cache[i + 1][j - 1] == 0) {
                 cache[i + 1][j - 1] = isPalindromic(chars, i + 1, j - 1) ? 1 : 2;
             }
-            return equal && cache[i + 1][j - 1] == 1;
+            return cache[i + 1][j - 1] == 1;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
