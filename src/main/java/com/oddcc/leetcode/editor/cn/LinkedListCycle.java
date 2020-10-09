@@ -69,12 +69,11 @@ public class LinkedListCycle {
         // 关于慢指针走一步，快指针走两步的情况下，为什么快慢指针一定会相遇 https://www.zhihu.com/question/23208893
         public boolean hasCycle(ListNode head) {
             if (head == null) return false;
-            ListNode slow = head;
             ListNode fast = head;
+            ListNode slow = head;
             while (true) {
                 slow = slow.next;
-                if (fast.next == null) return false;
-                fast = fast.next.next;
+                fast = fast.next == null ? null : fast.next.next;
                 if (slow == null || fast == null) {
                     return false;
                 }
