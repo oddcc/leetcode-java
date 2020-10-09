@@ -38,50 +38,63 @@ public class GenerateParentheses {
         // 如何判断当前已经不满足条件了？计数
         public List<String> generateParenthesis(int n) {
             List<String> ans = new ArrayList<>();
-            generate(ans, "", "(", n);
+            generate(ans, "", '(', n);
             return ans;
         }
 
-        private void generate(List<String> result, String current, String insert, int limitCount) {
+        private void generate(List<String> result, String current, Character insert, int limitCount) {
             // 基准条件1，能插入，插入后长度达到limitCount * 2，加入result，返回
             // 基准条件2，不能插入，直接返回
-            if (!valid(current, insert, limitCount)) {
+            if (!valid(current.toCharArray(), insert, limitCount)) {
                 return;
             }
             if (current.length() == limitCount * 2 - 1) {
                 result.add(current + insert);
             }
             else {
-                generate(result, current + insert, "(", limitCount);
-                generate(result, current + insert, ")", limitCount);
+                generate(result, current + insert, '(', limitCount);
+                generate(result, current + insert, ')', limitCount);
             }
         }
 
-        private boolean valid(String current, String insert, int limitCount) {
-            if (current.length() >= limitCount * 2) return false;
-            int score = 0;
+        /**
+         * @param current    当前的字符串
+         * @param insert     要插入的字符串
+         * @param limitCount 限制的括号数量
+         * @return 是否可以插入这个字符
+         */
+        private boolean valid(char[] current, Character insert, int limitCount) {
+            // 如果当前已经满足长度了，则不能插入
+            if (current.length >= limitCount * 2) return false;
+            int rightRemain = 0; // 还可以插入右括号的数量（未完成的括号数量）
             int leftCount = 0;
             int rightCount = 0;
-            for (Character c : current.toCharArray()) {
+            for (Character c : current) {
                 if (c == '(') {
-                    score++;
+                    rightRemain++;
                     leftCount++;
                 }
                 if (c == ')') {
-                    score--;
+                    rightRemain--;
                     rightCount++;
                 }
-                if (score < 0) return false;
+                // 说明在current中，左括号已经多余右括号了，本身就非法，当然不能插入
+                if (rightRemain < 0) return false;
+                // 虽然左括号没有多余右括号，但单个括号已经多过限制了，也是非法的，如((((((这样的
                 if (leftCount > limitCount || rightCount > limitCount) return false;
             }
-            if (score == 0) {
-                return leftCount < limitCount && insert.equals("(");
+            // 上面的循环结束后，知道了current中，有几个左括号，有几个右括号，还能插入几个右括号
+            // 如果没有未完成的括号了，则下一个插入的只能是左括号
+            if (rightRemain == 0) {
+                return leftCount < limitCount && insert == '(';
             }
-            if (score < limitCount) {
-                return (leftCount < limitCount && insert.equals("(")) || rightCount < limitCount && insert.equals(")");
+            // rightRemain 大于0，小于上限的情况下，插入左\右括号都可以，但要在限制内
+            if (rightRemain < limitCount) {
+                return (leftCount < limitCount && insert == '(') || (rightCount < limitCount && insert == ')');
             }
-            if (score == limitCount) {
-                return rightCount < limitCount && insert.equals(")");
+            // 这种情况说明当前都是左括号，只能在限制内插入右括号
+            if (rightRemain == limitCount) {
+                return rightCount < limitCount && insert == ')';
             }
             return false;
         }
