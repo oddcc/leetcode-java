@@ -85,6 +85,7 @@ public class LinkedListCycleIi {
                         fast = head;
                     }
                 } else {
+                    // 当快慢指针在head相遇时，是特殊情况，此时是链表的头尾相连；如果先移动节点再判断相遇，就会出错
                     if (fast == slow) {
                         return fast;
                     }
