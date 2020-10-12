@@ -10,16 +10,9 @@ public class FactorialTrailingZeroes {
     class Solution {
         public int trailingZeroes(int n) {
             int ans = 0;
-            for (int i = 1; i <= n; i++) {
-                int tmp = i;
-                while (tmp / 5 != 0) {
-                    if (tmp % 5 == 0) {
-                        ans++;
-                    } else {
-                        break;
-                    }
-                    tmp = tmp / 5;
-                }
+            while (n != 0) {
+                ans += n / 5;
+                n = n / 5;
             }
             return ans;
         }
