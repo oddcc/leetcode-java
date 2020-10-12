@@ -128,5 +128,5 @@ hs_err_pid*
 # leetcode plugin
 all.json
 *.txt
-*.md
+src/**/*.md
 .idea/sonarlint
