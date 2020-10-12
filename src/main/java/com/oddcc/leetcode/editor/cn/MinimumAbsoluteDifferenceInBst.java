@@ -21,7 +21,7 @@ public class MinimumAbsoluteDifferenceInBst {
         public int getMinimumDifference(TreeNode root) {
             List<Integer> array = new ArrayList<>();
             walk(root, array);
-            array.sort(Comparator.comparingInt(a -> a));
+//            array.sort(Comparator.comparingInt(a -> a)); // 中序遍历得到的结果就是递增的，不用再次排序
             if (array.size() == 2) return Math.abs(array.get(0) - array.get(1));
             int ans = Integer.MAX_VALUE;
             for (int i = 0; i < array.size() - 1; i++) {
@@ -35,8 +35,8 @@ public class MinimumAbsoluteDifferenceInBst {
 
         private void walk(TreeNode root, List<Integer> array) {
             if (root == null) return;
-            array.add(root.val);
             walk(root.left, array);
+            array.add(root.val);
             walk(root.right, array);
         }
     }
