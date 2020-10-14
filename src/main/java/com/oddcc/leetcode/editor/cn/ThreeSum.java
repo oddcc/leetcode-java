@@ -5,7 +5,8 @@ import java.util.*;
 public class ThreeSum {
     public static void main(String[] args) {
         Solution solution = new ThreeSum().new Solution();
-        System.out.println(solution.threeSum(new int[]{-1, 0, 1, 2, -1, -4}));
+//        System.out.println(solution.threeSum(new int[]{-1, 0, 1, 2, -1, -4}));
+        System.out.println(solution.threeSum(new int[]{-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4}));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -36,6 +37,9 @@ public class ThreeSum {
             for (int i = 0; i < nums.length; i++) {
                 if (used[i]) {
                     continue;
+                }
+                if (path.stream().reduce(0, Integer::sum) + nums[i] > 0) {
+                    return;
                 }
                 path.add(nums[i]);
                 used[i] = true;
