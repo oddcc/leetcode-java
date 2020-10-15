@@ -14,46 +14,33 @@ public class PopulatingNextRightPointersInEachNode {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public Node connect(Node root) {
+            if (root == null) return null;
             bfs(root);
             return root;
         }
 
         private void bfs(Node root) {
-            if (root == null) return;
-            Queue<Pair> queue = new LinkedList<>();
-            queue.offer(new Pair(root, 1));
-            Node pre = new Node(); // dummyRoot
-            int lastDepth = 0;
+            Queue<Node> queue = new LinkedList<>();
+            queue.offer(root);
             while (!queue.isEmpty()) {
-                Pair pair = queue.poll();
-                // 当前节点深度跟之前不同，则说明进入了下一层，此时的pre是上一层的节点，要把next设为null
-                if (pair.depth != lastDepth) {
-                    pre.next = null;
-                    pre = pair.node;
-                    lastDepth = pair.depth;
+                int len = queue.size();
+                Node pre = null;
+                for (int i = 0; i < len; i++) {
+                    Node node = queue.poll();
+                    if (pre == null) {
+                        pre = node;
+                    }
+                    else {
+                        pre.next = node;
+                        pre = node;
+                    }
+                    if (node.left != null) {
+                        queue.offer(node.left);
+                    }
+                    if (node.right != null) {
+                        queue.offer(node.right);
+                    }
                 }
-                // 当前节点深度跟之前相同，说明在同一层之内
-                else {
-                    pre.next = pair.node;
-                    pre = pair.node;
-                }
-                System.out.format("%d-%d\n", pair.node.val, pair.depth);
-                if (pair.node.left != null) {
-                    queue.offer(new Pair(pair.node.left, pair.depth + 1));
-                }
-                if (pair.node.right != null) {
-                    queue.offer(new Pair(pair.node.right, pair.depth + 1));
-                }
-            }
-        }
-
-        class Pair {
-            public Node node;
-            public int depth;
-
-            public Pair(Node node, int depth) {
-                this.node = node;
-                this.depth = depth;
             }
         }
     }
