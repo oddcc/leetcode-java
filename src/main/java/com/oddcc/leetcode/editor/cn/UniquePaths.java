@@ -20,34 +20,24 @@ public class UniquePaths {
         }
 
         private int getWays(int m, int n, int x, int y, int[][] db) {
-            if (x == 0 && y == 0) return 1; // 0,0走到0,0返回1
+            if (x == 0 || y == 0) return 1;
             if (x > m || x < 0 || y > n || y < 0) return 0; // 超出范围返回0
             int left; // 走到左边的位置有几种走法
             int up; // 走到上边的位置有几种走法
-            if (x - 1 >= 0) {
-                if (db[x - 1][y] == -1) {
-                    left = getWays(m, n, x - 1, y, db);
-                    db[x - 1][y] = left;
-                }
-                else {
-                    left = db[x - 1][y];
-                }
+            if (db[x - 1][y] == -1) {
+                left = getWays(m, n, x - 1, y, db);
+                db[x - 1][y] = left;
             }
             else {
-                left = 0;
+                left = db[x - 1][y];
             }
 
-            if (y - 1 >= 0) {
-                if (db[x][y - 1] == -1) {
-                    up = getWays(m, n, x, y - 1, db);
-                    db[x][y - 1] = up;
-                }
-                else {
-                    up = db[x][y - 1];
-                }
+            if (db[x][y - 1] == -1) {
+                up = getWays(m, n, x, y - 1, db);
+                db[x][y - 1] = up;
             }
             else {
-                up = 0;
+                up = db[x][y - 1];
             }
 
             return left + up;
