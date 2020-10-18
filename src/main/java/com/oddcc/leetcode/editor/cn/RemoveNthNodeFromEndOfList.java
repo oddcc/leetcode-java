@@ -48,38 +48,30 @@ import java.util.List;
 public class RemoveNthNodeFromEndOfList {
     public static void main(String[] args) {
         Solution solution = new RemoveNthNodeFromEndOfList().new Solution();
-        ListNode n1 = solution.removeNthFromEnd(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))), 2);
-        ListNode n2 = solution.removeNthFromEnd(new ListNode(1), 1);
-        ListNode n3 = solution.removeNthFromEnd(new ListNode(1, new ListNode(2)), 1);
-        System.out.println(n1);
+        ListNode n1 = solution.removeNthFromEnd(ListNode.GetNodeList(1, 2, 3, 4, 5), 2);
+        ListNode n2 = solution.removeNthFromEnd(ListNode.GetNodeList(1), 1);
+        ListNode n3 = solution.removeNthFromEnd(ListNode.GetNodeList(1, 2), 1);
+        System.out.println(n3);
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        // 遍历时把位置记下来，删除的时候就不用二次遍历，时间复杂度O(n)，空间复杂度O(n)
+        // 删除倒数第n个，可以让快指针比慢指针先走n步，当快指针到结尾时，慢指针指向的就是要删除的元素
         public ListNode removeNthFromEnd(ListNode head, int n) {
-            if (head == null) return null;
-            ListNode current = head;
-            List<ListNode> cache = new ArrayList<>();
-            while (current != null) {
-                cache.add(current);
-                current = current.next;
+            ListNode dummyHead = new ListNode(-1);
+            dummyHead.next = head;
+            ListNode pre = dummyHead;
+            ListNode fast = head;
+            for (int i = 1; i<= n; i++) {
+                fast = fast.next;
             }
-            // 删除节点
-            int nIndex = cache.size() - n;
-            // 删除的是头节点
-            if (nIndex == 0) {
+            while (fast != null) {
+                fast = fast.next;
                 head = head.next;
+                pre = pre.next;
             }
-            // 删除的是尾节点
-            else if (nIndex == cache.size() - 1) {
-                cache.get(nIndex - 1).next = null;
-            }
-            // 删除的是普通节点
-            else {
-                cache.get(nIndex - 1).next = cache.get(nIndex + 1);
-            }
-            return head;
+            pre.next = head.next;
+            return dummyHead.next;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
