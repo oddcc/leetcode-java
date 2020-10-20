@@ -67,6 +67,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/BinaryTreeInorderTraversal.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/BinaryTreeInorderTraversal.java" />
+              <option name="questionId" value="94" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/BinaryTreeLevelOrderTraversalIi.java">
           <value>
             <LeetcodeEditor>
@@ -432,6 +440,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/RemoveNthNodeFromEndOfList.java" />
               <option name="questionId" value="19" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/ReorderList.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/ReorderList.java" />
+              <option name="questionId" value="143" />
             </LeetcodeEditor>
           </value>
         </entry>
