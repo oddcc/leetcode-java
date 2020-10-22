@@ -19,14 +19,15 @@ public class PartitionLabels {
             int start = 0;
             int end = 0;
             int current = 0;
-            while (end <= S.length() - 1 && current <= S.length() - 1) {
+            // 处理完左右字符后结束
+            while (current <= S.length() - 1) {
                 char c = S.charAt(current);
                 end = Math.max(end, S.lastIndexOf(c));
                 if (current == end) {
                     ans.add(end - start + 1);
                     start = end + 1;
-                    current = end + 1;
-                    end = end + 1;
+                    current = start;
+                    end = start;
                 }
                 else {
                     current++;
