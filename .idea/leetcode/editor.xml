@@ -227,6 +227,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/HowManyNumbersAreSmallerThanTheCurrentNumber.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/HowManyNumbersAreSmallerThanTheCurrentNumber.java" />
+              <option name="questionId" value="1482" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/ImplementStrstr.java">
           <value>
             <LeetcodeEditor>
