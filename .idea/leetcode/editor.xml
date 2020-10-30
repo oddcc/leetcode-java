@@ -91,6 +91,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/BinaryTreeMaximumPathSum.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/BinaryTreeMaximumPathSum.java" />
+              <option name="questionId" value="124" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/BinaryTreePreorderTraversal.java">
           <value>
             <LeetcodeEditor>
@@ -800,6 +808,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/VideoStitching.java" />
               <option name="questionId" value="1081" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/WordBreak.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/WordBreak.java" />
+              <option name="questionId" value="139" />
             </LeetcodeEditor>
           </value>
         </entry>
