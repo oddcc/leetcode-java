@@ -20,23 +20,21 @@ public class FlattenBinaryTreeToLinkedList {
         // 连接的顺序是前序遍历（根左右）的顺序，每次连接的时候，都连接到右子树
         public void flatten(TreeNode root) {
             Deque<TreeNode> stack = new LinkedList<>();
-            List<TreeNode> cache = new ArrayList<>();
+            TreeNode tmp = null;
             while (root != null || !stack.isEmpty()) {
                 if (root == null) {
                     root = stack.pop();
-
                 }
-                cache.add(root);
                 if (root.right != null) stack.push(root.right);
-                root = root.left;
-            }
-            TreeNode tmp = null;
-            for (TreeNode n : cache) {
-                if (tmp != null) {
-                    tmp.right = n;
-                    tmp.left = null;
+                if (tmp == null) {
+                    tmp = root;
                 }
-                tmp = n;
+                else {
+                    tmp.left = null;
+                    tmp.right = root;
+                    tmp = root;
+                }
+                root = root.left;
             }
         }
     }
