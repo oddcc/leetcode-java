@@ -14,19 +14,35 @@ public class ListNode {
         this.next = next;
     }
 
-    public static ListNode GetNodeList(Integer ...array) {
+    public static ListNode GetNodeList(Integer... array) {
         if (array.length == 0) return null;
         ListNode ans = null;
         ListNode head = ans;
-        for (Integer i: array) {
+        for (Integer i : array) {
             if (head == null) {
                 head = new ListNode(i);
                 ans = head;
-            } else {
+            }
+            else {
                 head.next = new ListNode(i);
                 head = head.next;
             }
         }
         return ans;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        ListNode c = this;
+        int count = 0;
+        while (c != null) {
+            if (count >= 200) return "too long, maybe infinite loop";
+            if (count != 0) sb.append("->");
+            count++;
+            sb.append(c.val);
+            c = c.next;
+        }
+        return sb.toString();
     }
 }

@@ -5,47 +5,72 @@ import com.oddcc.leetcode.editor.cn.common.ListNode;
 public class SortList {
     public static void main(String[] args) {
         Solution solution = new SortList().new Solution();
-//        ListNode n1 = ListNode.GetNodeList(4,2,1,3);
-        ListNode n1 = ListNode.GetNodeList(-1,5,3,4,0);
-        ListNode n2 = solution.sortList(n1);
-        System.out.println("done");
+        System.out.println(solution.sortList(ListNode.GetNodeList(4, 2, 1, 3)));
+        System.out.println(solution.sortList(ListNode.GetNodeList(-1, 5, 3, 4, 0)));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        // 思路1，一次遍历，类似插入排序
+        // 由O(NlogN)的时间复杂度要求，想到递归（logN）解法
+        // 归并，涉及到拆分和合并一个链表，其中拆分需要找到链表的中点（奇数个节点，偶数个节点要找到中点靠左的点）
         public ListNode sortList(ListNode head) {
-            ListNode dummyNode = new ListNode(Integer.MIN_VALUE);
-            while (head != null) {
-                ListNode current = head;
-                head = head.next;
-                current.next = null;
-                ListNode insert = findLastSmaller(dummyNode, current);
-                insertBehind(insert, current);
+            if (head == null || head.next == null) return head;
+            // 拆分一个链表
+            ListNode midNode = getMid(head);
+            ListNode tmp = midNode.next;
+            midNode.next = null;
+            ListNode l1 = sortList(head);
+            ListNode l2 = sortList(tmp);
+            return merge(l1, l2);
+        }
+
+        /**
+         * 快慢指针，找到链表的中点（奇数个节点，偶数个节点要找到中点靠左的点）
+         *
+         * @param head
+         * @return
+         */
+        private ListNode getMid(ListNode head) {
+            ListNode slow = head;
+            ListNode fast = head;
+            while (fast.next != null && fast.next.next != null) {
+                slow = slow.next;
+                fast = fast.next.next;
             }
-            return dummyNode.next;
+            return slow;
         }
 
-        private void insertBehind(ListNode insert, ListNode current) {
-            ListNode tmp = insert.next;
-            insert.next = current;
-            current.next = tmp;
-        }
-
-        // 遍历dummyNode，找到第一个小于current的节点
-        private ListNode findLastSmaller(ListNode dummyNode, ListNode current) {
-            ListNode lastSmaller = null;
-            while (dummyNode.next != null) {
-                if (dummyNode.next.val > current.val) {
-                    lastSmaller = dummyNode;
-                    break;
+        /**
+         * 合并排序两个链表
+         * @param l1
+         * @param l2
+         * @return
+         */
+        private ListNode merge(ListNode l1, ListNode l2) {
+            ListNode dummyHead = new ListNode(0);
+            ListNode current = dummyHead;
+            while (l1 != null || l2 != null) {
+                if (l1 == null) {
+                    current.next = l2;
+                    l2 = l2.next;
+                }
+                else if (l2 == null) {
+                    current.next = l1;
+                    l1 = l1.next;
                 }
                 else {
-                    dummyNode = dummyNode.next;
+                    if (l1.val < l2.val) {
+                        current.next = l1;
+                        l1 = l1.next;
+                    }
+                    else {
+                        current.next = l2;
+                        l2 = l2.next;
+                    }
                 }
+                current = current.next;
             }
-            if (lastSmaller == null) return dummyNode;
-            return lastSmaller;
+            return dummyHead.next;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
