@@ -13,34 +13,18 @@ public class ValidMountainArray {
     class Solution {
         public boolean validMountainArray(int[] A) {
             if (A.length < 3) return false;
-            int state = 0; // 0-初始，1-上升，2-下降
-            Integer tmp = null;
-            for (int i : A) {
-                if (tmp == null) {
-                    tmp = i;
-                }
-                else {
-                    if (tmp == i) return false;
-                    if (state == 0) {
-                        if (i > tmp) {
-                            state = 1;
-                        }
-                        else {
-                            return false;
-                        }
-                    }
-                    else if (state == 1) {
-                        if (i < tmp) {
-                            state = 2;
-                        }
-                    }
-                    else {
-                        if (i > tmp) return false;
-                    }
-                    tmp = i;
-                }
+            int left = 0;
+            // 主意边界条件，不要越界
+            while (left < A.length - 1 && A[left] < A[left + 1]) {
+                left++;
             }
-            return state == 2;
+            if (left == 0 || left == A.length - 1) return false;
+            int right = A.length - 1;
+            // 主意边界条件，不要越界
+            while (right > 0 && A[right] < A[right - 1]) {
+                right--;
+            }
+            return left == right;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
