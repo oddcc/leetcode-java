@@ -57,33 +57,37 @@ package com.oddcc.leetcode.editor.cn;
 public class MaximumSubarray {
     public static void main(String[] args) {
         Solution solution = new MaximumSubarray().new Solution();
-        System.out.println(solution.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));
+        System.out.println(solution.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
         System.out.println(solution.maxSubArray(new int[]{1}));
         System.out.println(solution.maxSubArray(new int[]{0}));
         System.out.println(solution.maxSubArray(new int[]{-1}));
         System.out.println(solution.maxSubArray(new int[]{-2147483647}));
-        System.out.println(solution.maxSubArray(new int[]{8,-19,5,-4,20}));
+        System.out.println(solution.maxSubArray(new int[]{8, -19, 5, -4, 20}));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        // 动态规划，dp[i]表示以i结尾的和最大的子数组的和
         public int maxSubArray(int[] nums) {
-            // 如果一个数 <= 0 那么对最大和是没有贡献的，可以抛弃
-            // 如果一个 subarray 的和 <= 0 那么对于之后的元素来说，也是没有贡献的，可以抛弃
-            // 如果nums中都是 <= 0 的，则返回最大的值就可以
-            int maxSum = Integer.MIN_VALUE;
-            int sum = 0;
-            for (int i = 0; i < nums.length; i++) {
-                sum = nums[i] + sum;
-                if (sum > maxSum) {
-                    maxSum = sum;
+            int len = nums.length;
+            if (len == 0) return 0;
+            int[] dp = new int[len];
+            dp[0] = nums[0];
+            for (int i = 1; i < len; i++) {
+                int sum;
+                if (dp[i] == 0) {
+                    sum = Math.max(dp[i - 1] + nums[i], nums[i]);
+                    dp[i] = sum;
                 }
-                // 如果当前数没贡献，当前和也没贡献，就可以把sum归零，i及之前的都可以抛弃了，从之后的元素重新计算
-                if (nums[i] <= 0 && sum <= 0) {
-                    sum = 0;
+                else {
+                    sum = dp[i];
                 }
             }
-            return maxSum;
+            int max = dp[0];
+            for (int i : dp) {
+                if (i > max) max = i;
+            }
+            return max;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
