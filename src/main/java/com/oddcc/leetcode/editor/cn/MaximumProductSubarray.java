@@ -12,39 +12,32 @@ public class MaximumProductSubarray {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 思路1，暴力法+动态规划，对非常大的输入来说是有问题的，空间复杂度是O(N)，提交会内存超限；dp[i][j]表示的是[i,j]区间数组的乘积
+        // 思路2，动态规划
         public int maxProduct(int[] nums) {
             int len = nums.length;
             int max = Integer.MIN_VALUE;
-            int[][] dp = new int[len][len]; // dp[i][j]记的是区间[i,j]的乘积
-            for (int i = 0; i < len; i++) {
-                for (int j = i; j < len; j++) {
-                    int product = dps(nums, i, j, dp);
-                    if (product > max) max = product;
+            int[] dpMax = new int[len]; // 表示以i结尾的乘积最大的子数组的乘积
+            int[] dpMin = new int[len]; // 表示以i结尾的乘积最小的子数组的乘积
+            // 给初始值
+            dpMax[0] = nums[0];
+            dpMin[0] = nums[0];
+            for (int i = 1; i < len; i++) {
+                // 当nums[i]<0时，乘负数会得到一个正数，这个负数要尽可能小；乘正数会得到一个负数，这个正数要尽可能大（以备后用）
+                if (nums[i] < 0) {
+                    dpMax[i] = Math.max(dpMin[i - 1] * nums[i], nums[i]);
+                    dpMin[i] = Math.min(dpMax[i - 1] * nums[i], nums[i]);
+                }
+                // 当nums[i]>=0时，正常计算最大最小值
+                else {
+                    dpMax[i] = Math.max(dpMax[i - 1] * nums[i], nums[i]);
+                    dpMin[i] = Math.min(dpMin[i - 1] * nums[i], nums[i]);
                 }
             }
+            max = dpMax[0];
+            for (int i: dpMax) {
+                if (i > max) max = i;
+            }
             return max;
-        }
-
-        /**
-         * 计算nums中区间[i,j]的乘积
-         *
-         * @param nums
-         * @param i
-         * @param j
-         * @param dp
-         * @return
-         */
-        private int dps(int[] nums, int i, int j, int[][] dp) {
-            if (j <= i) return nums[i]; // 如果区间只包含1个元素，则返回本身
-            int product;
-            if (dp[i][j] == 0) { // 用==0判断，可能导致重复计算，因为乘积也可能为0，但大多数情况没问题，用0判断比较简单
-                product = nums[i] * dps(nums, i + 1, j, dp); // 递推公式
-                dp[i][j] = product;
-            }
-            else {
-                product = dp[i][j];
-            }
-            return product;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
