@@ -67,20 +67,21 @@ public class MaximumSubarray {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        // 动态规划，dp[i]表示以i结尾的和最大的子数组的和
         public int maxSubArray(int[] nums) {
-            int len = nums.length;
-            if (len == 0) return 0;
-            int[] dp = new int[len];
-            dp[0] = nums[0];
-            for (int i = 1; i < len; i++) {
-                dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
+            // 如果一个 subarray 的和 <= 0 那么对于之后的元素来说，是没有贡献的，可以抛弃
+            int maxSum = Integer.MIN_VALUE;
+            int sum = 0;
+            for (int i = 0; i < nums.length; i++) {
+                sum = nums[i] + sum;
+                if (sum > maxSum) {
+                    maxSum = sum;
+                }
+                // sum是非正数，算上sum最终结果也不会更大，就可以把sum归零，意味着i及之前的都抛弃了，从之后的元素重新计算
+                if (sum <= 0) {
+                    sum = 0;
+                }
             }
-            int max = dp[0];
-            for (int i : dp) {
-                if (i > max) max = i;
-            }
-            return max;
+            return maxSum;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
