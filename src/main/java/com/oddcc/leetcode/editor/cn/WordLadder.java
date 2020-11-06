@@ -15,6 +15,7 @@ public class WordLadder {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        // 由要求最短序列想到BFS，这个转换过程其实可以理解成一副图，我们的遍历就是在以BFS的方式遍历一副图
         public int ladderLength(String beginWord, String endWord, List<String> wordList) {
             if (!wordList.contains(endWord)) return 0;
             int ans = 0;
