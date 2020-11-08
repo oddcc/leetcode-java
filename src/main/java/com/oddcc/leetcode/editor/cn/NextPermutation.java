@@ -1,21 +1,3 @@
-//Implement next permutation, which rearranges numbers into the lexicographicall
-//y next greater permutation of numbers. 
-//
-// If such arrangement is not possible, it must rearrange it as the lowest possi
-//ble order (ie, sorted in ascending order). 
-//
-// The replacement must be in-place and use only constant extra memory. 
-//
-// Here are some examples. Inputs are in the left-hand column and its correspond
-//ing outputs are in the right-hand column. 
-//
-// 1,2,3 → 1,3,2 
-//3,2,1 → 1,2,3 
-//1,1,5 → 1,5,1 
-// Related Topics 数组 
-// 👍 670 👎 0
-
-
 package com.oddcc.leetcode.editor.cn;
 
 import java.util.Arrays;
@@ -23,43 +5,41 @@ import java.util.Arrays;
 public class NextPermutation {
     public static void main(String[] args) {
         Solution solution = new NextPermutation().new Solution();
-        int[] n1 = new int[]{1,2,3};
+        int[] n1 = new int[]{1, 2, 3};
         solution.nextPermutation(n1);
         System.out.println(Arrays.toString(n1));
-        int[] n2 = new int[]{3,2,1};
+        int[] n2 = new int[]{3, 2, 1};
         solution.nextPermutation(n2);
         System.out.println(Arrays.toString(n2));
-        int[] n3 = new int[]{1,1,5};
+        int[] n3 = new int[]{1, 5, 1};
         solution.nextPermutation(n3);
         System.out.println(Arrays.toString(n3));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        // 以字典序来说，升序最小，降序最大
+        // https://leetcode.com/problems/next-permutation/solution/ 英文的题解要比中文更好理解
         public void nextPermutation(int[] nums) {
-            if (nums.length <= 1) return;
-            // 找一个nums[i] < nums[i - 1]的位置，出现的话，表示把i位置与右侧比它大的数交换，数字都会变得更大
-            int found = -1;
-            for (int i = nums.length - 2; i >= 0; i--) {
-                if (nums[i] < nums[i + 1]) {
-                    found = i;
-                    break;
-                }
+            int len = nums.length;
+            if (len <= 1) return;
+            // 从右端开始找，找到不满足降序的元素
+            int i = len - 1;
+            while (i > 0 && nums[i - 1] >= nums[i]) {
+                i--;
             }
-            // 如果循环完了还没找到，就说明本身是个降序的数组，reverse成升序就可以
-            if (found == -1) {
-                reverse(nums, 0, nums.length - 1);
+            if (i == 0) {
+                reverse(nums, 0, len);
                 return;
             }
-            // 如果找到了，要从found的右侧，找一个大于nums[found]的最小的数，交换之后数字才是最小的
-            // 交换之后，found右侧还是降序的，如果变成升序则是最小的
-            for (int i = nums.length - 1; i >= 0; i--) {
-                if (nums[i] > nums[found]) {
-                    swap(nums, i, found);
-                    break;
-                }
+            // 结束时，i-1指向的就是不满足条件的元素，找i-1右侧仅大于刚大于i-1的第一个数
+            int j = i;
+            while (j < len && nums[j] > nums[i - 1]) {
+                j++;
             }
-            reverse(nums, found + 1, nums.length - 1);
+            swap(nums, i - 1, j - 1);
+            // i - 1之后的排序，使之成为升序
+            Arrays.sort(nums, i, len);
         }
 
         private void swap(int[] nums, int i, int j) {
@@ -68,12 +48,19 @@ public class NextPermutation {
             nums[j] = tmp;
         }
 
+        /**
+         *
+         * @param nums
+         * @param x include
+         * @param y exclude
+         */
         private void reverse(int[] nums, int x, int y) {
+            y = y - 1;
             for (int i = 0; i <= (y - x) / 2; i++) {
                 swap(nums, x + i, y - i);
             }
         }
     }
-//leetcode submit region end(Prohibit modification and deletion)
+    //leetcode submit region end(Prohibit modification and deletion)
 
 }
