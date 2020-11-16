@@ -4,10 +4,7 @@ package com.oddcc.leetcode.editor.cn;
 
 import com.oddcc.leetcode.editor.cn.common.TreeNode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class LowestCommonAncestorOfABinaryTree {
     public static void main(String[] args) {
@@ -23,11 +20,12 @@ public class LowestCommonAncestorOfABinaryTree {
     class Solution {
         // 思路1，如果能得到两个点到根节点的路径，然后从根节点开始对比两个路径，最后一个相同的节点就是答案
         // TreeNode没有指向父节点的指针，只能通过root进行遍历，寻找p和q，可以采用回溯算法
+        // 思路2，参考思路1，反正都有O(N)的空间复杂度，可以考虑使用dfs遍历，用哈希表存储节点的父节点，这样就很容易能得到根到节点的路径
         public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-            List<TreeNode> pathP = findPath(root, p, new ArrayList<>(Collections.singletonList(root)));
-            List<TreeNode> pathQ = findPath(root, q, new ArrayList<>(Collections.singletonList(root)));
-            assert pathP != null;
-            assert pathQ != null;
+            Map<Integer, TreeNode> parentCache = new HashMap<>();
+            dfs(root, null, parentCache);
+            List<TreeNode> pathP = findPath(p, parentCache);
+            List<TreeNode> pathQ = findPath(q, parentCache);
             int pP = 0;
             int pQ = 0;
             TreeNode ans = null;
@@ -49,27 +47,20 @@ public class LowestCommonAncestorOfABinaryTree {
             return ans;
         }
 
-        private List<TreeNode> findPath(TreeNode root, TreeNode p, List<TreeNode> path) {
-            if (root.val == p.val) return new ArrayList<>(path);
-            if (root.left == null && root.right == null) return null;
-            List<TreeNode> ans = null;
-            if (root.left != null) {
-                path.add(root.left);
-                ans = findPath(root.left, p, path);
-                if (ans != null) return ans;
-                path.remove(path.size() - 1);
+        private List<TreeNode> findPath(TreeNode p, Map<Integer, TreeNode> parentCache) {
+            List<TreeNode> path = new ArrayList<>();
+            while (p != null) {
+                path.add(p);
+                p = parentCache.get(p.val);
             }
-            if (root.right != null) {
-                path.add(root.right);
-                ans = findPath(root.right, p, path);
-                if (ans != null) return ans;
-                path.remove(path.size() - 1);
-            }
-            return ans;
+            Collections.reverse(path);
+            return path;
         }
 
-        private void dfs(TreeNode root, TreeNode p, List<TreeNode> path) {
-
+        private void dfs(TreeNode root, TreeNode parent, Map<Integer, TreeNode> parentCache) {
+            if (parent != null) parentCache.put(root.val, parent);
+            if (root.left != null) dfs(root.left, root, parentCache);
+            if (root.right != null) dfs(root.right, root, parentCache);
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
