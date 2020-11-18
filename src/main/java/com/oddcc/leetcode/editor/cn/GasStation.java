@@ -2,6 +2,9 @@
 
 package com.oddcc.leetcode.editor.cn;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class GasStation {
     public static void main(String[] args) {
         Solution solution = new GasStation().new Solution();
@@ -13,15 +16,24 @@ public class GasStation {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 思路1，遍历所有可能的起点，直接模拟+剪枝
+        // 思路2，思路1包含很多重复计算，比如，从i点出发，走到了j点，油箱余量为r，这个过程是不变的
+        // 不用重复计算，假设到底i点时候有油r1，那么我们可以直接得出，可以走到j点且余量为r + r1
         public int canCompleteCircuit(int[] gas, int[] cost) {
             int ans = -1;
+            Map<Integer, int[]> cache = new HashMap<>(); // {终点,余量}
             for (int i = 0; i < gas.length; i++) {
                 int remain = 0;
                 int start = i;
                 boolean found = false;
                 while (true) {
+                    int[] c = cache.get(start);
+                    if (c != null) {
+                        start = c[0];
+                        remain += c[1];
+                    }
                     // 表示从start点不能走到start+1
                     if (gas[start] + remain < cost[start]) {
+                        cache.put(i, new int[]{start, remain});
                         break;
                     }
                     // 如果能走到下一个点，更新油箱余量，移动start
