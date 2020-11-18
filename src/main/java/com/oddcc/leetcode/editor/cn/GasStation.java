@@ -12,7 +12,7 @@ public class GasStation {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        // 思路1，遍历所有可能的起点，模拟过程
+        // 思路1，遍历所有可能的起点，直接模拟+剪枝
         public int canCompleteCircuit(int[] gas, int[] cost) {
             int ans = -1;
             for (int i = 0; i < gas.length; i++) {
@@ -40,10 +40,7 @@ public class GasStation {
         }
 
         private int getNext(int i, int[] gas) {
-            int len = gas.length;
-            int next = i + 1;
-            if (next >= len) return 0;
-            return next;
+            return (i + 1) % gas.length;
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
