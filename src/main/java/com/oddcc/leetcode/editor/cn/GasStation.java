@@ -20,20 +20,23 @@ public class GasStation {
         // 不用重复计算，假设到底i点时候有油r1，那么我们可以直接得出，可以走到j点且余量为r + r1
         public int canCompleteCircuit(int[] gas, int[] cost) {
             int ans = -1;
-            Map<Integer, int[]> cache = new HashMap<>(); // {终点,余量}
+            int[][] cache = new int[gas.length][2]; // {终点,余量}
+            for (int i = 0; i < gas.length; i++) {
+                cache[i] = new int[]{-1, 0};
+            }
             for (int i = 0; i < gas.length; i++) {
                 int remain = 0;
                 int start = i;
                 boolean found = false;
                 while (true) {
-                    int[] c = cache.get(start);
-                    if (c != null) {
+                    int[] c = cache[start];
+                    if (c[0] != -1) {
                         start = c[0];
                         remain += c[1];
                     }
                     // 表示从start点不能走到start+1
                     if (gas[start] + remain < cost[start]) {
-                        cache.put(i, new int[]{start, remain});
+                        cache[i] = new int[]{start, remain};
                         break;
                     }
                     // 如果能走到下一个点，更新油箱余量，移动start
