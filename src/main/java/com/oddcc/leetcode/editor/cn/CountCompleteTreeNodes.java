@@ -18,25 +18,20 @@ public class CountCompleteTreeNodes {
 
         // 思路1，返回完全二叉树有多少个节点，各种遍历方法
         // 深度优先遍历
-        // 深度优先遍历非递归 -> 栈
-        // todo 广度优先遍历
+        // 深度优先遍历非递归，前序遍历
+        // 广度优先遍历
         public int countNodes(TreeNode root) {
             if (root == null) return 0;
-            Deque<TreeNode> stack = new LinkedList<>();
-            stack.add(root);
-            while (!stack.isEmpty()) {
-                Deque<TreeNode> s2 = new LinkedList<>();
-                TreeNode node = stack.pop();
-                s2.push(node);
-                while (node.left != null) {
-                    s2.push(node.left);
-                    node = node.left;
-                }
-                while (!s2.isEmpty()) {
-                    TreeNode n = s2.pop();
-                    if (n.right != null) stack.push(n.right);
+            List<TreeNode> nodeList = new ArrayList<>();
+            nodeList.add(root);
+            while (!nodeList.isEmpty()) {
+                List<TreeNode> nextLayer = new ArrayList<>();
+                for (TreeNode n: nodeList) {
                     count++;
+                    if (n.left != null) nextLayer.add(n.left);
+                    if (n.right != null) nextLayer.add(n.right);
                 }
+                nodeList = nextLayer;
             }
             return count;
         }
