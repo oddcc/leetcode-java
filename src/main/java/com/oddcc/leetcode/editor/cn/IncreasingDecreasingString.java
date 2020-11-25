@@ -2,11 +2,6 @@
 
 package com.oddcc.leetcode.editor.cn;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 public class IncreasingDecreasingString {
     public static void main(String[] args) {
         Solution solution = new IncreasingDecreasingString().new Solution();
@@ -20,47 +15,30 @@ public class IncreasingDecreasingString {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 思路1，利用list保存排序后的所有字符，利用map保存字符出现的次数，然后根据描述拼接答案
+        // 思路2，思路1其实是桶排序，因为只包含小写英文字母，所以桶数就是26
         public String sortString(String s) {
-            List<Character> charList = new ArrayList<>();
-            Map<Character, Integer> charCountMap = new HashMap<>();
+            int[] charCount = new int[26];
             for (Character c : s.toCharArray()) {
-                if (charCountMap.get(c) == null) {
-                    charList.add(c);
-                    charCountMap.put(c, 1);
-                }
-                else {
-                    charCountMap.put(c, charCountMap.get(c) + 1);
-                }
+                charCount[c - 'a']++;
             }
-            charList.sort(Character::compareTo);
             // 开始拼接
             int len = s.length();
-            int charCount = charList.size();
-            boolean upper = true;
-            int current = 0;
             StringBuilder ans = new StringBuilder();
             while (len > 0) {
-                // 升
-                while (current < charCount) {
-                    Character c = charList.get(current);
-                    // 说明还可以选
-                    if (charCountMap.get(c) > 0) {
-                        ans.append(c);
-                        charCountMap.put(c, charCountMap.get(c) - 1);
+                for (int i = 0; i < charCount.length; i++) {
+                    if (charCount[i] > 0) {
+                        ans.append((char) ('a' + i));
+                        charCount[i]--;
+                        len--;
                     }
-                    current++;
                 }
-                // 降
-                while (current > 0) {
-                    Character c = charList.get(current - 1);
-                    // 说明还可以选
-                    if (charCountMap.get(c) > 0) {
-                        ans.append(c);
-                        charCountMap.put(c, charCountMap.get(c) - 1);
+                for (int i = charCount.length - 1; i >= 0; i--) {
+                    if (charCount[i] > 0) {
+                        ans.append((char) ('a' + i));
+                        charCount[i]--;
+                        len--;
                     }
-                    current--;
                 }
-                len--;
             }
             return ans.toString();
         }
