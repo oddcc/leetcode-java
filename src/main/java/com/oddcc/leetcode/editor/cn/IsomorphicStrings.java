@@ -17,26 +17,16 @@ public class IsomorphicStrings {
         // 字符的对应位置应该相同，但字符可以不同
         public boolean isIsomorphic(String s, String t) {
             boolean ans = true;
-            Map<Character, Set<Integer>> sCache = new HashMap<>();
-            Map<Character, Set<Integer>> tCache = new HashMap<>();
+            Map<Character, Integer> sCache = new HashMap<>();
+            Map<Character, Integer> tCache = new HashMap<>();
             for (int i = 0; i < s.length(); i++) {
                 char sC = s.charAt(i);
-                if (sCache.get(sC) != null) {
-                    sCache.get(sC).add(i);
-                } else {
-                    Set<Integer> set = new HashSet<>();
-                    set.add(i);
-                    sCache.put(sC, set);
-                }
+                sCache.putIfAbsent(sC, i);
+                int iS = sCache.get(sC);
                 char tC = t.charAt(i);
-                if (tCache.get(tC) != null) {
-                    tCache.get(tC).add(i);
-                } else {
-                    Set<Integer> set = new HashSet<>();
-                    set.add(i);
-                    tCache.put(tC, set);
-                }
-                if (!tCache.get(tC).equals(sCache.get(sC))) return false;
+                tCache.putIfAbsent(tC, i);
+                int iT = tCache.get(tC);
+                if (iS != iT) return false;
             }
             return ans;
         }
