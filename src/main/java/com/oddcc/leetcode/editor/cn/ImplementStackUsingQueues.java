@@ -3,42 +3,45 @@
 package com.oddcc.leetcode.editor.cn;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class ImplementStackUsingQueues {
-    public static void main(String[] args) {
-        MyStack solution = new ImplementStackUsingQueues().new MyStack();
-    }
-
     //leetcode submit region begin(Prohibit modification and deletion)
     class MyStack {
-        private int point = -1;
-        private List<Integer> array;
-
+        Queue<Integer> q1;
+        Queue<Integer> q2;
         /** Initialize your data structure here. */
         public MyStack() {
-            array = new ArrayList<>();
+            q1 = new LinkedList<>();
+            q2 = new LinkedList<>();
         }
 
         /** Push element x onto stack. */
         public void push(int x) {
-            array.add(x);
-            point++;
+            q2.add(x);
+            while (!q1.isEmpty()) {
+                q2.add(q1.remove());
+            }
+            Queue<Integer> tmp = q1;
+            q1 = q2;
+            q2 = tmp;
         }
 
         /** Removes the element on top of the stack and returns that element. */
         public int pop() {
-            return array.remove(point--);
+            return q1.remove();
         }
 
         /** Get the top element. */
         public int top() {
-            return array.get(point);
+            return q1.element();
         }
 
         /** Returns whether the stack is empty. */
         public boolean empty() {
-            return array.isEmpty();
+            return q1.isEmpty();
         }
     }
 
