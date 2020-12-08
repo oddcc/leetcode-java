@@ -771,6 +771,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/PowerOfTwo.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/PowerOfTwo.java" />
+              <option name="questionId" value="231" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/ProductOfArrayExceptSelf.java">
           <value>
             <LeetcodeEditor>
@@ -891,6 +899,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/ScoreAfterFlippingMatrix.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/ScoreAfterFlippingMatrix.java" />
+              <option name="questionId" value="891" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/SearchInRotatedSortedArray.java">
           <value>
             <LeetcodeEditor>
@@ -968,6 +984,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/SplitArrayIntoConsecutiveSubsequences.java" />
               <option name="questionId" value="659" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/SplitArrayIntoFibonacciSequence.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/SplitArrayIntoFibonacciSequence.java" />
+              <option name="questionId" value="872" />
             </LeetcodeEditor>
           </value>
         </entry>
