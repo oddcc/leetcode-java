@@ -1,48 +1,32 @@
-package com.oddcc.leetcode.editor.cn;
+// 62
 
-import java.util.Arrays;
+package com.oddcc.leetcode.editor.cn;
 
 public class UniquePaths {
     public static void main(String[] args) {
         Solution solution = new UniquePaths().new Solution();
         System.out.println(solution.uniquePaths(3, 7));
+        System.out.println(solution.uniquePaths(3, 2));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        // 动态规划
+        // 思路1，给路径数，不用给出具体路径，考虑动态规划；对于点(m,n)来说，由于只能向右或向下走，如果f(m,n)表示有多少种方法
+        // 那么f(m,n)=f(m-1,n)+f(m,n-1)即从上方走和从左侧走
         public int uniquePaths(int m, int n) {
-            int[][] db = new int[m][n]; // 记录了走到从0,0走到m,n有多少种走法
-            for (int[] i : db) {
-                Arrays.fill(i, -1);
+            int[][] dp = new int[m][n]; // 表示有多少种方式到达m,n点
+            dp[0][0] = 1;
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (i == 0 && j == 0) continue;
+                    int fromUp = j - 1 >= 0 ? dp[i][j - 1] : 0;
+                    int fromLeft = i - 1 >= 0 ? dp[i - 1][j] : 0;
+                    dp[i][j] = fromUp + fromLeft;
+                }
             }
-            return getWays(m, n, m - 1, n - 1, db);
-        }
-
-        private int getWays(int m, int n, int x, int y, int[][] db) {
-            if (x == 0 || y == 0) return 1;
-            if (x > m || x < 0 || y > n || y < 0) return 0; // 超出范围返回0
-            int left; // 走到左边的位置有几种走法
-            int up; // 走到上边的位置有几种走法
-            if (db[x - 1][y] == -1) {
-                left = getWays(m, n, x - 1, y, db);
-                db[x - 1][y] = left;
-            }
-            else {
-                left = db[x - 1][y];
-            }
-
-            if (db[x][y - 1] == -1) {
-                up = getWays(m, n, x, y - 1, db);
-                db[x][y - 1] = up;
-            }
-            else {
-                up = db[x][y - 1];
-            }
-
-            return left + up;
+            return dp[m - 1][n - 1];
         }
     }
-//leetcode submit region end(Prohibit modification and deletion)
+    //leetcode submit region end(Prohibit modification and deletion)
 
 }
