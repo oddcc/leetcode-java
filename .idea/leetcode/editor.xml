@@ -75,6 +75,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockWithTransactionFee.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockWithTransactionFee.java" />
+              <option name="questionId" value="714" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/BinaryTreeInorderTraversal.java">
           <value>
             <LeetcodeEditor>
@@ -208,6 +216,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DeleteDuplicateEmails.java" />
               <option name="questionId" value="196" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DeleteNodeInALinkedList.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DeleteNodeInALinkedList.java" />
+              <option name="questionId" value="237" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -544,6 +560,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/LongestSubstringWithoutRepeatingCharacters.java" />
               <option name="questionId" value="3" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/LowestCommonAncestorOfABinarySearchTree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/LowestCommonAncestorOfABinarySearchTree.java" />
+              <option name="questionId" value="235" />
             </LeetcodeEditor>
           </value>
         </entry>
