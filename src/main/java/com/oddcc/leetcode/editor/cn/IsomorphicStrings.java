@@ -2,33 +2,33 @@
 
 package com.oddcc.leetcode.editor.cn;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class IsomorphicStrings {
     public static void main(String[] args) {
         Solution solution = new IsomorphicStrings().new Solution();
-        System.out.println(solution.isIsomorphic("foo", "egg"));
+        System.out.println(solution.isIsomorphic("egg", "add"));
         System.out.println(solution.isIsomorphic("foo", "bar"));
         System.out.println(solution.isIsomorphic("paper", "title"));
+        System.out.println(solution.isIsomorphic("", ""));
+        System.out.println(solution.isIsomorphic("a", "b"));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        // 字符的对应位置应该相同，但字符可以不同
+        // 思路1，同时遍历两个字符串，如果碰到字符的相对位置不符，则返回false
         public boolean isIsomorphic(String s, String t) {
-            boolean ans = true;
-            Map<Character, Integer> sCache = new HashMap<>();
-            Map<Character, Integer> tCache = new HashMap<>();
+            Map<Character, Integer> cacheS = new HashMap<>();
+            Map<Character, Integer> cacheT = new HashMap<>();
             for (int i = 0; i < s.length(); i++) {
-                char sC = s.charAt(i);
-                sCache.putIfAbsent(sC, i);
-                int iS = sCache.get(sC);
-                char tC = t.charAt(i);
-                tCache.putIfAbsent(tC, i);
-                int iT = tCache.get(tC);
-                if (iS != iT) return false;
+                int i1 = cacheS.getOrDefault(s.charAt(i), i);
+                cacheS.putIfAbsent(s.charAt(i), i);
+                int i2 = cacheT.getOrDefault(t.charAt(i), i);
+                cacheT.putIfAbsent(t.charAt(i), i);
+                if (i1 != i2) return false;
             }
-            return ans;
+            return true;
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
