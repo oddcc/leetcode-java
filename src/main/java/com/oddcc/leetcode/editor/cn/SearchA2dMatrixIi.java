@@ -21,20 +21,26 @@ public class SearchA2dMatrixIi {
             int y = 0;
             int width = matrix[0].length;
             int height = matrix.length;
+            boolean searchRow = true;
+            boolean searchColumn = true;
             while (true) {
                 if (matrix[x][y] < target) {
-                    System.out.println("pass " + x + "," + y);
+                    // System.out.println("pass " + x + "," + y);
                 }
                 else {
-                    System.out.format("search row %d,%d ~ %d,%d\n", x, 0, x, y);
-                    if (searchRow(matrix, target, x, 0, y)) {
-                        System.out.format("found at %d,%d ~ %d,%d\n", x, 0, x, y);
-                        return true;
+                    if (searchRow) {
+                        // System.out.format("search row %d,%d ~ %d,%d\n", x, 0, x, y);
+                        if (searchRow(matrix, target, x, 0, y)) {
+                            System.out.format("found at %d,%d ~ %d,%d\n", x, 0, x, y);
+                            return true;
+                        }
                     }
-                    System.out.format("search column %d,%d ~ %d,%d\n", 0, y, x, y);
-                    if (searchColumn(matrix, target, y, 0, x)) {
-                        System.out.format("found at %d,%d ~ %d,%d\n", 0, y, x, y);
-                        return true;
+                    if (searchColumn) {
+                        // System.out.format("search column %d,%d ~ %d,%d\n", 0, y, x, y);
+                        if (searchColumn(matrix, target, y, 0, x)) {
+                            System.out.format("found at %d,%d ~ %d,%d\n", 0, y, x, y);
+                            return true;
+                        }
                     }
                 }
                 // 如果最后一个点搜完了，则结束
@@ -43,10 +49,12 @@ public class SearchA2dMatrixIi {
                 }
                 // 如果x最大了，说明没有更多行了，下次只能搜右边的点
                 if (x == height - 1) {
+                    searchRow = false;
                     y++;
                 }
                 // 如果y最大了，说明没有更多列了，下次只能搜下面的点
                 else if (y == width - 1) {
+                    searchColumn = false;
                     x++;
                 }
                 // 如果右边下边都有空间，则搜右下角的点
