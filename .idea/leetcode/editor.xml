@@ -251,6 +251,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DiameterOfBinaryTree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DiameterOfBinaryTree.java" />
+              <option name="questionId" value="543" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DivideTwoIntegers.java">
           <value>
             <LeetcodeEditor>
@@ -376,6 +384,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/GroupAnagrams.java" />
               <option name="questionId" value="49" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/HammingDistance.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/HammingDistance.java" />
+              <option name="questionId" value="461" />
             </LeetcodeEditor>
           </value>
         </entry>
