@@ -20,6 +20,7 @@ public class PositionsOfLargeGroups {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 思路1，单指针扫描计数，如果长度>=3就加入结果集，返回结果之前排序
+        // 思路2，优化思路1，扫描是从前到后，所以结果自然是按start升序排列的，不需要再进行排序
         public List<List<Integer>> largeGroupPositions(String s) {
             List<List<Integer>> ans = new ArrayList<>();
             int start = 0;
@@ -51,7 +52,6 @@ public class PositionsOfLargeGroups {
                 a.add(end);
                 ans.add(a);
             }
-            ans.sort(Comparator.comparingInt(l -> l.get(0)));
             return ans;
         }
     }
