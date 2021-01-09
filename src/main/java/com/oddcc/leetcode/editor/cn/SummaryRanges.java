@@ -17,32 +17,23 @@ public class SummaryRanges {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 思路1，一次遍历
+        // 思路2，还是一次遍历，双指针，优化代码，没有那么冗余且容易理解
         public List<String> summaryRanges(int[] nums) {
             List<String> ans = new ArrayList<>();
-            if (nums.length == 0) return ans;
-            if (nums.length == 1) {
-                ans.add(String.valueOf(nums[0]));
-                return ans;
-            }
-            int start = 0;
-            int end = 1;
-            while (end < nums.length) {
-                if (nums[end] != nums[end - 1] + 1) {
-                    if (start == end - 1) {
-                        ans.add(String.valueOf(nums[start]));
-                    }
-                    else {
-                        ans.add(nums[start] + "->" + nums[end - 1]);
-                    }
-                    start = end;
+            int i = 0;
+            int len = nums.length;
+            while (i < len) {
+                int end = i;
+                while (end + 1 < len && nums[end + 1] == nums[end] + 1) {
+                    end++;
                 }
-                end++;
-            }
-            if (nums[end - 1] != nums[end - 2] + 1) {
-                ans.add(String.valueOf(nums[start]));
-            }
-            else {
-                ans.add(nums[start] + "->" + nums[end - 1]);
+                if (end == i) {
+                    ans.add(String.valueOf(nums[end]));
+                }
+                else {
+                    ans.add(nums[i] + "->" + nums[end]);
+                }
+                i = end + 1;
             }
             return ans;
         }
