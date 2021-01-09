@@ -16,23 +16,35 @@ public class SummaryRanges {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        // 思路1，一次遍历
         public List<String> summaryRanges(int[] nums) {
             List<String> ans = new ArrayList<>();
+            if (nums.length == 0) return ans;
+            if (nums.length == 1) {
+                ans.add(String.valueOf(nums[0]));
+                return ans;
+            }
             int start = 0;
-            int end = 0;
-            for (int i = 0; i < nums.length; i++) {
-                if (i + 1 > nums.length - 1 || nums[i] + 1 != nums[i + 1]) {
-                    end = i;
-                    ans.add(getString(nums[start], nums[end]));
-                    start = i + 1;
+            int end = 1;
+            while (end < nums.length) {
+                if (nums[end] != nums[end - 1] + 1) {
+                    if (start == end - 1) {
+                        ans.add(String.valueOf(nums[start]));
+                    }
+                    else {
+                        ans.add(nums[start] + "->" + nums[end - 1]);
+                    }
+                    start = end;
                 }
+                end++;
+            }
+            if (nums[end - 1] != nums[end - 2] + 1) {
+                ans.add(String.valueOf(nums[start]));
+            }
+            else {
+                ans.add(nums[start] + "->" + nums[end - 1]);
             }
             return ans;
-        }
-
-        private String getString(int start, int end) {
-            if (start == end) return String.valueOf(start);
-            return start + "->" + end;
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
