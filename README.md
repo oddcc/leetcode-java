@@ -29,3 +29,11 @@ public class $!velocityTool.camelCaseName(${question.titleSlug}){
 
 
 
+PS：
+
+推荐一些工具，方便做题的时候理解
+
+图相关：
+
+1. https://csacademy.com/app/graph_editor，可以根据“边”来构造图，有向图无向图都可以，在测试用例太大，你自己画不出来的时候可以用这个，方便找问题
+2. https://graphonline.ru/en/?graph=Planar，除了手画之外，构造图不是很方便，但内置了多种算法演示，如果你能把图画出来，在上面演示非常方便，不理解算法中某一步的时候用
