@@ -851,6 +851,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/MinCostToConnectAllPoints.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/MinCostToConnectAllPoints.java" />
+              <option name="questionId" value="1706" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/MinStack.java">
           <value>
             <LeetcodeEditor>
@@ -1008,6 +1016,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/PathSum.java" />
               <option name="questionId" value="112" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/PathSumIii.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/PathSumIii.java" />
+              <option name="questionId" value="437" />
             </LeetcodeEditor>
           </value>
         </entry>
