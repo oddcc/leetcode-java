@@ -18,26 +18,13 @@ public class LongestContinuousIncreasingSubsequence {
         public int findLengthOfLCIS(int[] nums) {
             int ans = 0;
             int start = 0;
-            Integer pre = null;
             for (int i = 0; i < nums.length; i++) {
-                if (pre == null) {
-                    pre = nums[i];
-                    ans = 1;
-                    continue;
-                }
-                if (nums[i] <= pre) {
-                    int len = i - start;
-                    if (len > ans) ans = len;
+                // 遍历时判断要不要更新start的位置
+                if (i > 0 && nums[i] <= nums[i - 1]) {
                     start = i;
                 }
-                else {
-                    if (i == nums.length - 1) {
-                        int len = i - start + 1;
-                        if (len > ans) ans = len;
-                        break;
-                    }
-                }
-                pre = nums[i];
+                // 每次遇到一个新元素，都更新ans，即ans就是到i位置的最长子串的长度
+                ans = Math.max(ans, i - start + 1);
             }
             return ans;
         }
