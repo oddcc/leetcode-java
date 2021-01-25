@@ -13,6 +13,7 @@ public class RegionsCutBySlashes {
         System.out.println(solution.regionsBySlashes(new String[]{"\\/", "/\\"}));
         System.out.println(solution.regionsBySlashes(new String[]{"/\\", "\\/"}));
         System.out.println(solution.regionsBySlashes(new String[]{"//", "/ "}));
+        System.out.println(solution.regionsBySlashes(new String[]{"//\\\\////", "//\\\\/\\//", "\\/ /\\\\/\\", "///\\\\\\\\ ", "//  / \\\\", "\\/\\/ //\\", " // \\ \\\\", "/\\\\/\\\\\\/"}));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -22,11 +23,12 @@ public class RegionsCutBySlashes {
         public int regionsBySlashes(String[] grid) {
             int[][] matrix = convert(grid);
             int ans = 0;
-            while (true) {
-                int[] start = nextStart(matrix);
-                if (start[0] == -1) break;
-                bfs(start, matrix);
-                ans++;
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 0; j < matrix[0].length; j++) {
+                    if (matrix[i][j] != 0) continue;
+                    bfs(new int[]{i, j}, matrix);
+                    ans++;
+                }
             }
             return ans;
         }
@@ -72,16 +74,6 @@ public class RegionsCutBySlashes {
                 return matrix[i][j];
             }
             return 1;
-        }
-
-        // 在矩阵中找第一个出现的0的位置，如果没有则返回[-1,-1]
-        private int[] nextStart(int[][] matrix) {
-            for (int i = 0; i < matrix.length; i++) {
-                for (int j = 0; j < matrix[0].length; j++) {
-                    if (matrix[i][j] == 0) return new int[]{i, j};
-                }
-            }
-            return new int[]{-1, -1};
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
