@@ -26,7 +26,7 @@ public class RegionsCutBySlashes {
             for (int i = 0; i < matrix.length; i++) {
                 for (int j = 0; j < matrix[0].length; j++) {
                     if (matrix[i][j] != 0) continue;
-                    bfs(new int[]{i, j}, matrix);
+                    dfs(new int[]{i, j}, matrix);
                     ans++;
                 }
             }
@@ -66,6 +66,19 @@ public class RegionsCutBySlashes {
                 if (getValue(i + 1, j, matrix) == 0) queue.add(new int[]{i + 1, j});
                 if (getValue(i, j - 1, matrix) == 0) queue.add(new int[]{i, j - 1});
                 if (getValue(i, j + 1, matrix) == 0) queue.add(new int[]{i, j + 1});
+            }
+        }
+
+        // 通过dfs进行搜索，并染色为2表示访问过
+        private void dfs(int[] start, int[][] matrix) {
+            int i = start[0];
+            int j = start[1];
+            if (getValue(i, j, matrix) == 0) {
+                matrix[i][j] = 2;
+                dfs(new int[]{i - 1, j}, matrix);
+                dfs(new int[]{i + 1, j}, matrix);
+                dfs(new int[]{i, j - 1}, matrix);
+                dfs(new int[]{i, j + 1}, matrix);
             }
         }
 
