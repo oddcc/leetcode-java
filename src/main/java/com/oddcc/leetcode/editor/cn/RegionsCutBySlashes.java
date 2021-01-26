@@ -20,73 +20,80 @@ public class RegionsCutBySlashes {
     class Solution {
         // 思路1，1*1的grid转化成3*3的矩阵，划线的地方标记为1，其余标记为0，问题转化为求有多少个岛
         // 在矩阵中求有多少个岛的问题可以用染色+dfs/bfs来解决
+        // 思路2，利用并查集，把每个1*1的grid看成4个三角形，如果三角形相连，就可以视为在一个连通分量中
+        // 问题可以转化为，最后图中有几个连通分量
         public int regionsBySlashes(String[] grid) {
-            int[][] matrix = convert(grid);
-            int ans = 0;
-            for (int i = 0; i < matrix.length; i++) {
-                for (int j = 0; j < matrix[0].length; j++) {
-                    if (matrix[i][j] != 0) continue;
-                    dfs(new int[]{i, j}, matrix);
-                    ans++;
+            int len = grid.length;
+            int n = 4 * len * len; // 用于表示所有三角形
+
+            UnionFind unionFind = new UnionFind(n);
+            for (int i = 0; i < len; i++) {
+                for (int j = 0; j < len; j++) {
+                    char c = grid[i].charAt(j);
+                    int zi = 4 * (i * len + j); // 一个grid中第一个三角形的位置
+                    if (c == ' ') {
+                        unionFind.union(zi, zi + 1);
+                        unionFind.union(zi + 1, zi + 2);
+                        unionFind.union(zi + 2, zi + 3);
+                    }
+                    if (c == '/') {
+                        unionFind.union(zi, zi + 3);
+                        unionFind.union(zi + 1, zi + 2);
+                    }
+                    if (c == '\\') {
+                        unionFind.union(zi, zi + 1);
+                        unionFind.union(zi + 2, zi + 3);
+                    }
+                    // 观察可知，如果gridA右边还有另一个gridB，则A的右边总是跟B的左边相连
+                    // 同理，下边总是跟下方grid的上边相连
+                    if (j < len - 1) {
+                        unionFind.union(zi + 1, 4 * (i * len + j + 1) + 3);
+                    }
+                    if (i < len - 1) {
+                        unionFind.union(zi + 2, 4 * ((i + 1) * len + j));
+                    }
                 }
             }
-            return ans;
+
+            return unionFind.getCount();
         }
 
-        private int[][] convert(String[] grid) {
-            int[][] matrix = new int[grid.length * 3][grid.length * 3];
-            for (int i = 0; i < grid.length; i++) {
-                for (int j = 0; j < grid[0].length(); j++) {
-                    if (grid[i].charAt(j) == ' ') continue;
-                    if (grid[i].charAt(j) == '/') {
-                        matrix[i * 3][j * 3 + 2] = 1;
-                        matrix[i * 3 + 1][j * 3 + 1] = 1;
-                        matrix[i * 3 + 2][j * 3] = 1;
-                    }
-                    if (grid[i].charAt(j) == '\\') {
-                        matrix[i * 3][j * 3] = 1;
-                        matrix[i * 3 + 1][j * 3 + 1] = 1;
-                        matrix[i * 3 + 2][j * 3 + 2] = 1;
-                    }
+        private class UnionFind {
+            private int[] parent;
+            private int count;
+
+            public UnionFind(int count) {
+                this.count = count;
+                int[] parent = new int[count];
+                for (int i = 0; i < count; i++) parent[i] = i;
+                this.parent = parent;
+            }
+
+            public int getCount() {
+                return count;
+            }
+
+            public int find(int x) {
+                while (x != parent[x]) {
+                    parent[x] = parent[parent[x]];
+                    x = parent[x];
                 }
+                return x;
             }
-            return matrix;
-        }
 
-        // 通过bfs进行搜索，并染色为2表示访问过
-        private void bfs(int[] start, int[][] matrix) {
-            Queue<int[]> queue = new LinkedList<>();
-            queue.add(start);
-            while (!queue.isEmpty()) {
-                int[] s = queue.remove();
-                int i = s[0];
-                int j = s[1];
-                matrix[i][j] = 2;
-                if (getValue(i - 1, j, matrix) == 0) queue.add(new int[]{i - 1, j});
-                if (getValue(i + 1, j, matrix) == 0) queue.add(new int[]{i + 1, j});
-                if (getValue(i, j - 1, matrix) == 0) queue.add(new int[]{i, j - 1});
-                if (getValue(i, j + 1, matrix) == 0) queue.add(new int[]{i, j + 1});
+            public void union(int x, int y) {
+                // System.out.println("union " + x + ' ' + y );
+                int rootX = find(x);
+                int rootY = find(y);
+                if (rootX == rootY) return;
+                if (rootX > rootY) {
+                    parent[rootX] = rootY;
+                }
+                else {
+                    parent[rootY] = rootX;
+                }
+                count--;
             }
-        }
-
-        // 通过dfs进行搜索，并染色为2表示访问过
-        private void dfs(int[] start, int[][] matrix) {
-            int i = start[0];
-            int j = start[1];
-            if (getValue(i, j, matrix) == 0) {
-                matrix[i][j] = 2;
-                dfs(new int[]{i - 1, j}, matrix);
-                dfs(new int[]{i + 1, j}, matrix);
-                dfs(new int[]{i, j - 1}, matrix);
-                dfs(new int[]{i, j + 1}, matrix);
-            }
-        }
-
-        private int getValue(int i, int j, int[][] matrix) {
-            if (i >= 0 && i < matrix.length && j >= 0 && j < matrix[0].length) {
-                return matrix[i][j];
-            }
-            return 1;
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
