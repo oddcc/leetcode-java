@@ -25,7 +25,7 @@ public class ImplementStrstr {
             if (needle.length() > haystack.length()) return -1;
             if (needle.isEmpty()) return 0;
             int current = 0;
-            while (current < haystack.length()) {
+            while (current < haystack.length() - needle.length() + 1) {
                 int i = 0;
                 while (i < needle.length() && current + i < haystack.length() && needle.charAt(i) == haystack.charAt(current + i)) {
                     i++;
@@ -33,7 +33,7 @@ public class ImplementStrstr {
                 if (i == needle.length()) {
                     return current;
                 }
-                current = current + 1;
+                current++;
             }
             return -1;
         }
