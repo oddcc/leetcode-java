@@ -4,8 +4,6 @@ package com.oddcc.leetcode.editor.cn;
 
 import com.oddcc.leetcode.editor.cn.common.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class ConvertBstToGreaterTree {
     public static void main(String[] args) {

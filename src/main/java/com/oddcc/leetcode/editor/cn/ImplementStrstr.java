@@ -1,38 +1,4 @@
-//Implement strStr(). 
-//
-// Return the index of the first occurrence of needle in haystack, or -1 if need
-//le is not part of haystack. 
-//
-// Example 1: 
-//
-// 
-//Input: haystack = "hello", needle = "ll"
-//Output: 2
-// 
-//
-// Example 2: 
-//
-// 
-//Input: haystack = "aaaaa", needle = "bba"
-//Output: -1
-// 
-//
-// Clarification: 
-//
-// What should we return when needle is an empty string? This is a great questio
-//n to ask during an interview. 
-//
-// For the purpose of this problem, we will return 0 when needle is an empty str
-//ing. This is consistent to C's strstr() and Java's indexOf(). 
-//
-// 
-// Constraints: 
-//
-// 
-// haystack and needle consist only of lowercase English characters. 
-// 
-// Related Topics 双指针 字符串 
-// 👍 570 👎 0
+// 28
 
 
 package com.oddcc.leetcode.editor.cn;
@@ -40,46 +6,38 @@ package com.oddcc.leetcode.editor.cn;
 public class ImplementStrstr {
     public static void main(String[] args) {
         Solution solution = new ImplementStrstr().new Solution();
-//        System.out.println(solution.strStr("hello", "ll"));
-//        System.out.println(solution.strStr("aaaaa", "bba"));
-//        System.out.println(solution.strStr("a", ""));
+        System.out.println(solution.strStr("hello", "ll"));
+        System.out.println(solution.strStr("aaaaa", "bba"));
+        System.out.println(solution.strStr("a", ""));
         System.out.println(solution.strStr("mississippi", "sippi"));
+        System.out.println(solution.strStr("mississippi", "issip"));
+        System.out.println(solution.strStr("mississippi", "issipi"));
         System.out.println(solution.strStr("", ""));
-//        System.out.println(solution.strStr("aaa", "aaaa"));
+        System.out.println(solution.strStr("aaa", "aaaa"));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        // 是一个子串的匹配问题
+        // 思路1，暴力法，如果找到匹配的字母，则向后匹配，不断往后移动起点，直到字符串末尾
+        // 思路2，思路1优化，双指针
         public int strStr(String haystack, String needle) {
-            if (haystack.equals(needle)) return 0;
+            if (needle.length() > haystack.length()) return -1;
             if (needle.isEmpty()) return 0;
-            if (haystack.isEmpty()) return -1;
-            if (haystack.length() < needle.length()) return -1;
-
-            int result = -1;
-            // 如果剩下的都不够needl那么长了，就不用判断了
-            for (int i = 0; i < haystack.length() - needle.length() + 1; i++) {
-                if (haystack.charAt(i) == needle.charAt(0)) {
-                    int n = 0;
-                    for (int h = 0; h < needle.length(); h++) {
-                        // 相同的话，移动两个指针，不同的直接放弃
-                        if (haystack.charAt(h + i) == needle.charAt(n)) {
-                            n++;
-                        } else {
-                            break;
-                        }
-                    }
-                    // 如果最后指针n停留在最后，说明找到了
-                    if (n == needle.length()) {
-                        result = i;
-                        break;
-                    }
+            int current = 0;
+            while (current < haystack.length()) {
+                int i = 0;
+                while (i < needle.length() && current + i < haystack.length() && needle.charAt(i) == haystack.charAt(current + i)) {
+                    i++;
                 }
+                if (i == needle.length()) {
+                    return current;
+                }
+                current = current + 1;
             }
-            return result;
+            return -1;
         }
-
     }
-//leetcode submit region end(Prohibit modification and deletion)
+    //leetcode submit region end(Prohibit modification and deletion)
 
 }
