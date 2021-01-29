@@ -25,10 +25,8 @@ public class PathWithMinimumEffort {
         public int minimumEffortPath(int[][] heights) {
             int r = heights.length;
             int c = heights[0].length;
-            int[][] edges = new int[r * c][r * c]; // edges[x][y] 表示x节点和y节点之间的effect
-            PriorityQueue<int[]> edgeQueue = new PriorityQueue<>((e1, e2) -> {
-                return edges[e1[0]][e1[1]] - edges[e2[0]][e2[1]];
-            });
+            int[] edges = new int[3]; // 0,1-边的两个节点，2-边的effect
+            List<int[]> edgeList = new ArrayList<>();
             // 得到所有的边
             for (int i = 0; i < r; i++) {
                 for (int j = 0; j < c; j++) {
@@ -38,30 +36,26 @@ public class PathWithMinimumEffort {
                         int e = Math.abs(h - heights[i - 1][j]);
                         int num1 = toNum(i - 1, j, c);
                         int num2 = toNum(i, j, c);
-                        edges[num1][num2] = e;
-                        edges[num2][num1] = e;
-                        edgeQueue.add(new int[]{num1, num2});
+                        edgeList.add(new int[]{num1, num2, e});
                     }
                     if (j - 1 >= 0) {
                         int e = Math.abs(h - heights[i][j - 1]);
                         int num1 = toNum(i, j - 1, c);
                         int num2 = toNum(i, j, c);
-                        edges[num1][num2] = e;
-                        edges[num2][num1] = e;
-                        edgeQueue.add(new int[]{num1, num2});
+                        edgeList.add(new int[]{num1, num2, e});
                     }
                 }
             }
+            edgeList.sort(Comparator.comparingInt(e -> e[2]));
             UnionFind unionFind = new UnionFind(r * c);
             int start = 0;
             int end = r * c - 1;
-            while (!edgeQueue.isEmpty()) {
-                int[] e = edgeQueue.poll();
+            for (int[] e : edgeList) {
                 unionFind.union(e[0], e[1]);
-                System.out.println(e[0] + "-" + e[1]);
+                // System.out.println(e[0] + "-" + e[1]);
                 if (unionFind.find(start) == unionFind.find(end)) {
-                    System.out.println("connected!");
-                    return edges[e[0]][e[1]];
+                    // System.out.println("connected!");
+                    return e[2];
                 }
             }
             return 0;
