@@ -7,9 +7,11 @@ LeetCode练习记录，JDK版本是11
 
 
 
-另外如果你也用IDEA刷题的话，推荐一下这个[插件](https://plugins.jetbrains.com/plugin/12132-leetcode-editor)，非常好用
+另外如果你也用IDEA刷题的话，推荐一下这个[插件](https://plugins.jetbrains.com/plugin/12132-leetcode-editor) ，非常好用
 
-我的习惯配置是
+我的习惯配置如下：
+
+PS：插件查看题目会连tag一起展示出来，这其实是个不小的提示，可以考虑不用这个插件功能
 
 CodeFileName： `$!velocityTool.camelCaseName(${question.titleSlug})`
 
@@ -35,5 +37,5 @@ PS：
 
 图相关：
 
-1. https://csacademy.com/app/graph_editor，可以根据“边”来构造图，有向图无向图都可以，在测试用例太大，你自己画不出来的时候可以用这个，方便找问题
-2. https://graphonline.ru/en/?graph=Planar，除了手画之外，构造图不是很方便，但内置了多种算法演示，如果你能把图画出来，在上面演示非常方便，不理解算法中某一步的时候用
+1. [graph_editor](https://csacademy.com/app/graph_editor) ， 可以根据“边”来构造图，有向图无向图都可以，在测试用例太大，你自己画不出来的时候可以用这个，方便找问题
+2. [graphonline.ru](https://graphonline.ru/en/?graph=Planar) ，除了手画之外，构造图不是很方便，但内置了多种算法演示，如果你能把图画出来，在上面演示非常方便，不理解算法中某一步的时候用

@@ -21,7 +21,7 @@ public class ShortestUnsortedContinuousSubarray {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 要求O(n)的时间复杂度
-        // 思路1，已排序的跟未排序的做对比，不同的地方就是边界
+        // 思路1，已排序的跟未排序的做对比，不同的地方就是边界，不满足O(n)的时间复杂度要求
         public int findUnsortedSubarray(int[] nums) {
             int[] sorted = Arrays.copyOf(nums, nums.length);
             Arrays.sort(sorted);
