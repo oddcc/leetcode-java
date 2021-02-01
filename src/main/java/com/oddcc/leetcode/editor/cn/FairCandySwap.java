@@ -3,6 +3,8 @@
 package com.oddcc.leetcode.editor.cn;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class FairCandySwap {
     public static void main(String[] args) {
@@ -17,39 +19,36 @@ public class FairCandySwap {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 思路1，排序，计算相差多少，然后找到符合条件的值
+        // 思路2，哈希表
         public int[] fairCandySwap(int[] A, int[] B) {
-            Arrays.sort(A);
-            Arrays.sort(B);
-            int want = (Arrays.stream(A).sum() - Arrays.stream(B).sum()) / 2;
+            Set<Integer> setA = new HashSet<>();
+            int sumA = 0;
+            for (int i : A) {
+                setA.add(i);
+                sumA += i;
+            }
+            Set<Integer> setB = new HashSet<>();
+            int sumB = 0;
+            for (int i : B) {
+                setB.add(i);
+                sumB += i;
+            }
+            int want = (sumA - sumB) / 2;
             // A的和大
             if (want > 0) {
-                int a = A.length - 1;
-                while (a >= 0) {
-                    int b = B.length - 1;
-                    while (b >= 0) {
-                        if (A[a] - want > B[b]) break; // 继续遍历，B[b]会越来越小
-                        if (A[a] - want == B[b]) {
-                            return new int[]{A[a], B[b]};
-                        }
-                        b--;
+                for (int a : A) {
+                    if (setB.contains(a - want)) {
+                        return new int[]{a, a - want};
                     }
-                    a--;
                 }
             }
             // B的和大
             else {
                 want = -want;
-                int b = B.length - 1;
-                while (b >= 0) {
-                    int a = A.length - 1;
-                    while (a >= 0) {
-                        if (B[b] - want > A[a]) break; // 剪枝
-                        if (B[b] - want == A[a]) {
-                            return new int[]{A[a], B[b]};
-                        }
-                        a--;
+                for (int b : B) {
+                    if (setA.contains(b - want)) {
+                        return new int[]{b - want, b};
                     }
-                    b--;
                 }
             }
             return null;
