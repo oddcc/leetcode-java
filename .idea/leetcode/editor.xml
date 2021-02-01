@@ -323,6 +323,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DailyTemperatures.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DailyTemperatures.java" />
+              <option name="questionId" value="739" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DecodeString.java">
           <value>
             <LeetcodeEditor>
