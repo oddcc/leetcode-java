@@ -27,6 +27,7 @@ public class FairCandySwap {
                 while (a >= 0) {
                     int b = B.length - 1;
                     while (b >= 0) {
+                        if (A[a] - want > B[b]) break; // 继续遍历，B[b]会越来越小
                         if (A[a] - want == B[b]) {
                             return new int[]{A[a], B[b]};
                         }
@@ -42,6 +43,7 @@ public class FairCandySwap {
                 while (b >= 0) {
                     int a = A.length - 1;
                     while (a >= 0) {
+                        if (B[b] - want > A[a]) break; // 剪枝
                         if (B[b] - want == A[a]) {
                             return new int[]{A[a], B[b]};
                         }
