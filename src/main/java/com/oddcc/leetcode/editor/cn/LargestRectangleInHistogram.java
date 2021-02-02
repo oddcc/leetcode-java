@@ -2,6 +2,7 @@
 
 package com.oddcc.leetcode.editor.cn;
 
+import java.util.Arrays;
 import java.util.Deque;
 import java.util.LinkedList;
 
@@ -23,38 +24,44 @@ public class LargestRectangleInHistogram {
         // 如果对heights[i]能快速找到左边第一个小于heights[i]的值的索引left，找到右边第一个小于heights[i]的值的索引right，则问题就好解了
         public int largestRectangleArea(int[] heights) {
             int len = heights.length;
-            int[] leftFirstLower = new int[len];
+            // towardsRightFirstLower记录heights[i]向右找，第几个元素是小于heights[i]的元素
+            int[] towardsRightFirstLower = new int[len];
+            Arrays.fill(towardsRightFirstLower, -1);
             Deque<int[]> stack = new LinkedList<>();
             for (int i = 0; i < len; i++) {
                 if (!stack.isEmpty()) {
                     int[] n = stack.peek();
+                    // 此处n表示还没有找到小于n[0]的元素，heights[i]是新碰到的值
+                    // 当heights[i] < n[0]时，n就找到了对应的元素，要出栈
                     while (n != null && heights[i] < n[0] && i > n[1]) {
-                        leftFirstLower[n[1]] = i - n[1];
+                        towardsRightFirstLower[n[1]] = i;
                         stack.pop();
                         n = stack.peek();
                     }
                 }
                 stack.push(new int[]{heights[i], i});
             }
-            while (!stack.isEmpty()) leftFirstLower[stack.pop()[1]] = 0;
-            int[] rightFirstLower = new int[len];
+            while (!stack.isEmpty()) towardsRightFirstLower[stack.pop()[1]] = 0;
+            // towardsLeftFirstLower记录heights[i]向左找，第几个元素是小于heights[i]的元素
+            int[] towardsLeftFirstLower = new int[len];
+            Arrays.fill(towardsLeftFirstLower, -1);
             for (int i = len - 1; i >= 0; i--) {
                 if (!stack.isEmpty()) {
                     int[] n = stack.peek();
                     while (n != null && heights[i] < n[0] && i < n[1]) {
-                        rightFirstLower[n[1]] = n[1] - i;
+                        towardsLeftFirstLower[n[1]] = i;
                         stack.pop();
                         n = stack.peek();
                     }
                 }
                 stack.push(new int[]{heights[i], i});
             }
-            while (!stack.isEmpty()) rightFirstLower[stack.pop()[1]] = 0;
+            while (!stack.isEmpty()) towardsLeftFirstLower[stack.pop()[1]] = 0;
             int ans = 0;
             for (int i = 0; i < len; i++) {
                 int h = heights[i];
-                int left = rightFirstLower[i] == 0? 0: i - rightFirstLower[i] + 1;
-                int right = leftFirstLower[i] == 0? len - 1: i + leftFirstLower[i] - 1;
+                int left = towardsLeftFirstLower[i] == -1 ? 0 : towardsLeftFirstLower[i] + 1;
+                int right = towardsRightFirstLower[i] == -1 ? len - 1 : towardsRightFirstLower[i] - 1;
                 int w = right - left + 1;
                 ans = Math.max(ans, h * w);
             }
