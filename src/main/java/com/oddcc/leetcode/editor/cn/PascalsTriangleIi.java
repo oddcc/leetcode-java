@@ -1,35 +1,4 @@
-//Given an integer rowIndex, return the rowIndexth row of the Pascal's triangle.
-// 
-//
-// Notice that the row index starts from 0. 
-//
-// 
-//In Pascal's triangle, each number is the sum of the two numbers directly above
-// it. 
-//
-// Follow up: 
-//
-// Could you optimize your algorithm to use only O(k) extra space? 
-//
-// 
-// Example 1: 
-// Input: rowIndex = 3
-//Output: [1,3,3,1]
-// Example 2: 
-// Input: rowIndex = 0
-//Output: [1]
-// Example 3: 
-// Input: rowIndex = 1
-//Output: [1,1]
-// 
-// 
-// Constraints: 
-//
-// 
-// 0 <= rowIndex <= 40 
-// 
-// Related Topics 数组 
-// 👍 181 👎 0
+// 119
 
 
 package com.oddcc.leetcode.editor.cn;
@@ -51,20 +20,21 @@ public class PascalsTriangleIi {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        // 思路1，找规律，直接生成
         public List<Integer> getRow(int rowIndex) {
-            int numsLength = rowIndex + 1;
-            Integer[] nums = new Integer[numsLength];
-            Arrays.fill(nums, 0);
-            nums[0] = 1;
-            for (int i = 0; i < numsLength; i++) {
-                Integer[] backup = Arrays.copyOf(nums, numsLength);
-                for (int j = 0; j <= i; j++) {
-                    nums[j] = backup[j] + (j - 1 < 0 ? 0 : backup[j - 1]);
+            Integer[] ans = new Integer[]{1};
+            for (int i = 1; i <= rowIndex; i++) {
+                Integer[] row = new Integer[i + 1];
+                row[0] = 1;
+                row[i] = 1;
+                for (int j = 1; j <= i - 1; j++) {
+                    row[j] = ans[j - 1] + (j < ans.length? ans[j]:0);
                 }
+                ans = row;
             }
-            return Arrays.asList(nums);
+            return Arrays.asList(ans);
         }
     }
-//leetcode submit region end(Prohibit modification and deletion)
+    //leetcode submit region end(Prohibit modification and deletion)
 
 }
