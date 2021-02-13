@@ -3,7 +3,6 @@
 package com.oddcc.leetcode.editor.cn;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class FindAllNumbersDisappearedInAnArray {
@@ -22,15 +21,11 @@ public class FindAllNumbersDisappearedInAnArray {
         public List<Integer> findDisappearedNumbers(int[] nums) {
             int len = nums.length;
             for (int i = 0; i < len; i++) {
-                int n = nums[i];
-                // 把出现的地方数字标记为负
-                nums[Math.abs(n) - 1] = -Math.abs(nums[Math.abs(n) - 1]);
+                nums[Math.abs(nums[i]) - 1] = -Math.abs(nums[Math.abs(nums[i]) - 1]);
             }
             List<Integer> ans = new ArrayList<>();
             for (int i = 0; i < len; i++) {
-                if (nums[i] > 0) {
-                    ans.add(i + 1);
-                }
+                if (nums[i] > 0) ans.add(i + 1);
             }
             return ans;
         }
