@@ -2,9 +2,6 @@
 
 package com.oddcc.leetcode.editor.cn;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class ImplementTriePrefixTree {
     public static void main(String[] args) {
         ImplementTriePrefixTree test = new ImplementTriePrefixTree();
@@ -23,40 +20,26 @@ public class ImplementTriePrefixTree {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Trie {
+        // 因为题目中节点只存小写英文字母，所以存储空间可以优化
         private class Node {
             private Character c;
-            private Set<Node> children;
+            private Node[] children;
+            private final int R = 26;
             private Boolean isEnd;
 
             public Node(Character c) {
                 this.c = c;
-                this.children = new HashSet<>();
+                this.children = new Node[R];
                 this.isEnd = false;
             }
 
             private Node find(Character c) {
-                Node t = new Node(c);
-                if (this.children.contains(t)) {
-                    for (Node n : this.children) {
-                        if (n.c == c) return n;
-                    }
-                }
-                return null;
+                return this.children[c - 'a'];
             }
 
-            @Override
-            public boolean equals(Object o) {
-                if (this == o) return true;
-                if (o == null || getClass() != o.getClass()) return false;
-
-                Node node = (Node) o;
-
-                return c != null ? c.equals(node.c) : node.c == null;
-            }
-
-            @Override
-            public int hashCode() {
-                return c != null ? c.hashCode() : 0;
+            private void put(Node n) {
+                if (n.c == null) return;
+                this.children[n.c - 'a'] = n;
             }
         }
 
@@ -79,7 +62,7 @@ public class ImplementTriePrefixTree {
                 if (i == chars.length - 1) {
                     n.isEnd = true;
                 }
-                parent.children.add(n);
+                parent.put(n);
                 parent = n;
             }
         }
