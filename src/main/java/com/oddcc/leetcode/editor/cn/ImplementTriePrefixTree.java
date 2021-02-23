@@ -22,13 +22,11 @@ public class ImplementTriePrefixTree {
     class Trie {
         // 因为题目中节点只存小写英文字母，所以存储空间可以优化
         private class Node {
-            private Character c;
             private Node[] children;
             private final int R = 26;
             private Boolean isEnd;
 
             public Node(Character c) {
-                this.c = c;
                 this.children = new Node[R];
                 this.isEnd = false;
             }
@@ -37,9 +35,9 @@ public class ImplementTriePrefixTree {
                 return this.children[c - 'a'];
             }
 
-            private void put(Node n) {
-                if (n.c == null) return;
-                this.children[n.c - 'a'] = n;
+            private void put(Node n, Character c) {
+                if (c == null) return;
+                this.children[c - 'a'] = n;
             }
         }
 
@@ -62,7 +60,7 @@ public class ImplementTriePrefixTree {
                 if (i == chars.length - 1) {
                     n.isEnd = true;
                 }
-                parent.put(n);
+                parent.put(n, chars[i]);
                 parent = n;
             }
         }
