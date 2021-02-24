@@ -28,7 +28,7 @@ public class LruCache {
     class LRUCache {
         private class Node {
             private int value;
-            private int key;
+            private int key; // 必须存储，因为实际操作时，有拿到Node，需要从nodeMap中删除此Node
             private Node pre;
             private Node next;
         }
@@ -54,7 +54,7 @@ public class LruCache {
                 return -1;
             }
             remove(n);
-            insert(this.head, n);
+            insert(n);
             System.out.println(n.value);
             return n.value;
         }
@@ -64,7 +64,7 @@ public class LruCache {
             if (n != null) {
                 n.value = value;
                 remove(n);
-                insert(this.head, n);
+                insert(n);
             }
             else {
                 n = new Node();
@@ -75,14 +75,14 @@ public class LruCache {
                     remove(e);
                     this.nodeMap.remove(e.key);
                 }
-                insert(this.head, n);
+                insert(n);
                 this.nodeMap.put(key, n);
             }
         }
 
-        // insert n after pre
-        private void insert(Node pre, Node n) {
-            Node tmp = pre.next;
+        // insert n after head
+        private void insert(Node n) {
+            Node tmp = this.head.next;
             this.head.next = n;
             n.next = tmp;
             tmp.pre = n;
