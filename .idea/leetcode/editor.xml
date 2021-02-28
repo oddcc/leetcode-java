@@ -1131,6 +1131,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/MonotonicArray.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/MonotonicArray.java" />
+              <option name="questionId" value="932" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/MostStonesRemovedWithSameRowOrColumn.java">
           <value>
             <LeetcodeEditor>
