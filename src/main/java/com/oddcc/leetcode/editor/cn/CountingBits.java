@@ -27,19 +27,16 @@ public class CountingBits {
         // 可以看到，规律，比如2~3复用0~1的结果，就是0~1的结果+1，4~7复用0~3，8~15复用0~7
         // 2^n ~ 2^(n+1) - 1  复用  0~2^n - 1 的结果
         public int[] countBits(int num) {
-            if (num == 0) return new int[]{0};
-            if (num == 1) return new int[]{0, 1};
-            int[] ans = new int[num + 1]; // 存储0~num的bit数量
+            int[] ans = new int[num + 1];
             ans[0] = 0;
-            ans[1] = 1;
-            int n = 1; // 记录要复用的元素和当前元素的距离
-            int upperBound = 2; // 达到了上界后，距离n要翻倍，如当i是3时，n=2，复用的是1的结果；当i是5时，n=4，复用的还是1的结果
-            for (int i = 2; i < num + 1; i++) {
-                if (i == upperBound) {
-                    upperBound = upperBound * 2;
-                    n = n * 2;
+            int sub = 1;
+            int count = 1;
+            for (int i = 1; i <= num; i++, count++) {
+                ans[i] = ans[i - sub] + 1;
+                if (count == sub) {
+                    sub *= 2;
+                    count = 0;
                 }
-                ans[i] = ans[i - n] + 1;
             }
             return ans;
         }
