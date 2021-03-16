@@ -130,3 +130,6 @@ all.json
 *.txt
 src/**/*.md
 .idea/sonarlint
+
+src/main/java/test/*
+*.hprof
