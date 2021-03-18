@@ -19,38 +19,32 @@ public class ReverseLinkedListIi {
         // 思路1，利用辅助数组，记录链表节点的位置，直接修改链表节点的值
         // 思路2，把链表分为3部分，反转中间部分，然后拼接
         // 思路3，使用递归来反转中间部分
+        // 思路4，一次遍历，利用头插法来反转链表，每次遇到新的节点，就插到链表头，就是头插法，遍历完成之后链表自然是反转的
         public ListNode reverseBetween(ListNode head, int left, int right) {
             ListNode dummy = new ListNode(-1);
             dummy.next = head;
-            ListNode pre = dummy; // pre表示第一部分不变的链表尾部，可能为dummy
+            ListNode p = dummy;
+            // 找到链表头，即每次插入的位置是p.next
             for (int i = 1; i < left; i++) {
-                pre = pre.next;
+                p = p.next;
             }
-            ListNode next = pre.next; // next表示第三部分不变的链表头部，可能为null
-            for (int i = 0; i < right - left; i++) {
-                next = next.next;
+            // 找到后p就固定了，之后从p.next开始，还要遍历right - left + 1个节点
+            ListNode pre = p;
+            for (int i = 0; i < right - left + 1; i++) {
+                ListNode cur = pre.next;
+                // 如果p.next就是cur，其实这个点就不用动，特殊处理一下，如果按下面的逻辑走，其实就完全没动了，可以画图看看
+                if (cur == p.next) {
+                    pre = pre.next;
+                }
+                else {
+                    // 这里建议画图理解，在插入完成后，cur在p.next的位置，而pre在原来cur的位置
+                    pre.next = cur.next;
+                    cur.next = p.next;
+                    p.next = cur;
+                }
             }
-            ListNode tmp = next.next;
-            next.next = null;
-            next = tmp;
-            // 到这里next获取结束
-            ListNode newHead = reverse(pre.next);
-            pre.next.next = next; // 这时原本的pre.next应该在反转后的链表尾部
-            pre.next = newHead;
-            return dummy.next;
-        }
 
-        // 递归反转链表，head表示要反转的链表头，返回反转后的链表头
-        private ListNode reverse(ListNode head) {
-            if (head.next == null) {
-                return head;
-            }
-            ListNode h = reverse(head.next); // 这里逻辑要求先反转
-            // 此时head还持有原来head.next的引用，我们需要把head加到链表中去
-            // 原来的head.next现在应该在反转后的链表尾部
-            head.next.next = head; // 加到反转后的链表尾部
-            head.next = null; // 断开其他连接
-            return h;
+            return dummy.next;
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
