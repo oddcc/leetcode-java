@@ -25,25 +25,18 @@ public class ReverseLinkedListIi {
             dummy.next = head;
             ListNode p = dummy;
             // 找到链表头，即每次插入的位置是p.next
-            for (int i = 1; i < left; i++) {
+            for (int i = 0; i < left - 1; i++) {
                 p = p.next;
             }
-            // 找到后p就固定了，之后从p.next开始，还要遍历right - left + 1个节点
-            ListNode pre = p;
-            for (int i = 0; i < right - left + 1; i++) {
+            // 找到后p就固定了，之后从p.next开始，还要遍历right - left + 1个节点，其中最初的p.next不用遍历，因为其实不用移动，所以下面是right - left
+            ListNode pre = p.next;
+            for (int i = 0; i < right - left; i++) {
                 ListNode cur = pre.next;
-                // 如果p.next就是cur，其实这个点就不用动，特殊处理一下，如果按下面的逻辑走，其实就完全没动了，可以画图看看
-                if (cur == p.next) {
-                    pre = pre.next;
-                }
-                else {
-                    // 这里建议画图理解，在插入完成后，cur在p.next的位置，而pre在原来cur的位置
-                    pre.next = cur.next;
-                    cur.next = p.next;
-                    p.next = cur;
-                }
+                // 这里建议画图理解，在插入完成后，cur在p.next的位置，而pre在原来cur的位置
+                pre.next = cur.next;
+                cur.next = p.next;
+                p.next = cur;
             }
-
             return dummy.next;
         }
     }
