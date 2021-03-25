@@ -7,7 +7,7 @@ import com.oddcc.leetcode.editor.cn.common.ListNode;
 public class DeleteNodeInALinkedList {
     public static void main(String[] args) {
         Solution solution = new DeleteNodeInALinkedList().new Solution();
-        ListNode n1 = ListNode.GetNodeList(4,5,1,9);
+        ListNode n1 = ListNode.getNodeList(4,5,1,9);
         solution.deleteNode(n1.next);
         System.out.println(n1);
     }

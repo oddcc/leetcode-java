@@ -8,8 +8,8 @@ import java.util.List;
 public class ReorderList {
     public static void main(String[] args) {
         Solution solution = new ReorderList().new Solution();
-        ListNode n1 = ListNode.GetNodeList(1, 2, 3, 4);
-        ListNode n2 = ListNode.GetNodeList(1, 2, 3, 4, 5);
+        ListNode n1 = ListNode.getNodeList(1, 2, 3, 4);
+        ListNode n2 = ListNode.getNodeList(1, 2, 3, 4, 5);
         solution.reorderList(n1);
         solution.reorderList(n2);
         System.out.println("done");

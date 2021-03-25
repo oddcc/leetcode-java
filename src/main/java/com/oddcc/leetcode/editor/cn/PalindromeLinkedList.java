@@ -8,10 +8,10 @@ import java.util.List;
 public class PalindromeLinkedList {
     public static void main(String[] args) {
         Solution solution = new PalindromeLinkedList().new Solution();
-        System.out.println(solution.isPalindrome(ListNode.GetNodeList(1,2)));
-        System.out.println(solution.isPalindrome(ListNode.GetNodeList(1,2,2,1)));
-        System.out.println(solution.isPalindrome(ListNode.GetNodeList(1)));
-        System.out.println(solution.isPalindrome(ListNode.GetNodeList(1,1)));
+        System.out.println(solution.isPalindrome(ListNode.getNodeList(1,2)));
+        System.out.println(solution.isPalindrome(ListNode.getNodeList(1,2,2,1)));
+        System.out.println(solution.isPalindrome(ListNode.getNodeList(1)));
+        System.out.println(solution.isPalindrome(ListNode.getNodeList(1,1)));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

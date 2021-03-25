@@ -7,8 +7,8 @@ import com.oddcc.leetcode.editor.cn.common.ListNode;
 public class InsertionSortList {
     public static void main(String[] args) {
         Solution solution = new InsertionSortList().new Solution();
-        System.out.println(solution.insertionSortList(ListNode.GetNodeList(4, 2, 1, 3)));
-        System.out.println(solution.insertionSortList(ListNode.GetNodeList(1, 1)));
+        System.out.println(solution.insertionSortList(ListNode.getNodeList(4, 2, 1, 3)));
+        System.out.println(solution.insertionSortList(ListNode.getNodeList(1, 1)));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

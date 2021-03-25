@@ -7,10 +7,10 @@ import com.oddcc.leetcode.editor.cn.common.ListNode;
 public class RemoveDuplicatesFromSortedListIi {
     public static void main(String[] args) {
         Solution solution = new RemoveDuplicatesFromSortedListIi().new Solution();
-        System.out.println(solution.deleteDuplicates(ListNode.GetNodeList(1, 2, 3, 3, 4, 4, 5)));
-        System.out.println(solution.deleteDuplicates(ListNode.GetNodeList(1, 1, 1, 2, 3)));
-        System.out.println(solution.deleteDuplicates(ListNode.GetNodeList(1, 1, 1, 2, 3, 3, 3)));
-        System.out.println(solution.deleteDuplicates(ListNode.GetNodeList(1)));
+        System.out.println(solution.deleteDuplicates(ListNode.getNodeList(1, 2, 3, 3, 4, 4, 5)));
+        System.out.println(solution.deleteDuplicates(ListNode.getNodeList(1, 1, 1, 2, 3)));
+        System.out.println(solution.deleteDuplicates(ListNode.getNodeList(1, 1, 1, 2, 3, 3, 3)));
+        System.out.println(solution.deleteDuplicates(ListNode.getNodeList(1)));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

@@ -42,15 +42,12 @@ package com.oddcc.leetcode.editor.cn;
 
 import com.oddcc.leetcode.editor.cn.common.ListNode;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class RemoveNthNodeFromEndOfList {
     public static void main(String[] args) {
         Solution solution = new RemoveNthNodeFromEndOfList().new Solution();
-        ListNode n1 = solution.removeNthFromEnd(ListNode.GetNodeList(1, 2, 3, 4, 5), 2);
-        ListNode n2 = solution.removeNthFromEnd(ListNode.GetNodeList(1), 1);
-        ListNode n3 = solution.removeNthFromEnd(ListNode.GetNodeList(1, 2), 1);
+        ListNode n1 = solution.removeNthFromEnd(ListNode.getNodeList(1, 2, 3, 4, 5), 2);
+        ListNode n2 = solution.removeNthFromEnd(ListNode.getNodeList(1), 1);
+        ListNode n3 = solution.removeNthFromEnd(ListNode.getNodeList(1, 2), 1);
         System.out.println(n3);
     }
 

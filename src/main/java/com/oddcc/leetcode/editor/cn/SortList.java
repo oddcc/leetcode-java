@@ -5,10 +5,10 @@ import com.oddcc.leetcode.editor.cn.common.ListNode;
 public class SortList {
     public static void main(String[] args) {
         Solution solution = new SortList().new Solution();
-        System.out.println(solution.sortList(ListNode.GetNodeList(4, 2, 1, 3)));
-        System.out.println(solution.sortList(ListNode.GetNodeList(-1, 5, 3, 4, 0)));
-        System.out.println(solution.sortList(ListNode.GetNodeList(-1)));
-        System.out.println(solution.sortList(ListNode.GetNodeList()));
+        System.out.println(solution.sortList(ListNode.getNodeList(4, 2, 1, 3)));
+        System.out.println(solution.sortList(ListNode.getNodeList(-1, 5, 3, 4, 0)));
+        System.out.println(solution.sortList(ListNode.getNodeList(-1)));
+        System.out.println(solution.sortList(ListNode.getNodeList()));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

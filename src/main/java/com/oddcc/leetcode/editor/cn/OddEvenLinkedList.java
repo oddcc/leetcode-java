@@ -7,10 +7,10 @@ import com.oddcc.leetcode.editor.cn.common.ListNode;
 public class OddEvenLinkedList {
     public static void main(String[] args) {
         Solution solution = new OddEvenLinkedList().new Solution();
-        System.out.println(solution.oddEvenList(ListNode.GetNodeList(1, 2, 3, 4, 5)));
-        System.out.println(solution.oddEvenList(ListNode.GetNodeList(2, 1, 3, 5, 6, 4, 7)));
-        System.out.println(solution.oddEvenList(ListNode.GetNodeList(1, 2, 3)));
-        System.out.println(solution.oddEvenList(ListNode.GetNodeList()));
+        System.out.println(solution.oddEvenList(ListNode.getNodeList(1, 2, 3, 4, 5)));
+        System.out.println(solution.oddEvenList(ListNode.getNodeList(2, 1, 3, 5, 6, 4, 7)));
+        System.out.println(solution.oddEvenList(ListNode.getNodeList(1, 2, 3)));
+        System.out.println(solution.oddEvenList(ListNode.getNodeList()));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

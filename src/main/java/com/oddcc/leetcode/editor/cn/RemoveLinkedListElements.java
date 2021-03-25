@@ -7,8 +7,8 @@ import com.oddcc.leetcode.editor.cn.common.ListNode;
 public class RemoveLinkedListElements {
     public static void main(String[] args) {
         Solution solution = new RemoveLinkedListElements().new Solution();
-        System.out.println(solution.removeElements(ListNode.GetNodeList(1, 2, 3, 4, 5, 6), 1));
-        System.out.println(solution.removeElements(ListNode.GetNodeList(1, 1), 1));
+        System.out.println(solution.removeElements(ListNode.getNodeList(1, 2, 3, 4, 5, 6), 1));
+        System.out.println(solution.removeElements(ListNode.getNodeList(1, 1), 1));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

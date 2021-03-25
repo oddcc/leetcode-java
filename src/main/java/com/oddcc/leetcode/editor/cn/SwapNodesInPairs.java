@@ -11,7 +11,7 @@ public class SwapNodesInPairs {
 //        ListNode n1 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
 //        ListNode ans1 = solution.swapPairs(n1);
 //        System.out.println(ans1);
-        ListNode n1 = ListNode.GetNodeList(2, 5, 3, 4, 6, 2, 2);
+        ListNode n1 = ListNode.getNodeList(2, 5, 3, 4, 6, 2, 2);
         ListNode ans1 = solution.swapPairs(n1);
         System.out.println(ans1);
     }

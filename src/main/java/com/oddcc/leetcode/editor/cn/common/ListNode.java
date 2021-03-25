@@ -14,7 +14,7 @@ public class ListNode {
         this.next = next;
     }
 
-    public static ListNode GetNodeList(Integer... array) {
+    public static ListNode getNodeList(Integer... array) {
         if (array.length == 0) return null;
         ListNode ans = null;
         ListNode head = ans;

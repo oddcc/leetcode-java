@@ -7,10 +7,10 @@ import com.oddcc.leetcode.editor.cn.common.ListNode;
 public class ReverseLinkedListIi {
     public static void main(String[] args) {
         Solution solution = new ReverseLinkedListIi().new Solution();
-        System.out.println(solution.reverseBetween(ListNode.GetNodeList(1, 2, 3, 4, 5), 2, 4));
-        System.out.println(solution.reverseBetween(ListNode.GetNodeList(5), 1, 1));
-        System.out.println(solution.reverseBetween(ListNode.GetNodeList(3, 5), 1, 2));
-        System.out.println(solution.reverseBetween(ListNode.GetNodeList(1, 2, 3, 4), 1, 4));
+        System.out.println(solution.reverseBetween(ListNode.getNodeList(1, 2, 3, 4, 5), 2, 4));
+        System.out.println(solution.reverseBetween(ListNode.getNodeList(5), 1, 1));
+        System.out.println(solution.reverseBetween(ListNode.getNodeList(3, 5), 1, 2));
+        System.out.println(solution.reverseBetween(ListNode.getNodeList(1, 2, 3, 4), 1, 4));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
