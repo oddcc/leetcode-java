@@ -22,23 +22,16 @@ public class CongWeiDaoTouDaYinLianBiaoLcof {
             if (head == null) return new int[]{};
             ListNode pre = null;
             ListNode cur = head;
-            while (cur.next != null) {
-                if (pre == null) {
-                    pre = cur;
-                    cur = cur.next;
-                    continue;
-                }
-                ListNode tmp = cur.next;
-                if (pre.next == cur) pre.next = null;
+            while (cur != null) {
+                ListNode next = cur.next;
                 cur.next = pre;
                 pre = cur;
-                cur = tmp;
+                cur = next;
             }
-            cur.next = pre;
             List<Integer> list = new ArrayList<>();
-            while (cur != null) {
-                list.add(cur.val);
-                cur = cur.next;
+            while (pre != null) {
+                list.add(pre.val);
+                pre = pre.next;
             }
             int[] ans = new int[list.size()];
             for (int i = 0; i < list.size(); i++) {
