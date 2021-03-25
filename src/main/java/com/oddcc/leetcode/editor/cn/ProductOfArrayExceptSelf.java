@@ -16,33 +16,21 @@ public class ProductOfArrayExceptSelf {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 思路1，output[i]的值是整个乘积/nums[i]的结果；注意，如果出现一个0，则除了0的位置有结果，其他位置都是0；如果出现2个或以上的0，则所有位置都是0
+        // 思路2，除了i元素之外的乘积 = i左边所有元素的乘积 * i右边所有元素的乘积，利用类似前缀和数组的方式来解
         public int[] productExceptSelf(int[] nums) {
-            int total = 1;
-            int countZero = 0;
-            for (int i : nums) {
-                if (i == 0) {
-                    countZero++;
-                    continue;
-                }
-                total *= i;
+            int len = nums.length;
+            int[] ans = new int[len];
+            int tmpProduct = 1;
+            // 这里得到的是左边的前缀积，ans[i]表示的是i左边所有元素的乘积
+            for (int i = 0; i < len; i++) {
+                ans[i] = tmpProduct;
+                tmpProduct *= nums[i];
             }
-            int[] ans = new int[nums.length];
-            if (countZero >= 2) {
-                Arrays.fill(ans, 0);
-                return ans;
-            }
-            for (int i = 0; i < ans.length; i++) {
-                if (countZero == 1) {
-                    if (nums[i] == 0) {
-                        ans[i] = total;
-                    }
-                    else {
-                        ans[i] = 0;
-                    }
-                }
-                else {
-                    ans[i] = total / nums[i];
-                }
+            tmpProduct = 1;
+            for (int i = len - 1; i >= 0; i--) {
+                // 这里tmpProduct表示的是右边的前缀积，ans[i]是左边的前缀积
+                ans[i] = tmpProduct * ans[i];
+                tmpProduct *= nums[i];
             }
             return ans;
         }
