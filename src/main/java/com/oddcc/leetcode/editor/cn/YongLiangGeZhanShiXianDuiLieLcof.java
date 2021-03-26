@@ -16,37 +16,43 @@ public class YongLiangGeZhanShiXianDuiLieLcof {
         obj.appendTail(1);
         obj.appendTail(2);
         obj.appendTail(3);
-        int param_2 = obj.deleteHead();
-        System.out.println(param_2);
+        System.out.println(obj.deleteHead());
+        System.out.println(obj.deleteHead());
+        System.out.println(obj.deleteHead());
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class CQueue {
         // 思路1，s0和s1两个栈，当入栈时，如果s0不为空，则所有元素pop，然后push进s1，把新元素push进s0，然后再把s1中所有元素pop，push进s0
-
-        private Deque<Integer> s0;
-        private Deque<Integer> s1;
+        // 思路2，in和out两个栈，当入栈时，如果in不空，则直接入栈in，如果in为空，则把out中的都pop并push进in，然后新元素入栈；
+        // 当出栈时，如果out不为空，则直接从out出栈，如果out为空，则把in中元素都pop并push进out，然后out出栈
+        private Deque<Integer> in;
+        private Deque<Integer> out;
 
         public CQueue() {
-            s0 = new LinkedList<>();
-            s1 = new LinkedList<>();
+            in = new LinkedList<>();
+            out = new LinkedList<>();
         }
 
         public void appendTail(int value) {
-            while (!s0.isEmpty()) {
-                s1.push(s0.pop());
+            if (!in.isEmpty()) {
+                in.push(value);
+                return;
             }
-            s0.push(value);
-            while (!s1.isEmpty()) {
-                s0.push(s1.pop());
+            while (!out.isEmpty()) {
+                in.push(out.pop());
             }
+            in.push(value);
         }
 
         public int deleteHead() {
-            if (s0.isEmpty()) {
-                return -1;
+            while (!in.isEmpty()) {
+                out.push(in.pop());
             }
-            return s0.pop();
+            if (!out.isEmpty()) {
+                return out.pop();
+            }
+            return -1;
         }
     }
 
