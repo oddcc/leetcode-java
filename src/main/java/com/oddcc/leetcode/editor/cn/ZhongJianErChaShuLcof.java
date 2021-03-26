@@ -13,6 +13,7 @@ public class ZhongJianErChaShuLcof {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        // 思路1，根据前序遍历确认根节点，然后根据根节点，在中序遍历中确定左子树和右子树的范围，然后递归调用
         public TreeNode buildTree(int[] preorder, int[] inorder) {
             return buildTree(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
         }
