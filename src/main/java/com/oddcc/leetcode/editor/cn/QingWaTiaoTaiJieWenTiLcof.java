@@ -13,15 +13,18 @@ public class QingWaTiaoTaiJieWenTiLcof {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 思路1，动态规划
+        // 思路2，优化动态规划，只存必要的值
         public int numWays(int n) {
-            if (n == 0) return 1;
-            int[] dp = new int[n + 1]; // dp[i] 表示跳上第i阶台阶有多少种跳法
-            dp[0] = 1;
-            dp[1] = 1;
+            if (n == 0 || n == 1) return 1;
+            int from2ahead = 1;
+            int from1ahead = 1;
+            int ans = 0;
             for (int i = 2; i < n + 1; i++) {
-                dp[i] = (dp[i - 1] + dp[i - 2]) % 1000000007;
+                ans = (from2ahead + from1ahead) % 1000000007;
+                from2ahead = from1ahead;
+                from1ahead = ans;
             }
-            return dp[n] % 1000000007;
+            return ans % 1000000007;
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
