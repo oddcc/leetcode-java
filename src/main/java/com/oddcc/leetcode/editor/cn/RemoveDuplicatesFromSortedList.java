@@ -25,44 +25,24 @@ import com.oddcc.leetcode.editor.cn.common.ListNode;
 public class RemoveDuplicatesFromSortedList {
     public static void main(String[] args) {
         Solution solution = new RemoveDuplicatesFromSortedList().new Solution();
-        ListNode n = new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3, null)))));
-        ListNode r = solution.deleteDuplicates(n);
-        System.out.println(r);
+        System.out.println(solution.deleteDuplicates(ListNode.getNodeList(1,1,2,3,3)));
     }
-    //leetcode submit region begin(Prohibit modification and deletion)
 
-    /**
-     * Definition for singly-linked list.
-     * public class ListNode {
-     * int val;
-     * ListNode next;
-     * ListNode(int x) { val = x; }
-     * }
-     */
+    //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        // 思路1，遍历链表，如果碰到一样的就删掉
         public ListNode deleteDuplicates(ListNode head) {
-            // 从头结点开始遍历，遇到重复的就删掉，需要注意的是起止条件
-            // 这里用了2个结点来遍历，开始时last为null，current指向头结点；终止时last指向尾结点，current指向null
-            ListNode lastNode = null;
-            ListNode current = head;
-            while (current != null) {
-                if (lastNode == null) {
-                    lastNode = current;
-                    current = current.next;
+            ListNode cur = head;
+            while (cur != null) {
+                if (cur.next != null && cur.val == cur.next.val) {
+                    cur.next = cur.next.next;
                 }
                 else {
-                    if (current.val == lastNode.val) {
-                        lastNode.next = current.next;
-                        current = current.next;
-                    }
-                    else {
-                        lastNode = lastNode.next;
-                        current = current.next;
-                    }
+                    cur = cur.next;
                 }
             }
             return head;
         }
     }
-//leetcode submit region end(Prohibit modification and deletion)
+    //leetcode submit region end(Prohibit modification and deletion)
 }
