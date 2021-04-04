@@ -47,36 +47,26 @@ public class MergeSortedArray {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        // 思路1，类似归并排序合并两个数组，但不能从小到大合并，因为nums1后半部分是0，所以可以从大到小进行合并
         public void merge(int[] nums1, int m, int[] nums2, int n) {
-            // 类似归并排序，但是要从大到小排序，这样才可以利用开始为0的那些空间
             int p1 = m - 1;
             int p2 = n - 1;
-            int insert = m + n - 1;
-            while (p1 >= 0 || p2 >= 0) {
-                if (p1 < 0) {
-                    nums1[insert] = nums2[p2];
-                    p2--;
-                    insert--;
-                    continue;
-                }
-                if (p2 < 0) {
-                    nums1[insert] = nums1[p1];
-                    p1--;
-                    insert--;
-                    continue;
-                }
-                if (nums1[p1] > nums2[p2]) {
-                    nums1[insert] = nums1[p1];
+            int i = nums1.length - 1;
+            while (i >= 0) {
+                int n1 = p1 >= 0 ? nums1[p1] : Integer.MIN_VALUE;
+                int n2 = p2 >= 0 ? nums2[p2] : Integer.MIN_VALUE;
+                if (n1 >= n2) {
+                    nums1[i] = n1;
                     p1--;
                 }
                 else {
-                    nums1[insert] = nums2[p2];
+                    nums1[i] = nums2[p2];
                     p2--;
                 }
-                insert--;
+                i--;
             }
         }
     }
-//leetcode submit region end(Prohibit modification and deletion)
+    //leetcode submit region end(Prohibit modification and deletion)
 
 }
