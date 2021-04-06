@@ -17,51 +17,21 @@ public class RemoveDuplicatesFromSortedArrayIi {
         // 思路2，双指针一次遍历，指针l指向重复的位置，需要交换；指针r指向需要的数的位置
         // l每右移一次，数组长度就+1，l左边都是已经确定的结果
         // r永远向右边找
+        // 思路3，优化思路2
         public int removeDuplicates(int[] nums) {
-            int ans = 1;
+            int ans = 2;
             int len = nums.length;
-            int count = 1;
             int r = 0;
-            for (int i = 1; i < len; i++) {
-                if (nums[i - 1] == nums[i]) {
-                    if (count < 2) {
-                        count++;
-                    }
-                    else {
-                        // 找大于nums[i-1]的值交换
-                        if (r <= i) r = i + 1;
-                        while (r < len && nums[r] <= nums[i - 1]) r++;
-                        if (r >= len) break;
-                        exchange(nums, i, r);
-                        count = 1;
-                    }
-                }
-                else if (nums[i - 1] > nums[i]) {
-                    if (count < 2) {
-                        // 找大于等于nums[i-1]的值交换
-                        if (r <= i) r = i + 1;
-                        while (r < len && nums[r] < nums[i - 1]) r++;
-                        if (r >= len) break;
-                        exchange(nums, i, r);
-                        if (nums[i] > nums[i - 1]) {
-                            count = 1;
-                        }
-                        else {
-                            count++;
-                        }
-                    }
-                    else {
-                        // 找大于nums[i-1]的值交换
-                        if (r <= i) r = i + 1;
-                        if (r >= len) break;
-                        while (r < len && nums[r] <= nums[i - 1]) r++;
-                        if (r >= len) break;
-                        exchange(nums, i, r);
-                        count = 1;
-                    }
-                }
-                else {
-                    count = 1;
+            for (int i = 2; i < len; i++) {
+                // 遍历每一个位置，如果不符合题意，就跟后面符合题意的元素交换
+                // i左侧是已确定的数组
+                // nums[i] < nums[i - 1]明显不合要求
+                // nums[i] == nums[i - 2]是同样数字重复超过2次的情况
+                if (nums[i] < nums[i - 1] || nums[i] == nums[i - 2]) {
+                    // 找大于nums[i-2]的值交换
+                    while (r < len && nums[r] <= nums[i - 2]) r++;
+                    if (r >= len) break; // 当所有元素都找过时，跳出循环
+                    exchange(nums, i, r);
                 }
                 ans++;
             }
