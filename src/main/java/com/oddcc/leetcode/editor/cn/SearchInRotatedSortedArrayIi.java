@@ -14,20 +14,31 @@ public class SearchInRotatedSortedArrayIi {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        // 思路1，一次遍历+两次二分查找，先遍历一次，找到数组pivot，然后分成两个有序的子数组进行二分查找
+        // 思路1，一次遍历+两次二分查找，先遍历一次，找到数组pivot，然后分成两个有序的子数组进行二分查找；O(N)复杂度，极端情况下甚至不如直接遍历来的快，肯定是不行的
+        // 思路2，二分法的时候，找到中点mid
+        // 如果有nums[mid] < nums[end]，那么可以判断[mid, end]这个区间是有序的，相应的[start, mid-1]这个区间就是无序的
+        // 如果有nums[mid] > nums[end]，那么可以判断[start, mid]这个区间是有序的，对应的[mid + 1, end]这个区间就是无序的
+        // 但因为题意允许有重复的数字，所有可能有nums[mid] == nums[end]的情况，这时候无法判断哪边是有序的
+        // 但我们能知道nums[mid]不是答案，所以可以跳过mid和end两个元素，继续查找
         public boolean search(int[] nums, int target) {
-            int len = nums.length;
-            if (len == 1) return nums[0] == target;
-            int p = 1;
-            while (p < len && nums[p] >= nums[p - 1]) {
-                p++;
+            return search(nums, 0, nums.length - 1, target);
+        }
+
+        private boolean search(int[] nums, int start, int end, int target) {
+            if (end <= start) {
+                return nums[start] == target;
             }
-            // 如果p==len，说明移动到最后都没找到
-            if (p == len) {
-                return binarySearch(nums, 0, len - 1, target);
+            int mid = (end - start) / 2 + start;
+            if (nums[mid] == target) return true;
+            if (nums[mid] < nums[end]) {
+                return binarySearch(nums, mid + 1, end, target) || search(nums, start, mid - 1, target);
             }
-            // 0~p-1是一个单调数组，p~len-1是一个单调数组
-            return binarySearch(nums, 0, p - 1, target) || binarySearch(nums, p, len - 1, target);
+            else if (nums[mid] > nums[end]) {
+                return binarySearch(nums, start, mid - 1, target) || search(nums, mid + 1, end, target);
+            }
+            else {
+                return search(nums, start, mid - 1, target) || search(nums, mid + 1, end - 1, target);
+            }
         }
 
         private boolean binarySearch(int[] nums, int start, int end, int target) {
