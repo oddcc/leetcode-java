@@ -22,17 +22,14 @@ public class FindMinimumInRotatedSortedArrayIi {
                 return Math.min(nums[l], nums[r]);
             }
             int m = l + (r - l) / 2;
-            // m~r是有序的，对应的l~m是无序的
-            if (nums[m] < nums[r]) {
-                return Math.min(nums[m], findMin(nums, l, m));
+            if (nums[m] < nums[l]) {
+                return findMin(nums, l, m);
             }
-            // m~r是无序的，l~m是有序的
-            else if (nums[m] > nums[r]) {
-                return Math.min(nums[l], findMin(nums, m, r));
+            else if (nums[m] > nums[l]) {
+                return Math.min(nums[l], findMin(nums, m + 1, r));
             }
-            // 相等的情况，无法判断哪个区间有序，需要排除一些元素再试
             else {
-                return Math.min(findMin(nums, l, m), findMin(nums, m, r));
+                return Math.min(findMin(nums, l + 1, m - 1), findMin(nums, m, r));
             }
         }
     }
