@@ -15,10 +15,18 @@ public class UglyNumber {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 思路1，递归
+        // 思路2，循环判断
         public boolean isUgly(int n) {
-            if (n == 0) return false;
-            if (n == 1) return true;
-            return (n % 2 == 0 && isUgly(n / 2)) || (n % 3 == 0 && isUgly(n / 3)) || (n % 5 == 0 && isUgly(n / 5));
+            while (n != 0) {
+                if (n % 2 == 0) n /= 2;
+                else if (n % 3 == 0) n /= 3;
+                else if (n % 5 == 0) n /= 5;
+                // 这里会是1或其他质数
+                else {
+                    break;
+                }
+            }
+            return n == 1;
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
