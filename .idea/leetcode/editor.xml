@@ -379,6 +379,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DaYinCong1daoZuiDaDeNweiShuLcof.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DaYinCong1daoZuiDaDeNweiShuLcof.java" />
+              <option name="questionId" value="100296" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DailyTemperatures.java">
           <value>
             <LeetcodeEditor>
@@ -1920,6 +1928,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/ShortestUnsortedContinuousSubarray.java" />
               <option name="questionId" value="581" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/ShuZhiDeZhengShuCiFangLcof.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/ShuZhiDeZhengShuCiFangLcof.java" />
+              <option name="questionId" value="100295" />
             </LeetcodeEditor>
           </value>
         </entry>
