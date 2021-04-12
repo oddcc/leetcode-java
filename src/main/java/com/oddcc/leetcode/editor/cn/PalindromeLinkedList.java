@@ -16,31 +16,28 @@ public class PalindromeLinkedList {
     class Solution {
         // 思路1，先存下来位置，然后再从两边遍历，时间复杂度O(n)，空间复杂度O(n)
         // 思路2，找到中点，反转后半部分链表，对比之后再恢复，得到结果，空间复杂度O(1)
+        // 思路3，优化思路2，找中点可以用快慢指针，不需要遍历两次
         public boolean isPalindrome(ListNode head) {
-            // 找到中点
-            int count = 0;
-            ListNode cur = head;
-            while (cur != null) {
-                cur = cur.next;
+            int count = 1; // 表示要对比的Node个数
+            ListNode slow = head;
+            ListNode quick = head;
+            while (quick.next != null && quick.next.next != null) {
+                slow = slow.next;
+                quick = quick.next.next;
                 count++;
             }
-            int mid = count / 2;
-
-            // 找到中点对应的node
-            ListNode midNode = head;
-            for (int i = 0; i < mid - 1; i++) {
-                midNode = midNode.next;
+            // 说明整个链表长度为奇数
+            if (quick.next == null) {
+                count--;
             }
-
             // 反转右半部分
-            ListNode r = midNode.next;
-            midNode.next = null;
+            ListNode r = slow.next;
+            slow.next = null;
             ListNode reverseHead = reverse(r);
 
             // 跟左半部分做对比
-            int t = count / 2;
             boolean ans = true;
-            for (int i = 0; i < t; i++) {
+            for (int i = 0; i < count; i++) {
                 if (head.val != reverseHead.val) {
                     ans = false;
                     break;
@@ -48,7 +45,7 @@ public class PalindromeLinkedList {
                 head = head.next;
                 reverseHead = reverseHead.next;
             }
-            midNode.next = reverse(reverseHead); // 恢复链表
+            slow.next = reverse(reverseHead); // 恢复链表
             return ans;
         }
 
