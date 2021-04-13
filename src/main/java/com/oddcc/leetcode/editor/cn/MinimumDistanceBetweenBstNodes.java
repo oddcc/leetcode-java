@@ -33,7 +33,6 @@ public class MinimumDistanceBetweenBstNodes {
                 }
                 if (!stack.isEmpty()) {
                     root = stack.pop();
-                    // System.out.println(root.val);
                     if (pre != null) {
                         ans = Math.min(ans, Math.abs(pre - root.val));
                     }
