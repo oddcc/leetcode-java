@@ -4,6 +4,9 @@ package com.oddcc.leetcode.editor.cn;
 
 import com.oddcc.leetcode.editor.cn.common.TreeNode;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 public class MinimumDistanceBetweenBstNodes {
     public static void main(String[] args) {
         Solution solution = new MinimumDistanceBetweenBstNodes().new Solution();
@@ -18,27 +21,25 @@ public class MinimumDistanceBetweenBstNodes {
         // 因为右子树中都大于root，除了最小值之外，其他值的距离都会更大
         // 左子树中都小于root，除了最大值之外，其他值的距离都会更大
         // 一颗BST中，最大值为最右子节点，最小值为最左子节点
+        // 思路2，中序遍历可以以递增的顺序遍历BST，那么最小距离只可能出现在相邻（遍历顺序）的两个节点中
         public int minDiffInBST(TreeNode root) {
-            if (root == null) return Integer.MAX_VALUE;
-            int leftMax = root.left == null ? Integer.MAX_VALUE : findMax(root.left);
-            int rightMin = root.right == null ? Integer.MAX_VALUE : findMin(root.right);
-            return Math.min(Math.min(Math.min(Math.abs(root.val - leftMax), Math.abs(root.val - rightMin)), minDiffInBST(root.left)), minDiffInBST(root.right));
-        }
-
-        private int findMin(TreeNode root) {
-            int ans = root.val;
-            while (root.left != null) {
-                ans = root.left.val;
-                root = root.left;
-            }
-            return ans;
-        }
-
-        private int findMax(TreeNode root) {
-            int ans = root.val;
-            while (root.right != null) {
-                ans = root.right.val;
-                root = root.right;
+            int ans = Integer.MAX_VALUE;
+            Integer pre = null;
+            Deque<TreeNode> stack = new LinkedList<>();
+            while (!stack.isEmpty() || root != null) {
+                while (root != null) {
+                    stack.push(root);
+                    root = root.left;
+                }
+                if (!stack.isEmpty()) {
+                    root = stack.pop();
+                    // System.out.println(root.val);
+                    if (pre != null) {
+                        ans = Math.min(ans, Math.abs(pre - root.val));
+                    }
+                    pre = root.val;
+                    root = root.right;
+                }
             }
             return ans;
         }
