@@ -20,24 +20,12 @@ public class ImplementTriePrefixTree {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Trie {
-        // 因为题目中节点只存小写英文字母，所以存储空间可以优化
         private class Node {
-            private Node[] children;
-            private final int R = 26;
-            private Boolean isEnd;
+            boolean isLast;
+            Node[] children = new Node[26];
 
-            public Node(Character c) {
-                this.children = new Node[R];
-                this.isEnd = false;
-            }
-
-            private Node find(Character c) {
-                return this.children[c - 'a'];
-            }
-
-            private void put(Node n, Character c) {
-                if (c == null) return;
-                this.children[c - 'a'] = n;
+            public Node(boolean isLast) {
+                this.isLast = isLast;
             }
         }
 
@@ -45,72 +33,51 @@ public class ImplementTriePrefixTree {
 
         /** Initialize your data structure here. */
         public Trie() {
-            this.root = new Node(null);
+            this.root = new Node(false);
         }
 
         /** Inserts a word into the trie. */
         public void insert(String word) {
-            Node parent = this.root;
-            char[] chars = word.toCharArray();
-            for (int i = 0; i < chars.length; i++) {
-                Node n = parent.find(chars[i]);
-                if (n == null) {
-                    n = new Node(chars[i]);
+            Node cur = this.root;
+            for (int i = 0; i < word.length(); i++) {
+                char c = word.charAt(i);
+                // 如果碰到节点不存在，则要新建，还要看是否是结尾的字符
+                if (cur.children[c - 'a'] == null) {
+                    cur.children[c - 'a'] = new Node(i == word.length() - 1);
                 }
-                if (i == chars.length - 1) {
-                    n.isEnd = true;
+                // 如果节点存在，要看是不是结尾的字符，是的话isLast标为true
+                else {
+                    if (i == word.length() - 1) {
+                        cur.children[c - 'a'].isLast = true;
+                    }
                 }
-                parent.put(n, chars[i]);
-                parent = n;
+                cur = cur.children[c - 'a'];
             }
         }
 
         /** Returns if the word is in the trie. */
         public boolean search(String word) {
-            char[] chars = word.toCharArray();
-            Node r = this.root;
-            for (int i = 0; i < chars.length; i++) {
-                Node t = r.find(chars[i]);
-                if (t != null) {
-                    r = t;
-                }
-                else {
-                    return false;
-                }
-                if (i == chars.length - 1) {
-                    return t.isEnd;
-                }
-            }
-            return false;
+            return find(word, false);
         }
 
         /** Returns if there is any word in the trie that starts with the given prefix. */
         public boolean startsWith(String prefix) {
-            char[] chars = prefix.toCharArray();
-            Node r = this.root;
-            for (int i = 0; i < chars.length; i++) {
-                Node t = r.find(chars[i]);
-                if (t != null) {
-                    r = t;
-                }
-                else {
-                    return false;
-                }
-                if (i == chars.length - 1) {
-                    return true;
-                }
+            return find(prefix, true);
+        }
+
+        private boolean find(String word, Boolean isPrefix) {
+            Node cur = this.root;
+            // 从root开始找word.length()次，如果中间节点就为null，说明不存在
+            for (int i = 0; i < word.length(); i++) {
+                char c = word.charAt(i);
+                cur = cur.children[c - 'a'];
+                if (cur == null) return false;
             }
-            return false;
+            // 如果找完了word.length()次没有碰到null，则看找的是什么分别处理
+            if (isPrefix) return true;
+            return cur.isLast;
         }
     }
-
-    /**
-     * Your Trie object will be instantiated and called as such:
-     * Trie obj = new Trie();
-     * obj.insert(word);
-     * boolean param_2 = obj.search(word);
-     * boolean param_3 = obj.startsWith(prefix);
-     */
     //leetcode submit region end(Prohibit modification and deletion)
 
 }
