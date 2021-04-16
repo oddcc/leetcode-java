@@ -16,17 +16,30 @@ public class ScrambleString {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 思路1，递归，会超时
+        // 思路2，简单的递归包含很多重复计算，通过缓存计算结果的方式优化
+        private int[][][][] cache; // 0表示未知，1表示true，-1表示false
+
         public boolean isScramble(String s1, String s2) {
-            if (s1.length() != s2.length()) return false;
-            if (s1.equals(s2)) return true;
-            for (int i = 1; i < s1.length(); i++) {
-                // s1和s2都拆分成[0,i)和[i,len)，对比是否"相等"，这种是拆分之后没交换的情况
-                if (isScramble(s1.substring(0, i), s2.substring(0, i)) && isScramble(s1.substring(i), s2.substring(i)))
+            int len = s1.length();
+            cache = new int[len][len][len][len];
+            return isScramble(s1.toCharArray(), 0, len - 1, s2.toCharArray(), 0, len - 1);
+        }
+
+        private boolean isScramble(char[] s1, int begin1, int end1, char[] s2, int begin2, int end2) {
+            if (begin1 == end1) return s1[begin1] == s2[begin2];
+            if (cache[begin1][end1][begin2][end2] != 0) return cache[begin1][end1][begin2][end2] == 1;
+            for (int i = 0; i < end1 - begin1; i++) {
+                if ((isScramble(s1, begin1, begin1 + i, s2, begin2, begin2 + i) &&
+                        isScramble(s1, begin1 + i + 1, end1, s2, begin2 + i + 1, end2))
+                        ||
+                        (isScramble(s1, begin1, begin1 + i, s2, end2 - i, end2) &&
+                                isScramble(s1, begin1 + i + 1, end1, s2, begin2, end2 - i - 1))
+                ) {
+                    cache[begin1][end1][begin2][end2] = 1;
                     return true;
-                // s1拆成[0,i)和[i,len)，s2拆成[0,len-i)和[len-i,len)，对比是否"相等"，这种情况就是拆分之后交换的情况
-                if (isScramble(s1.substring(0, i), s2.substring(s1.length() - i)) && isScramble(s1.substring(i), s2.substring(0, s1.length() - i)))
-                    return true;
+                }
             }
+            cache[begin1][end1][begin2][end2] = -1;
             return false;
         }
     }
