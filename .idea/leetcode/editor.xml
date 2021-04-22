@@ -1235,6 +1235,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/MaxSumOfRectangleNoLargerThanK.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/MaxSumOfRectangleNoLargerThanK.java" />
+              <option name="questionId" value="363" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/MaximalSquare.java">
           <value>
             <LeetcodeEditor>
