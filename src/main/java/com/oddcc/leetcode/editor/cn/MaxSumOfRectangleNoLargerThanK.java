@@ -16,25 +16,26 @@ public class MaxSumOfRectangleNoLargerThanK {
         // 有 dp[x1][y1][x2][y2] = dp[x1][y1][x2][y2 - 1] + dp[x1][y1][x2 - 1][y2] - dp[x1][y1][x2 - 1][y2 - 1] + matrix[x2][y2]
         // 如果越界了则对应值为0，在计算的过程中取最大，可以得到结果
         // 求值的顺序应该是从左到右、从上到下
+        // 思路2，观察可见，实际计算时，x1和y1的值实际上并没有用到，所以我们dp数组可以不要那么大
         public int maxSumSubmatrix(int[][] matrix, int k) {
             int m = matrix.length;
             int n = matrix[0].length;
-            int[][][][] dp = new int[m][n][m][n];
             int ans = Integer.MIN_VALUE;
             // 计算所有的矩形面积
             for (int x1 = 0; x1 < m; x1++) {
                 for (int y1 = 0; y1 < n; y1++) {
                     // 左上角x1,y1
+                    int[][] dp = new int[m][n];
                     for (int x2 = x1; x2 < m; x2++) {
                         for (int y2 = y1; y2 < n; y2++) {
                             // 右下角x2,y2
-                            int sum = getSum(matrix, dp, x1, y1, x2, y2 - 1)
-                                    + getSum(matrix, dp, x1, y1, x2 - 1, y2)
-                                    - getSum(matrix, dp, x1, y1, x2 - 1, y2 - 1)
+                            int sum = getSum(matrix, dp, x2, y2 - 1)
+                                    + getSum(matrix, dp, x2 - 1, y2)
+                                    - getSum(matrix, dp, x2 - 1, y2 - 1)
                                     + matrix[x2][y2];
-                            dp[x1][y1][x2][y2] = sum;
+                            dp[x2][y2] = sum;
                             if (sum > k) continue;
-                            ans = Math.max(ans, dp[x1][y1][x2][y2]);
+                            ans = Math.max(ans, dp[x2][y2]);
                         }
                     }
                 }
@@ -43,13 +44,12 @@ public class MaxSumOfRectangleNoLargerThanK {
             return ans;
         }
 
-        private int getSum(int[][] matrix, int[][][][] dp, int x1, int y1, int x2, int y2) {
+        private int getSum(int[][] matrix, int[][] dp, int x2, int y2) {
             int m = matrix.length;
             int n = matrix[0].length;
-            if (x1 < 0 || x2 < 0 || y1 < 0 || y2 < 0) return 0;
-            if (x1 >= m || x2 >= m) return 0;
-            if (y1 >= n || y2 >= n) return 0;
-            return dp[x1][y1][x2][y2];
+            if (x2 < 0 || y2 < 0) return 0;
+            if (x2 >= m || y2 >= n) return 0;
+            return dp[x2][y2];
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
