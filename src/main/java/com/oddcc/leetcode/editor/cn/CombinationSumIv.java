@@ -13,22 +13,19 @@ public class CombinationSumIv {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 思路1，回溯法，超时
-        private int ans;
-
+        // 思路2，动态规划
         public int combinationSum4(int[] nums, int target) {
-            ans = 0;
-            dfs(nums, target, 0);
-            return ans;
-        }
-
-        private void dfs(int[] nums, int target, int sum) {
-            if (sum >= target) {
-                if (sum == target) ans++;
-                return;
+            int[] dp = new int[target + 1]; // dp[i]表示和为i的方式有几种
+            dp[0] = 1;
+            for (int i = 1; i <= target; i++) {
+                for (int num : nums) {
+                    // 因为数字都是正数，所以这里可以进行剪枝
+                    if (num <= i) {
+                        dp[i] += dp[i - num];
+                    }
+                }
             }
-            for (int i : nums) {
-                dfs(nums, target, sum + i);
-            }
+            return dp[target];
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
