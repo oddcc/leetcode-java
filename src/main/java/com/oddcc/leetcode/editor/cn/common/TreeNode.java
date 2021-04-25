@@ -2,6 +2,7 @@ package com.oddcc.leetcode.editor.cn.common;
 
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.List;
 
 public class TreeNode {
     public int val;
@@ -12,9 +13,9 @@ public class TreeNode {
         val = x;
     }
 
-    @Override
-    public String toString() {
-        return String.valueOf(val);
+    public TreeNode(int val, TreeNode left) {
+        this.val = val;
+        this.left = left;
     }
 
     public TreeNode(int val, TreeNode left, TreeNode right) {
@@ -23,13 +24,46 @@ public class TreeNode {
         this.right = right;
     }
 
+    @Override
+    public String toString() {
+        return String.valueOf(val);
+    }
+
     public static void main(String[] args) {
-        TreeNode n = new TreeNode(1, new TreeNode(0), new TreeNode(48, new TreeNode(12), new TreeNode(49)));
+        TreeNode n = TreeNode.constructFromArr(1, 2, 3, null, null, 4, null, null, 5);
+        // System.out.println(Arrays.toString(TreeNode.toArr(n)));
+        System.out.println("inorderTraversal=====");
         inorderTraversal(n);
-        System.out.println("=====");
+        System.out.println("preorderTraversal=====");
         preorderTraversal(n);
-        System.out.println("=====");
+        System.out.println("postorderTraversal=====");
         postorderTraversal(n);
+    }
+
+    public static TreeNode constructFromArr(Integer... arr) {
+        if (arr.length == 0 || arr[0] == null) return null;
+        int i = 1;
+        TreeNode root = new TreeNode(arr[0]);
+        List<TreeNode> lastLayer = new LinkedList<>();
+        lastLayer.add(root);
+        while (i < arr.length) {
+            List<TreeNode> curLayer = new LinkedList<>();
+            for (TreeNode node : lastLayer) {
+                node.left = (i < arr.length && arr[i] == null) ? null : new TreeNode(arr[i]);
+                i++;
+                if (node.left != null) curLayer.add(node.left);
+                node.right = (i < arr.length && arr[i] == null) ? null : new TreeNode(arr[i]);
+                i++;
+                if (node.right != null) curLayer.add(node.right);
+            }
+            lastLayer = curLayer;
+        }
+        return root;
+    }
+
+    // todo
+    public static Integer[] toArr(TreeNode root) {
+        return null;
     }
 
     public static void inorderTraversal(TreeNode root) {

@@ -10,8 +10,8 @@ import java.util.LinkedList;
 public class IncreasingOrderSearchTree {
     public static void main(String[] args) {
         Solution solution = new IncreasingOrderSearchTree().new Solution();
-        solution.increasingBST(new TreeNode(5, new TreeNode(3, new TreeNode(2, new TreeNode(1), null), new TreeNode(4)), new TreeNode(6, null, new TreeNode(8, new TreeNode(7), new TreeNode(9)))));
-        solution.increasingBST(new TreeNode(2, new TreeNode(1), new TreeNode(4, new TreeNode(3), null)));
+        solution.increasingBST(TreeNode.constructFromArr(5, 3, 6, 2, 4, null, 8, 1, null, null, null, 7, 9));
+        solution.increasingBST(TreeNode.constructFromArr(2, 1, 4, null, null, 3));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -27,7 +27,7 @@ public class IncreasingOrderSearchTree {
                     root = root.left;
                 }
                 TreeNode c = stack.pop();
-                System.out.println(c);
+                // System.out.println(c);
                 if (pre != null) {
                     pre.right = c;
                 }
