@@ -49,10 +49,10 @@ public class TreeNode {
         while (i < arr.length) {
             List<TreeNode> curLayer = new LinkedList<>();
             for (TreeNode node : lastLayer) {
-                node.left = (i < arr.length && arr[i] == null) ? null : new TreeNode(arr[i]);
+                node.left = (i >= arr.length || arr[i] == null) ? null : new TreeNode(arr[i]);
                 i++;
                 if (node.left != null) curLayer.add(node.left);
-                node.right = (i < arr.length && arr[i] == null) ? null : new TreeNode(arr[i]);
+                node.right = (i >= arr.length || arr[i] == null) ? null : new TreeNode(arr[i]);
                 i++;
                 if (node.right != null) curLayer.add(node.right);
             }
