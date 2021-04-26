@@ -243,6 +243,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/CapacityToShipPackagesWithinDDays.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/CapacityToShipPackagesWithinDDays.java" />
+              <option name="questionId" value="1056" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/CheckIfItIsAStraightLine.java">
           <value>
             <LeetcodeEditor>
