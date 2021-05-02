@@ -11,10 +11,12 @@ public class ReverseInteger {
         System.out.println(solution.reverse(123));
         System.out.println(solution.reverse(-123));
         System.out.println(solution.reverse(120));
+        System.out.println(solution.reverse(1534236469));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     // 思路1，按位处理，然后反转
+    // 思路2，思路1用到了long，这是题目不允许的
     class Solution {
         public int reverse(int x) {
             if (x == 0) return 0;
@@ -25,13 +27,19 @@ public class ReverseInteger {
                 digits.add(i);
                 x = x / 10;
             }
-            long ans = 0;
+            int ans = 0;
             for (int i = 0; i < digits.size(); i++) {
-                ans += digits.get(i);
-                if (i != digits.size() - 1) ans *= 10;
+                ans += negative ? -digits.get(i) : digits.get(i);
+                if (i != digits.size() - 1) {
+                    int tmp = 0;
+                    for (int n = 0; n < 10; n++) {
+                        tmp += ans;
+                        if ((negative && tmp > 0) || (!negative && tmp < 0)) return 0;
+                    }
+                    ans = tmp;
+                }
             }
-            if (negative) ans = -ans;
-            return (ans < Integer.MIN_VALUE || ans > Integer.MAX_VALUE) ? 0 : (int) ans;
+            return ans;
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
