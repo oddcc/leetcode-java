@@ -2,9 +2,6 @@
 
 package com.oddcc.leetcode.editor.cn;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class DeleteAndEarn {
     public static void main(String[] args) {
         Solution solution = new DeleteAndEarn().new Solution();
@@ -15,39 +12,24 @@ public class DeleteAndEarn {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     // 思路1，暴力法+回溯，超时
+    // 思路2，先转换问题，再动态规划，选择了x，则表示可以选择所有的x，也表示不能选择所有的x+1和x-1
     class Solution {
         public int deleteAndEarn(int[] nums) {
-            Set<Integer> needRemove = new HashSet<>();
-            return dfs(nums, needRemove, 0, 0);
-        }
-
-        /**
-         * 返回最大的points
-         * @param nums
-         * @param needRemove 需要删除的数，如果当前数包含在里面则不能选
-         * @param i 当前处理到的位置 i>=0 i<nums.length
-         * @param points 当前的points
-         * @return
-         */
-        private int dfs(int[] nums, Set<Integer> needRemove, int i, int points) {
-            if (i >= nums.length) {
-                return points;
+            int max = 0;
+            for (int n : nums) max = Math.max(max, n);
+            int[] sum = new int[max + 1];
+            for (int n : nums) {
+                sum[n] += n;
             }
-            int n = nums[i];
-            if (needRemove.contains(n)) {
-                return dfs(nums, needRemove, i + 1, points);
+            // 把问题转化为，sum[i]中元素不能连续的选（选了i就不能选i-1和i+1），最大和是多少
+            int[][] dp = new int[max + 1][2]; // sum中截止i为止，dp[i][0]表示，不选i最大和，dp[i][1]表示选了i的最大和
+            for (int i = 1; i < max + 1; i++) {
+                // 选sum[i]
+                dp[i][1] = sum[i] + dp[i - 1][0];
+                // 不选sum[i]
+                dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1]);
             }
-            boolean p1 = needRemove.contains(n + 1);
-            boolean s1 = needRemove.contains(n - 1);
-            // 选n
-            needRemove.add(n + 1);
-            needRemove.add(n - 1);
-            int a = dfs(nums, needRemove, i + 1, points + n);
-            // 不选n
-            if (!p1) needRemove.remove(n + 1);
-            if (!s1) needRemove.remove(n - 1);
-            int b = dfs(nums, needRemove, i + 1, points);
-            return Math.max(a, b);
+            return Math.max(dp[max][0], dp[max][1]);
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
