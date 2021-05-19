@@ -699,6 +699,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/FindKthLargestXorCoordinateValue.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/FindKthLargestXorCoordinateValue.java" />
+              <option name="questionId" value="1860" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/FindMinimumInRotatedSortedArray.java">
           <value>
             <LeetcodeEditor>
