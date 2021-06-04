@@ -29,4 +29,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: update and push
         run: |
+          git config --global user.email "skycc71640@gmail.com"
+          git config --global user.name "Github Actions"
           python3 markdown-util.py
+          echo "generate new README.md"
+          cd public && git add . && git commit -m "Publishing to master (Github Actions)"
+          git push
