@@ -11,7 +11,6 @@ BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 CODE_DIR = "src/main/java/com/oddcc/leetcode/editor/cn"
 QUESTION_FILE = "all.json"
 README_FILE = "README.md"
-# RE = re.compile('^// ([0-9]+)\\n$')
 RE = re.compile('^// (.+)\\n$')
 COMMENT_LINE = "<!--question list generated below here, don't DELETE this line-->\n"
 HEADER = "|ID|标题|难度|CODE|\n"
@@ -51,7 +50,6 @@ def main():
             newFile.write("### 目前已有{}道题，不断添加中…\n".format(len(q_list)))
             newFile.write(HEADER)
             newFile.write(SEPARATOR)
-            # q_list.sort(key=lambda q: int(q["frontendQuestionId"]))
             q_list.sort(key=cmp_to_key(question_sort))
             for q in q_list:
                 newFile.write(QUESTION_INFO.format(
@@ -73,7 +71,7 @@ def question_sort(q1, q2):
     if id1.isnumeric() and id2.isnumeric():
         return int(id1) - int(id2)
     elif id1.isnumeric():
-        return 1
+        return -1
     else:
         return id1 < id2
 
