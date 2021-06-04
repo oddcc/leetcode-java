@@ -1,6 +1,5 @@
+// 剑指 Offer 03
 package com.oddcc.leetcode.editor.cn;
-
-import java.util.Arrays;
 
 public class ShuZuZhongZhongFuDeShuZiLcof {
     public static void main(String[] args) {

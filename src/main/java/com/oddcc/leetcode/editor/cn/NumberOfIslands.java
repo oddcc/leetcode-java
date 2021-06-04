@@ -1,6 +1,5 @@
+// 200
 package com.oddcc.leetcode.editor.cn;
-
-import java.util.Arrays;
 
 public class NumberOfIslands {
     public static void main(String[] args) {

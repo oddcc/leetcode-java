@@ -1,23 +1,4 @@
-//Given a sorted linked list, delete all duplicates such that each element appea
-//r only once. 
-//
-// Example 1: 
-//
-// 
-//Input: 1->1->2
-//Output: 1->2
-// 
-//
-// Example 2: 
-//
-// 
-//Input: 1->1->2->3->3
-//Output: 1->2->3
-// 
-// Related Topics 链表 
-// 👍 396 👎 0
-
-
+// 83
 package com.oddcc.leetcode.editor.cn;
 
 import com.oddcc.leetcode.editor.cn.common.ListNode;

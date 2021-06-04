@@ -1,3 +1,5 @@
+// 977
+
 package com.oddcc.leetcode.editor.cn;
 
 import java.util.Arrays;
@@ -5,10 +7,10 @@ import java.util.Arrays;
 public class SquaresOfASortedArray {
     public static void main(String[] args) {
         Solution solution = new SquaresOfASortedArray().new Solution();
-//        System.out.println(Arrays.toString(solution.sortedSquares(new int[]{-4, -1, 0, 3, 10})));
-//        System.out.println(Arrays.toString(solution.sortedSquares(new int[]{-7, -3, 2, 3, 11})));
+       System.out.println(Arrays.toString(solution.sortedSquares(new int[]{-4, -1, 0, 3, 10})));
+       System.out.println(Arrays.toString(solution.sortedSquares(new int[]{-7, -3, 2, 3, 11})));
         System.out.println(Arrays.toString(solution.sortedSquares(new int[]{-7, -3, -3, -3, -3})));
-//        System.out.println(Arrays.toString(solution.sortedSquares(new int[]{1, 2, 3, 4, 5})));
+       System.out.println(Arrays.toString(solution.sortedSquares(new int[]{1, 2, 3, 4, 5})));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

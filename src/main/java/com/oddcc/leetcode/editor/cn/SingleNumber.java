@@ -1,38 +1,12 @@
-//Given a non-empty array of integers, every element appears twice except for on
-//e. Find that single one. 
-//
-// Note: 
-//
-// Your algorithm should have a linear runtime complexity. Could you implement i
-//t without using extra memory? 
-//
-// Example 1: 
-//
-// 
-//Input: [2,2,1]
-//Output: 1
-// 
-//
-// Example 2: 
-//
-// 
-//Input: [4,1,2,1,2]
-//Output: 4
-// 
-// Related Topics 位运算 哈希表 
-// 👍 1507 👎 0
-
-
+// 136
 package com.oddcc.leetcode.editor.cn;
-
-import java.util.Arrays;
 
 public class SingleNumber {
     public static void main(String[] args) {
         Solution solution = new SingleNumber().new Solution();
-//        System.out.println(solution.singleNumber(new int[]{4,1,2,1,2}));
-//        System.out.println(solution.singleNumber(new int[]{2,2,1}));
-//        System.out.println(solution.singleNumber(new int[]{2}));
+        //        System.out.println(solution.singleNumber(new int[]{4,1,2,1,2}));
+        //        System.out.println(solution.singleNumber(new int[]{2,2,1}));
+        //        System.out.println(solution.singleNumber(new int[]{2}));
         System.out.println(solution.singleNumber(new int[]{17, 12, 5, -6, 12, 4, 17, -5, 2, -3, 2, 4, 5, 16, -3, -4, 15, 15, -4, -5, -6}));
     }
 
@@ -53,6 +27,6 @@ public class SingleNumber {
             return result;
         }
     }
-//leetcode submit region end(Prohibit modification and deletion)
+    //leetcode submit region end(Prohibit modification and deletion)
 
 }

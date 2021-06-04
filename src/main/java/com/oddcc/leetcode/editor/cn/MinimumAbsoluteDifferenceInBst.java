@@ -1,9 +1,9 @@
+// 530
 package com.oddcc.leetcode.editor.cn;
 
 import com.oddcc.leetcode.editor.cn.common.TreeNode;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class MinimumAbsoluteDifferenceInBst {

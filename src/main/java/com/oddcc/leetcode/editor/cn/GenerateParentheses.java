@@ -1,23 +1,4 @@
-//Given n pairs of parentheses, write a function to generate all combinations of
-// well-formed parentheses. 
-//
-// 
-// Example 1: 
-// Input: n = 3
-//Output: ["((()))","(()())","(())()","()(())","()()()"]
-// Example 2: 
-// Input: n = 1
-//Output: ["()"]
-// 
-// 
-// Constraints: 
-//
-// 
-// 1 <= n <= 8 
-// 
-// Related Topics 字符串 回溯算法 
-// 👍 1355 👎 0
-
+// 22
 
 package com.oddcc.leetcode.editor.cn;
 
