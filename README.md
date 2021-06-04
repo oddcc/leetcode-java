@@ -42,225 +42,225 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-目前已有219道题，不断添加中…
+### 目前已有219道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
-|6|ZigZag Conversion|medium|[url](baidu.com)|
-|7|Reverse Integer|easy|[url](baidu.com)|
-|12|Integer to Roman|medium|[url](baidu.com)|
-|13|Roman to Integer|easy|[url](baidu.com)|
-|26|Remove Duplicates from Sorted Array|easy|[url](baidu.com)|
-|27|Remove Element|easy|[url](baidu.com)|
-|28|Implement strStr()|easy|[url](baidu.com)|
-|30|Substring with Concatenation of All Words|hard|[url](baidu.com)|
-|41|First Missing Positive|hard|[url](baidu.com)|
-|42|Trapping Rain Water|hard|[url](baidu.com)|
-|49|Group Anagrams|medium|[url](baidu.com)|
-|54|Spiral Matrix|medium|[url](baidu.com)|
-|55|Jump Game|medium|[url](baidu.com)|
-|59|Spiral Matrix II|medium|[url](baidu.com)|
-|61|Rotate List|medium|[url](baidu.com)|
-|62|Unique Paths|medium|[url](baidu.com)|
-|73|Set Matrix Zeroes|medium|[url](baidu.com)|
-|74|Search a 2D Matrix|medium|[url](baidu.com)|
-|80|Remove Duplicates from Sorted Array II|medium|[url](baidu.com)|
-|81|Search in Rotated Sorted Array II|medium|[url](baidu.com)|
-|82|Remove Duplicates from Sorted List II|medium|[url](baidu.com)|
-|84|Largest Rectangle in Histogram|hard|[url](baidu.com)|
-|87|Scramble String|hard|[url](baidu.com)|
-|90|Subsets II|medium|[url](baidu.com)|
-|91|Decode Ways|medium|[url](baidu.com)|
-|92|Reverse Linked List II|medium|[url](baidu.com)|
-|103|Binary Tree Zigzag Level Order Traversal|medium|[url](baidu.com)|
-|115|Distinct Subsequences|hard|[url](baidu.com)|
-|119|Pascal's Triangle II|easy|[url](baidu.com)|
-|131|Palindrome Partitioning|medium|[url](baidu.com)|
-|132|Palindrome Partitioning II|hard|[url](baidu.com)|
-|134|Gas Station|medium|[url](baidu.com)|
-|135|Candy|hard|[url](baidu.com)|
-|137|Single Number II|medium|[url](baidu.com)|
-|145|Binary Tree Postorder Traversal|easy|[url](baidu.com)|
-|146|LRU Cache|medium|[url](baidu.com)|
-|147|Insertion Sort List|medium|[url](baidu.com)|
-|150|Evaluate Reverse Polish Notation|medium|[url](baidu.com)|
-|153|Find Minimum in Rotated Sorted Array|medium|[url](baidu.com)|
-|154|Find Minimum in Rotated Sorted Array II|hard|[url](baidu.com)|
-|164|Maximum Gap|hard|[url](baidu.com)|
-|169|Majority Element|easy|[url](baidu.com)|
-|173|Binary Search Tree Iterator|medium|[url](baidu.com)|
-|179|Largest Number|medium|[url](baidu.com)|
-|189|Rotate Array|medium|[url](baidu.com)|
-|190|Reverse Bits|easy|[url](baidu.com)|
-|191|Number of 1 Bits|easy|[url](baidu.com)|
-|202|Happy Number|easy|[url](baidu.com)|
-|203|Remove Linked List Elements|easy|[url](baidu.com)|
-|204|Count Primes|easy|[url](baidu.com)|
-|205|Isomorphic Strings|easy|[url](baidu.com)|
-|208|Implement Trie (Prefix Tree)|medium|[url](baidu.com)|
-|209|Minimum Size Subarray Sum|medium|[url](baidu.com)|
-|213|House Robber II|medium|[url](baidu.com)|
-|215|Kth Largest Element in an Array|medium|[url](baidu.com)|
-|217|Contains Duplicate|easy|[url](baidu.com)|
-|220|Contains Duplicate III|medium|[url](baidu.com)|
-|221|Maximal Square|medium|[url](baidu.com)|
-|222|Count Complete Tree Nodes|medium|[url](baidu.com)|
-|224|Basic Calculator|hard|[url](baidu.com)|
-|225|Implement Stack using Queues|easy|[url](baidu.com)|
-|227|Basic Calculator II|medium|[url](baidu.com)|
-|228|Summary Ranges|easy|[url](baidu.com)|
-|231|Power of Two|easy|[url](baidu.com)|
-|232|Implement Queue using Stacks|easy|[url](baidu.com)|
-|235|Lowest Common Ancestor of a Binary Search Tree|easy|[url](baidu.com)|
-|236|Lowest Common Ancestor of a Binary Tree|medium|[url](baidu.com)|
-|237|Delete Node in a Linked List|easy|[url](baidu.com)|
-|238|Product of Array Except Self|medium|[url](baidu.com)|
-|240|Search a 2D Matrix II|medium|[url](baidu.com)|
-|242|Valid Anagram|easy|[url](baidu.com)|
-|257|Binary Tree Paths|easy|[url](baidu.com)|
-|263|Ugly Number|easy|[url](baidu.com)|
-|264|Ugly Number II|medium|[url](baidu.com)|
-|279|Perfect Squares|medium|[url](baidu.com)|
-|283|Move Zeroes|easy|[url](baidu.com)|
-|287|Find the Duplicate Number|medium|[url](baidu.com)|
-|290|Word Pattern|easy|[url](baidu.com)|
-|300|Longest Increasing Subsequence|medium|[url](baidu.com)|
-|303|Range Sum Query - Immutable|easy|[url](baidu.com)|
-|304|Range Sum Query 2D - Immutable|medium|[url](baidu.com)|
-|309|Best Time to Buy and Sell Stock with Cooldown|medium|[url](baidu.com)|
-|316|Remove Duplicate Letters|medium|[url](baidu.com)|
-|322|Coin Change|medium|[url](baidu.com)|
-|328|Odd Even Linked List|medium|[url](baidu.com)|
-|331|Verify Preorder Serialization of a Binary Tree|medium|[url](baidu.com)|
-|337|House Robber III|medium|[url](baidu.com)|
-|338|Counting Bits|easy|[url](baidu.com)|
-|341|Flatten Nested List Iterator|medium|[url](baidu.com)|
-|342|Power of Four|easy|[url](baidu.com)|
-|343|Integer Break|medium|[url](baidu.com)|
-|347|Top K Frequent Elements|medium|[url](baidu.com)|
-|354|Russian Doll Envelopes|hard|[url](baidu.com)|
-|363|Max Sum of Rectangle No Larger Than K|hard|[url](baidu.com)|
-|368|Largest Divisible Subset|medium|[url](baidu.com)|
-|377|Combination Sum IV|medium|[url](baidu.com)|
-|387|First Unique Character in a String|easy|[url](baidu.com)|
-|394|Decode String|medium|[url](baidu.com)|
-|395|Longest Substring with At Least K Repeating Characters|medium|[url](baidu.com)|
-|399|Evaluate Division|medium|[url](baidu.com)|
-|403|Frog Jump|hard|[url](baidu.com)|
-|406|Queue Reconstruction by Height|medium|[url](baidu.com)|
-|415|Add Strings|easy|[url](baidu.com)|
-|416|Partition Equal Subset Sum|medium|[url](baidu.com)|
-|421|Maximum XOR of Two Numbers in an Array|medium|[url](baidu.com)|
-|424|Longest Repeating Character Replacement|medium|[url](baidu.com)|
-|435|Non-overlapping Intervals|medium|[url](baidu.com)|
-|437|Path Sum III|medium|[url](baidu.com)|
-|438|Find All Anagrams in a String|medium|[url](baidu.com)|
-|448|Find All Numbers Disappeared in an Array|easy|[url](baidu.com)|
-|452|Minimum Number of Arrows to Burst Balloons|medium|[url](baidu.com)|
-|454|4Sum II|medium|[url](baidu.com)|
-|455|Assign Cookies|easy|[url](baidu.com)|
-|456|132 Pattern|medium|[url](baidu.com)|
-|461|Hamming Distance|easy|[url](baidu.com)|
-|477|Total Hamming Distance|medium|[url](baidu.com)|
-|480|Sliding Window Median|hard|[url](baidu.com)|
-|485|Max Consecutive Ones|easy|[url](baidu.com)|
-|494|Target Sum|medium|[url](baidu.com)|
-|503|Next Greater Element II|medium|[url](baidu.com)|
-|509|Fibonacci Number|easy|[url](baidu.com)|
-|523|Continuous Subarray Sum|medium|[url](baidu.com)|
-|525|Contiguous Array|medium|[url](baidu.com)|
-|538|Convert BST to Greater Tree|medium|[url](baidu.com)|
-|543|Diameter of Binary Tree|easy|[url](baidu.com)|
-|547|Number of Provinces|medium|[url](baidu.com)|
-|554|Brick Wall|medium|[url](baidu.com)|
-|560|Subarray Sum Equals K|medium|[url](baidu.com)|
-|561|Array Partition I|easy|[url](baidu.com)|
-|566|Reshape the Matrix|easy|[url](baidu.com)|
-|567|Permutation in String|medium|[url](baidu.com)|
-|581|Shortest Unsorted Continuous Subarray|medium|[url](baidu.com)|
-|605|Can Place Flowers|easy|[url](baidu.com)|
-|617|Merge Two Binary Trees|easy|[url](baidu.com)|
-|621|Task Scheduler|medium|[url](baidu.com)|
-|628|Maximum Product of Three Numbers|easy|[url](baidu.com)|
-|633|Sum of Square Numbers|medium|[url](baidu.com)|
-|643|Maximum Average Subarray I|easy|[url](baidu.com)|
-|647|Palindromic Substrings|medium|[url](baidu.com)|
-|664|Strange Printer|hard|[url](baidu.com)|
-|665|Non-decreasing Array|easy|[url](baidu.com)|
-|674|Longest Continuous Increasing Subsequence|easy|[url](baidu.com)|
-|684|Redundant Connection|medium|[url](baidu.com)|
-|690|Employee Importance|easy|[url](baidu.com)|
-|692|Top K Frequent Words|medium|[url](baidu.com)|
-|697|Degree of an Array|easy|[url](baidu.com)|
-|703|Kth Largest Element in a Stream|easy|[url](baidu.com)|
-|705|Design HashSet|easy|[url](baidu.com)|
-|706|Design HashMap|easy|[url](baidu.com)|
-|709|To Lower Case|easy|[url](baidu.com)|
-|713|Subarray Product Less Than K|medium|[url](baidu.com)|
-|714|Best Time to Buy and Sell Stock with Transaction Fee|medium|[url](baidu.com)|
-|721|Accounts Merge|medium|[url](baidu.com)|
-|724|Find Pivot Index|easy|[url](baidu.com)|
-|738|Monotone Increasing Digits|medium|[url](baidu.com)|
-|739|Daily Temperatures|medium|[url](baidu.com)|
-|740|Delete and Earn|medium|[url](baidu.com)|
-|746|Min Cost Climbing Stairs|easy|[url](baidu.com)|
-|765|Couples Holding Hands|hard|[url](baidu.com)|
-|766|Toeplitz Matrix|easy|[url](baidu.com)|
-|767|Reorganize String|medium|[url](baidu.com)|
-|781|Rabbits in Forest|medium|[url](baidu.com)|
-|783|Minimum Distance Between BST Nodes|easy|[url](baidu.com)|
-|830|Positions of Large Groups|easy|[url](baidu.com)|
-|832|Flipping an Image|easy|[url](baidu.com)|
-|860|Lemonade Change|easy|[url](baidu.com)|
-|867|Transpose Matrix|easy|[url](baidu.com)|
-|872|Leaf-Similar Trees|easy|[url](baidu.com)|
-|888|Fair Candy Swap|easy|[url](baidu.com)|
-|896|Monotonic Array|easy|[url](baidu.com)|
-|897|Increasing Order Search Tree|easy|[url](baidu.com)|
-|922|Sort Array By Parity II|easy|[url](baidu.com)|
-|938|Range Sum of BST|easy|[url](baidu.com)|
-|951|Flip Equivalent Binary Trees|medium|[url](baidu.com)|
-|959|Regions Cut By Slashes|medium|[url](baidu.com)|
-|978|Longest Turbulent Subarray|medium|[url](baidu.com)|
-|989|Add to Array-Form of Integer|easy|[url](baidu.com)|
-|992|Subarrays with K Different Integers|hard|[url](baidu.com)|
-|993|Cousins in Binary Tree|easy|[url](baidu.com)|
-|995|Minimum Number of K Consecutive Bit Flips|hard|[url](baidu.com)|
-|1004|Max Consecutive Ones III|medium|[url](baidu.com)|
-|1006|Clumsy Factorial|medium|[url](baidu.com)|
-|1011|Capacity To Ship Packages Within D Days|medium|[url](baidu.com)|
-|1018|Binary Prefix Divisible By 5|easy|[url](baidu.com)|
-|1030|Matrix Cells in Distance Order|easy|[url](baidu.com)|
-|1035|Uncrossed Lines|medium|[url](baidu.com)|
-|1046|Last Stone Weight|easy|[url](baidu.com)|
-|1047|Remove All Adjacent Duplicates In String|easy|[url](baidu.com)|
-|1052|Grumpy Bookstore Owner|medium|[url](baidu.com)|
-|1074|Number of Submatrices That Sum to Target|hard|[url](baidu.com)|
-|1122|Relative Sort Array|easy|[url](baidu.com)|
-|1128|Number of Equivalent Domino Pairs|easy|[url](baidu.com)|
-|1143|Longest Common Subsequence|medium|[url](baidu.com)|
-|1178|Number of Valid Words for Each Puzzle|hard|[url](baidu.com)|
-|1190|Reverse Substrings Between Each Pair of Parentheses|medium|[url](baidu.com)|
-|1202|Smallest String With Swaps|medium|[url](baidu.com)|
-|1208|Get Equal Substrings Within Budget|medium|[url](baidu.com)|
-|1211|Queries Quality and Percentage|easy|[url](baidu.com)|
-|1232|Check If It Is a Straight Line|easy|[url](baidu.com)|
-|1269|Number of Ways to Stay in the Same Place After Some Steps|hard|[url](baidu.com)|
-|1310|XOR Queries of a Subarray|medium|[url](baidu.com)|
-|1370|Increasing Decreasing String|easy|[url](baidu.com)|
-|1423|Maximum Points You Can Obtain from Cards|medium|[url](baidu.com)|
-|1438|Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit|medium|[url](baidu.com)|
-|1442|Count Triplets That Can Form Two Arrays of Equal XOR|medium|[url](baidu.com)|
-|1473|Paint House III|hard|[url](baidu.com)|
-|1482|Minimum Number of Days to Make m Bouquets|medium|[url](baidu.com)|
-|1486|XOR Operation in an Array|easy|[url](baidu.com)|
-|1603|Design Parking System|easy|[url](baidu.com)|
-|1631|Path With Minimum Effort|medium|[url](baidu.com)|
-|1707|Maximum XOR With an Element From Array|hard|[url](baidu.com)|
-|1720|Decode XORed Array|easy|[url](baidu.com)|
-|1723|Find Minimum Time to Finish All Jobs|hard|[url](baidu.com)|
-|1734|Decode XORed Permutation|medium|[url](baidu.com)|
-|1738|Find Kth Largest XOR Coordinate Value|medium|[url](baidu.com)|
-|1744|Can You Eat Your Favorite Candy on Your Favorite Day?|medium|[url](baidu.com)|
-|1758|Minimum Changes To Make Alternating Binary String|easy|[url](baidu.com)|
-|1822|Sign of the Product of an Array|easy|[url](baidu.com)|
-|1823|Find the Winner of the Circular Game|medium|[url](baidu.com)|
+|[6](https://leetcode-cn.com/problems/zigzag-conversion)|ZigZag Conversion|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ZigzagConversion.java)|
+|[7](https://leetcode-cn.com/problems/reverse-integer)|Reverse Integer|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ReverseInteger.java)|
+|[12](https://leetcode-cn.com/problems/integer-to-roman)|Integer to Roman|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/IntegerToRoman.java)|
+|[13](https://leetcode-cn.com/problems/roman-to-integer)|Roman to Integer|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RomanToInteger.java)|
+|[26](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array)|Remove Duplicates from Sorted Array|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RemoveDuplicatesFromSortedArray.java)|
+|[27](https://leetcode-cn.com/problems/remove-element)|Remove Element|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RemoveElement.java)|
+|[28](https://leetcode-cn.com/problems/implement-strstr)|Implement strStr()|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ImplementStrstr.java)|
+|[30](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words)|Substring with Concatenation of All Words|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SubstringWithConcatenationOfAllWords.java)|
+|[41](https://leetcode-cn.com/problems/first-missing-positive)|First Missing Positive|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FirstMissingPositive.java)|
+|[42](https://leetcode-cn.com/problems/trapping-rain-water)|Trapping Rain Water|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TrappingRainWater.java)|
+|[49](https://leetcode-cn.com/problems/group-anagrams)|Group Anagrams|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/GroupAnagrams.java)|
+|[54](https://leetcode-cn.com/problems/spiral-matrix)|Spiral Matrix|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SpiralMatrix.java)|
+|[55](https://leetcode-cn.com/problems/jump-game)|Jump Game|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/JumpGame.java)|
+|[59](https://leetcode-cn.com/problems/spiral-matrix-ii)|Spiral Matrix II|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SpiralMatrixIi.java)|
+|[61](https://leetcode-cn.com/problems/rotate-list)|Rotate List|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RotateList.java)|
+|[62](https://leetcode-cn.com/problems/unique-paths)|Unique Paths|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/UniquePaths.java)|
+|[73](https://leetcode-cn.com/problems/set-matrix-zeroes)|Set Matrix Zeroes|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SetMatrixZeroes.java)|
+|[74](https://leetcode-cn.com/problems/search-a-2d-matrix)|Search a 2D Matrix|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SearchA2dMatrix.java)|
+|[80](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii)|Remove Duplicates from Sorted Array II|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RemoveDuplicatesFromSortedArrayIi.java)|
+|[81](https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii)|Search in Rotated Sorted Array II|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SearchInRotatedSortedArrayIi.java)|
+|[82](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii)|Remove Duplicates from Sorted List II|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RemoveDuplicatesFromSortedListIi.java)|
+|[84](https://leetcode-cn.com/problems/largest-rectangle-in-histogram)|Largest Rectangle in Histogram|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LargestRectangleInHistogram.java)|
+|[87](https://leetcode-cn.com/problems/scramble-string)|Scramble String|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ScrambleString.java)|
+|[90](https://leetcode-cn.com/problems/subsets-ii)|Subsets II|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SubsetsIi.java)|
+|[91](https://leetcode-cn.com/problems/decode-ways)|Decode Ways|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DecodeWays.java)|
+|[92](https://leetcode-cn.com/problems/reverse-linked-list-ii)|Reverse Linked List II|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ReverseLinkedListIi.java)|
+|[103](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal)|Binary Tree Zigzag Level Order Traversal|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BinaryTreeZigzagLevelOrderTraversal.java)|
+|[115](https://leetcode-cn.com/problems/distinct-subsequences)|Distinct Subsequences|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DistinctSubsequences.java)|
+|[119](https://leetcode-cn.com/problems/pascals-triangle-ii)|Pascal's Triangle II|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PascalsTriangleIi.java)|
+|[131](https://leetcode-cn.com/problems/palindrome-partitioning)|Palindrome Partitioning|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PalindromePartitioning.java)|
+|[132](https://leetcode-cn.com/problems/palindrome-partitioning-ii)|Palindrome Partitioning II|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PalindromePartitioningIi.java)|
+|[134](https://leetcode-cn.com/problems/gas-station)|Gas Station|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/GasStation.java)|
+|[135](https://leetcode-cn.com/problems/candy)|Candy|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/Candy.java)|
+|[137](https://leetcode-cn.com/problems/single-number-ii)|Single Number II|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SingleNumberIi.java)|
+|[145](https://leetcode-cn.com/problems/binary-tree-postorder-traversal)|Binary Tree Postorder Traversal|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BinaryTreePostorderTraversal.java)|
+|[146](https://leetcode-cn.com/problems/lru-cache)|LRU Cache|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LruCache.java)|
+|[147](https://leetcode-cn.com/problems/insertion-sort-list)|Insertion Sort List|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/InsertionSortList.java)|
+|[150](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation)|Evaluate Reverse Polish Notation|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/EvaluateReversePolishNotation.java)|
+|[153](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array)|Find Minimum in Rotated Sorted Array|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindMinimumInRotatedSortedArray.java)|
+|[154](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii)|Find Minimum in Rotated Sorted Array II|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindMinimumInRotatedSortedArrayIi.java)|
+|[164](https://leetcode-cn.com/problems/maximum-gap)|Maximum Gap|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaximumGap.java)|
+|[169](https://leetcode-cn.com/problems/majority-element)|Majority Element|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MajorityElement.java)|
+|[173](https://leetcode-cn.com/problems/binary-search-tree-iterator)|Binary Search Tree Iterator|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BinarySearchTreeIterator.java)|
+|[179](https://leetcode-cn.com/problems/largest-number)|Largest Number|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LargestNumber.java)|
+|[189](https://leetcode-cn.com/problems/rotate-array)|Rotate Array|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RotateArray.java)|
+|[190](https://leetcode-cn.com/problems/reverse-bits)|Reverse Bits|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ReverseBits.java)|
+|[191](https://leetcode-cn.com/problems/number-of-1-bits)|Number of 1 Bits|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NumberOf1Bits.java)|
+|[202](https://leetcode-cn.com/problems/happy-number)|Happy Number|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/HappyNumber.java)|
+|[203](https://leetcode-cn.com/problems/remove-linked-list-elements)|Remove Linked List Elements|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RemoveLinkedListElements.java)|
+|[204](https://leetcode-cn.com/problems/count-primes)|Count Primes|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CountPrimes.java)|
+|[205](https://leetcode-cn.com/problems/isomorphic-strings)|Isomorphic Strings|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/IsomorphicStrings.java)|
+|[208](https://leetcode-cn.com/problems/implement-trie-prefix-tree)|Implement Trie (Prefix Tree)|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ImplementTriePrefixTree.java)|
+|[209](https://leetcode-cn.com/problems/minimum-size-subarray-sum)|Minimum Size Subarray Sum|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MinimumSizeSubarraySum.java)|
+|[213](https://leetcode-cn.com/problems/house-robber-ii)|House Robber II|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/HouseRobberIi.java)|
+|[215](https://leetcode-cn.com/problems/kth-largest-element-in-an-array)|Kth Largest Element in an Array|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/KthLargestElementInAnArray.java)|
+|[217](https://leetcode-cn.com/problems/contains-duplicate)|Contains Duplicate|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ContainsDuplicate.java)|
+|[220](https://leetcode-cn.com/problems/contains-duplicate-iii)|Contains Duplicate III|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ContainsDuplicateIii.java)|
+|[221](https://leetcode-cn.com/problems/maximal-square)|Maximal Square|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaximalSquare.java)|
+|[222](https://leetcode-cn.com/problems/count-complete-tree-nodes)|Count Complete Tree Nodes|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CountCompleteTreeNodes.java)|
+|[224](https://leetcode-cn.com/problems/basic-calculator)|Basic Calculator|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BasicCalculator.java)|
+|[225](https://leetcode-cn.com/problems/implement-stack-using-queues)|Implement Stack using Queues|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ImplementStackUsingQueues.java)|
+|[227](https://leetcode-cn.com/problems/basic-calculator-ii)|Basic Calculator II|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BasicCalculatorIi.java)|
+|[228](https://leetcode-cn.com/problems/summary-ranges)|Summary Ranges|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SummaryRanges.java)|
+|[231](https://leetcode-cn.com/problems/power-of-two)|Power of Two|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PowerOfTwo.java)|
+|[232](https://leetcode-cn.com/problems/implement-queue-using-stacks)|Implement Queue using Stacks|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ImplementQueueUsingStacks.java)|
+|[235](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|Lowest Common Ancestor of a Binary Search Tree|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LowestCommonAncestorOfABinarySearchTree.java)|
+|[236](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree)|Lowest Common Ancestor of a Binary Tree|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LowestCommonAncestorOfABinaryTree.java)|
+|[237](https://leetcode-cn.com/problems/delete-node-in-a-linked-list)|Delete Node in a Linked List|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DeleteNodeInALinkedList.java)|
+|[238](https://leetcode-cn.com/problems/product-of-array-except-self)|Product of Array Except Self|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ProductOfArrayExceptSelf.java)|
+|[240](https://leetcode-cn.com/problems/search-a-2d-matrix-ii)|Search a 2D Matrix II|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SearchA2dMatrixIi.java)|
+|[242](https://leetcode-cn.com/problems/valid-anagram)|Valid Anagram|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ValidAnagram.java)|
+|[257](https://leetcode-cn.com/problems/binary-tree-paths)|Binary Tree Paths|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BinaryTreePaths.java)|
+|[263](https://leetcode-cn.com/problems/ugly-number)|Ugly Number|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/UglyNumber.java)|
+|[264](https://leetcode-cn.com/problems/ugly-number-ii)|Ugly Number II|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/UglyNumberIi.java)|
+|[279](https://leetcode-cn.com/problems/perfect-squares)|Perfect Squares|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PerfectSquares.java)|
+|[283](https://leetcode-cn.com/problems/move-zeroes)|Move Zeroes|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MoveZeroes.java)|
+|[287](https://leetcode-cn.com/problems/find-the-duplicate-number)|Find the Duplicate Number|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindTheDuplicateNumber.java)|
+|[290](https://leetcode-cn.com/problems/word-pattern)|Word Pattern|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/WordPattern.java)|
+|[300](https://leetcode-cn.com/problems/longest-increasing-subsequence)|Longest Increasing Subsequence|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LongestIncreasingSubsequence.java)|
+|[303](https://leetcode-cn.com/problems/range-sum-query-immutable)|Range Sum Query - Immutable|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RangeSumQueryImmutable.java)|
+|[304](https://leetcode-cn.com/problems/range-sum-query-2d-immutable)|Range Sum Query 2D - Immutable|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RangeSumQuery2dImmutable.java)|
+|[309](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown)|Best Time to Buy and Sell Stock with Cooldown|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockWithCooldown.java)|
+|[316](https://leetcode-cn.com/problems/remove-duplicate-letters)|Remove Duplicate Letters|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RemoveDuplicateLetters.java)|
+|[322](https://leetcode-cn.com/problems/coin-change)|Coin Change|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CoinChange.java)|
+|[328](https://leetcode-cn.com/problems/odd-even-linked-list)|Odd Even Linked List|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/OddEvenLinkedList.java)|
+|[331](https://leetcode-cn.com/problems/verify-preorder-serialization-of-a-binary-tree)|Verify Preorder Serialization of a Binary Tree|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/VerifyPreorderSerializationOfABinaryTree.java)|
+|[337](https://leetcode-cn.com/problems/house-robber-iii)|House Robber III|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/HouseRobberIii.java)|
+|[338](https://leetcode-cn.com/problems/counting-bits)|Counting Bits|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CountingBits.java)|
+|[341](https://leetcode-cn.com/problems/flatten-nested-list-iterator)|Flatten Nested List Iterator|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FlattenNestedListIterator.java)|
+|[342](https://leetcode-cn.com/problems/power-of-four)|Power of Four|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PowerOfFour.java)|
+|[343](https://leetcode-cn.com/problems/integer-break)|Integer Break|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/IntegerBreak.java)|
+|[347](https://leetcode-cn.com/problems/top-k-frequent-elements)|Top K Frequent Elements|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TopKFrequentElements.java)|
+|[354](https://leetcode-cn.com/problems/russian-doll-envelopes)|Russian Doll Envelopes|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RussianDollEnvelopes.java)|
+|[363](https://leetcode-cn.com/problems/max-sum-of-rectangle-no-larger-than-k)|Max Sum of Rectangle No Larger Than K|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaxSumOfRectangleNoLargerThanK.java)|
+|[368](https://leetcode-cn.com/problems/largest-divisible-subset)|Largest Divisible Subset|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LargestDivisibleSubset.java)|
+|[377](https://leetcode-cn.com/problems/combination-sum-iv)|Combination Sum IV|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CombinationSumIv.java)|
+|[387](https://leetcode-cn.com/problems/first-unique-character-in-a-string)|First Unique Character in a String|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FirstUniqueCharacterInAString.java)|
+|[394](https://leetcode-cn.com/problems/decode-string)|Decode String|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DecodeString.java)|
+|[395](https://leetcode-cn.com/problems/longest-substring-with-at-least-k-repeating-characters)|Longest Substring with At Least K Repeating Characters|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LongestSubstringWithAtLeastKRepeatingCharacters.java)|
+|[399](https://leetcode-cn.com/problems/evaluate-division)|Evaluate Division|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/EvaluateDivision.java)|
+|[403](https://leetcode-cn.com/problems/frog-jump)|Frog Jump|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FrogJump.java)|
+|[406](https://leetcode-cn.com/problems/queue-reconstruction-by-height)|Queue Reconstruction by Height|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/QueueReconstructionByHeight.java)|
+|[415](https://leetcode-cn.com/problems/add-strings)|Add Strings|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddStrings.java)|
+|[416](https://leetcode-cn.com/problems/partition-equal-subset-sum)|Partition Equal Subset Sum|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PartitionEqualSubsetSum.java)|
+|[421](https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array)|Maximum XOR of Two Numbers in an Array|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaximumXorOfTwoNumbersInAnArray.java)|
+|[424](https://leetcode-cn.com/problems/longest-repeating-character-replacement)|Longest Repeating Character Replacement|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LongestRepeatingCharacterReplacement.java)|
+|[435](https://leetcode-cn.com/problems/non-overlapping-intervals)|Non-overlapping Intervals|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NonOverlappingIntervals.java)|
+|[437](https://leetcode-cn.com/problems/path-sum-iii)|Path Sum III|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PathSumIii.java)|
+|[438](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string)|Find All Anagrams in a String|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindAllAnagramsInAString.java)|
+|[448](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array)|Find All Numbers Disappeared in an Array|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindAllNumbersDisappearedInAnArray.java)|
+|[452](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons)|Minimum Number of Arrows to Burst Balloons|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MinimumNumberOfArrowsToBurstBalloons.java)|
+|[454](https://leetcode-cn.com/problems/4sum-ii)|4Sum II|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FourSumIi.java)|
+|[455](https://leetcode-cn.com/problems/assign-cookies)|Assign Cookies|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AssignCookies.java)|
+|[456](https://leetcode-cn.com/problems/132-pattern)|132 Pattern|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/One32Pattern.java)|
+|[461](https://leetcode-cn.com/problems/hamming-distance)|Hamming Distance|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/HammingDistance.java)|
+|[477](https://leetcode-cn.com/problems/total-hamming-distance)|Total Hamming Distance|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TotalHammingDistance.java)|
+|[480](https://leetcode-cn.com/problems/sliding-window-median)|Sliding Window Median|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SlidingWindowMedian.java)|
+|[485](https://leetcode-cn.com/problems/max-consecutive-ones)|Max Consecutive Ones|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaxConsecutiveOnes.java)|
+|[494](https://leetcode-cn.com/problems/target-sum)|Target Sum|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TargetSum.java)|
+|[503](https://leetcode-cn.com/problems/next-greater-element-ii)|Next Greater Element II|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NextGreaterElementIi.java)|
+|[509](https://leetcode-cn.com/problems/fibonacci-number)|Fibonacci Number|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FibonacciNumber.java)|
+|[523](https://leetcode-cn.com/problems/continuous-subarray-sum)|Continuous Subarray Sum|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ContinuousSubarraySum.java)|
+|[525](https://leetcode-cn.com/problems/contiguous-array)|Contiguous Array|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ContiguousArray.java)|
+|[538](https://leetcode-cn.com/problems/convert-bst-to-greater-tree)|Convert BST to Greater Tree|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ConvertBstToGreaterTree.java)|
+|[543](https://leetcode-cn.com/problems/diameter-of-binary-tree)|Diameter of Binary Tree|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DiameterOfBinaryTree.java)|
+|[547](https://leetcode-cn.com/problems/number-of-provinces)|Number of Provinces|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NumberOfProvinces.java)|
+|[554](https://leetcode-cn.com/problems/brick-wall)|Brick Wall|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BrickWall.java)|
+|[560](https://leetcode-cn.com/problems/subarray-sum-equals-k)|Subarray Sum Equals K|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SubarraySumEqualsK.java)|
+|[561](https://leetcode-cn.com/problems/array-partition-i)|Array Partition I|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ArrayPartitionI.java)|
+|[566](https://leetcode-cn.com/problems/reshape-the-matrix)|Reshape the Matrix|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ReshapeTheMatrix.java)|
+|[567](https://leetcode-cn.com/problems/permutation-in-string)|Permutation in String|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PermutationInString.java)|
+|[581](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray)|Shortest Unsorted Continuous Subarray|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ShortestUnsortedContinuousSubarray.java)|
+|[605](https://leetcode-cn.com/problems/can-place-flowers)|Can Place Flowers|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CanPlaceFlowers.java)|
+|[617](https://leetcode-cn.com/problems/merge-two-binary-trees)|Merge Two Binary Trees|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MergeTwoBinaryTrees.java)|
+|[621](https://leetcode-cn.com/problems/task-scheduler)|Task Scheduler|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TaskScheduler.java)|
+|[628](https://leetcode-cn.com/problems/maximum-product-of-three-numbers)|Maximum Product of Three Numbers|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaximumProductOfThreeNumbers.java)|
+|[633](https://leetcode-cn.com/problems/sum-of-square-numbers)|Sum of Square Numbers|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SumOfSquareNumbers.java)|
+|[643](https://leetcode-cn.com/problems/maximum-average-subarray-i)|Maximum Average Subarray I|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaximumAverageSubarrayI.java)|
+|[647](https://leetcode-cn.com/problems/palindromic-substrings)|Palindromic Substrings|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PalindromicSubstrings.java)|
+|[664](https://leetcode-cn.com/problems/strange-printer)|Strange Printer|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/StrangePrinter.java)|
+|[665](https://leetcode-cn.com/problems/non-decreasing-array)|Non-decreasing Array|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NonDecreasingArray.java)|
+|[674](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence)|Longest Continuous Increasing Subsequence|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LongestContinuousIncreasingSubsequence.java)|
+|[684](https://leetcode-cn.com/problems/redundant-connection)|Redundant Connection|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RedundantConnection.java)|
+|[690](https://leetcode-cn.com/problems/employee-importance)|Employee Importance|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/EmployeeImportance.java)|
+|[692](https://leetcode-cn.com/problems/top-k-frequent-words)|Top K Frequent Words|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TopKFrequentWords.java)|
+|[697](https://leetcode-cn.com/problems/degree-of-an-array)|Degree of an Array|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DegreeOfAnArray.java)|
+|[703](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream)|Kth Largest Element in a Stream|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/KthLargestElementInAStream.java)|
+|[705](https://leetcode-cn.com/problems/design-hashset)|Design HashSet|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DesignHashset.java)|
+|[706](https://leetcode-cn.com/problems/design-hashmap)|Design HashMap|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DesignHashmap.java)|
+|[709](https://leetcode-cn.com/problems/to-lower-case)|To Lower Case|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ToLowerCase.java)|
+|[713](https://leetcode-cn.com/problems/subarray-product-less-than-k)|Subarray Product Less Than K|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SubarrayProductLessThanK.java)|
+|[714](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee)|Best Time to Buy and Sell Stock with Transaction Fee|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockWithTransactionFee.java)|
+|[721](https://leetcode-cn.com/problems/accounts-merge)|Accounts Merge|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AccountsMerge.java)|
+|[724](https://leetcode-cn.com/problems/find-pivot-index)|Find Pivot Index|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindPivotIndex.java)|
+|[738](https://leetcode-cn.com/problems/monotone-increasing-digits)|Monotone Increasing Digits|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MonotoneIncreasingDigits.java)|
+|[739](https://leetcode-cn.com/problems/daily-temperatures)|Daily Temperatures|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DailyTemperatures.java)|
+|[740](https://leetcode-cn.com/problems/delete-and-earn)|Delete and Earn|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DeleteAndEarn.java)|
+|[746](https://leetcode-cn.com/problems/min-cost-climbing-stairs)|Min Cost Climbing Stairs|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MinCostClimbingStairs.java)|
+|[765](https://leetcode-cn.com/problems/couples-holding-hands)|Couples Holding Hands|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CouplesHoldingHands.java)|
+|[766](https://leetcode-cn.com/problems/toeplitz-matrix)|Toeplitz Matrix|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ToeplitzMatrix.java)|
+|[767](https://leetcode-cn.com/problems/reorganize-string)|Reorganize String|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ReorganizeString.java)|
+|[781](https://leetcode-cn.com/problems/rabbits-in-forest)|Rabbits in Forest|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RabbitsInForest.java)|
+|[783](https://leetcode-cn.com/problems/minimum-distance-between-bst-nodes)|Minimum Distance Between BST Nodes|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MinimumDistanceBetweenBstNodes.java)|
+|[830](https://leetcode-cn.com/problems/positions-of-large-groups)|Positions of Large Groups|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PositionsOfLargeGroups.java)|
+|[832](https://leetcode-cn.com/problems/flipping-an-image)|Flipping an Image|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FlippingAnImage.java)|
+|[860](https://leetcode-cn.com/problems/lemonade-change)|Lemonade Change|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LemonadeChange.java)|
+|[867](https://leetcode-cn.com/problems/transpose-matrix)|Transpose Matrix|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TransposeMatrix.java)|
+|[872](https://leetcode-cn.com/problems/leaf-similar-trees)|Leaf-Similar Trees|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LeafSimilarTrees.java)|
+|[888](https://leetcode-cn.com/problems/fair-candy-swap)|Fair Candy Swap|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FairCandySwap.java)|
+|[896](https://leetcode-cn.com/problems/monotonic-array)|Monotonic Array|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MonotonicArray.java)|
+|[897](https://leetcode-cn.com/problems/increasing-order-search-tree)|Increasing Order Search Tree|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/IncreasingOrderSearchTree.java)|
+|[922](https://leetcode-cn.com/problems/sort-array-by-parity-ii)|Sort Array By Parity II|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SortArrayByParityIi.java)|
+|[938](https://leetcode-cn.com/problems/range-sum-of-bst)|Range Sum of BST|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RangeSumOfBst.java)|
+|[951](https://leetcode-cn.com/problems/flip-equivalent-binary-trees)|Flip Equivalent Binary Trees|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FlipEquivalentBinaryTrees.java)|
+|[959](https://leetcode-cn.com/problems/regions-cut-by-slashes)|Regions Cut By Slashes|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RegionsCutBySlashes.java)|
+|[978](https://leetcode-cn.com/problems/longest-turbulent-subarray)|Longest Turbulent Subarray|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LongestTurbulentSubarray.java)|
+|[989](https://leetcode-cn.com/problems/add-to-array-form-of-integer)|Add to Array-Form of Integer|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddToArrayFormOfInteger.java)|
+|[992](https://leetcode-cn.com/problems/subarrays-with-k-different-integers)|Subarrays with K Different Integers|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SubarraysWithKDifferentIntegers.java)|
+|[993](https://leetcode-cn.com/problems/cousins-in-binary-tree)|Cousins in Binary Tree|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CousinsInBinaryTree.java)|
+|[995](https://leetcode-cn.com/problems/minimum-number-of-k-consecutive-bit-flips)|Minimum Number of K Consecutive Bit Flips|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MinimumNumberOfKConsecutiveBitFlips.java)|
+|[1004](https://leetcode-cn.com/problems/max-consecutive-ones-iii)|Max Consecutive Ones III|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaxConsecutiveOnesIii.java)|
+|[1006](https://leetcode-cn.com/problems/clumsy-factorial)|Clumsy Factorial|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ClumsyFactorial.java)|
+|[1011](https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days)|Capacity To Ship Packages Within D Days|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CapacityToShipPackagesWithinDDays.java)|
+|[1018](https://leetcode-cn.com/problems/binary-prefix-divisible-by-5)|Binary Prefix Divisible By 5|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BinaryPrefixDivisibleBy5.java)|
+|[1030](https://leetcode-cn.com/problems/matrix-cells-in-distance-order)|Matrix Cells in Distance Order|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MatrixCellsInDistanceOrder.java)|
+|[1035](https://leetcode-cn.com/problems/uncrossed-lines)|Uncrossed Lines|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/UncrossedLines.java)|
+|[1046](https://leetcode-cn.com/problems/last-stone-weight)|Last Stone Weight|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LastStoneWeight.java)|
+|[1047](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string)|Remove All Adjacent Duplicates In String|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RemoveAllAdjacentDuplicatesInString.java)|
+|[1052](https://leetcode-cn.com/problems/grumpy-bookstore-owner)|Grumpy Bookstore Owner|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/GrumpyBookstoreOwner.java)|
+|[1074](https://leetcode-cn.com/problems/number-of-submatrices-that-sum-to-target)|Number of Submatrices That Sum to Target|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NumberOfSubmatricesThatSumToTarget.java)|
+|[1122](https://leetcode-cn.com/problems/relative-sort-array)|Relative Sort Array|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RelativeSortArray.java)|
+|[1128](https://leetcode-cn.com/problems/number-of-equivalent-domino-pairs)|Number of Equivalent Domino Pairs|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NumberOfEquivalentDominoPairs.java)|
+|[1143](https://leetcode-cn.com/problems/longest-common-subsequence)|Longest Common Subsequence|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LongestCommonSubsequence.java)|
+|[1178](https://leetcode-cn.com/problems/number-of-valid-words-for-each-puzzle)|Number of Valid Words for Each Puzzle|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NumberOfValidWordsForEachPuzzle.java)|
+|[1190](https://leetcode-cn.com/problems/reverse-substrings-between-each-pair-of-parentheses)|Reverse Substrings Between Each Pair of Parentheses|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ReverseSubstringsBetweenEachPairOfParentheses.java)|
+|[1202](https://leetcode-cn.com/problems/smallest-string-with-swaps)|Smallest String With Swaps|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SmallestStringWithSwaps.java)|
+|[1208](https://leetcode-cn.com/problems/get-equal-substrings-within-budget)|Get Equal Substrings Within Budget|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/GetEqualSubstringsWithinBudget.java)|
+|[1211](https://leetcode-cn.com/problems/queries-quality-and-percentage)|Queries Quality and Percentage|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStock.java)|
+|[1232](https://leetcode-cn.com/problems/check-if-it-is-a-straight-line)|Check If It Is a Straight Line|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CheckIfItIsAStraightLine.java)|
+|[1269](https://leetcode-cn.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps)|Number of Ways to Stay in the Same Place After Some Steps|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NumberOfWaysToStayInTheSamePlaceAfterSomeSteps.java)|
+|[1310](https://leetcode-cn.com/problems/xor-queries-of-a-subarray)|XOR Queries of a Subarray|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/XorQueriesOfASubarray.java)|
+|[1370](https://leetcode-cn.com/problems/increasing-decreasing-string)|Increasing Decreasing String|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/IncreasingDecreasingString.java)|
+|[1423](https://leetcode-cn.com/problems/maximum-points-you-can-obtain-from-cards)|Maximum Points You Can Obtain from Cards|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaximumPointsYouCanObtainFromCards.java)|
+|[1438](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit)|Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.java)|
+|[1442](https://leetcode-cn.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor)|Count Triplets That Can Form Two Arrays of Equal XOR|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CountTripletsThatCanFormTwoArraysOfEqualXor.java)|
+|[1473](https://leetcode-cn.com/problems/paint-house-iii)|Paint House III|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PaintHouseIii.java)|
+|[1482](https://leetcode-cn.com/problems/minimum-number-of-days-to-make-m-bouquets)|Minimum Number of Days to Make m Bouquets|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MinimumNumberOfDaysToMakeMBouquets.java)|
+|[1486](https://leetcode-cn.com/problems/xor-operation-in-an-array)|XOR Operation in an Array|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/XorOperationInAnArray.java)|
+|[1603](https://leetcode-cn.com/problems/design-parking-system)|Design Parking System|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DesignParkingSystem.java)|
+|[1631](https://leetcode-cn.com/problems/path-with-minimum-effort)|Path With Minimum Effort|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PathWithMinimumEffort.java)|
+|[1707](https://leetcode-cn.com/problems/maximum-xor-with-an-element-from-array)|Maximum XOR With an Element From Array|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaximumXorWithAnElementFromArray.java)|
+|[1720](https://leetcode-cn.com/problems/decode-xored-array)|Decode XORed Array|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DecodeXoredArray.java)|
+|[1723](https://leetcode-cn.com/problems/find-minimum-time-to-finish-all-jobs)|Find Minimum Time to Finish All Jobs|hard|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindMinimumTimeToFinishAllJobs.java)|
+|[1734](https://leetcode-cn.com/problems/decode-xored-permutation)|Decode XORed Permutation|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DecodeXoredPermutation.java)|
+|[1738](https://leetcode-cn.com/problems/find-kth-largest-xor-coordinate-value)|Find Kth Largest XOR Coordinate Value|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindKthLargestXorCoordinateValue.java)|
+|[1744](https://leetcode-cn.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day)|Can You Eat Your Favorite Candy on Your Favorite Day?|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CanYouEatYourFavoriteCandyOnYourFavoriteDay.java)|
+|[1758](https://leetcode-cn.com/problems/minimum-changes-to-make-alternating-binary-string)|Minimum Changes To Make Alternating Binary String|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MinimumChangesToMakeAlternatingBinaryString.java)|
+|[1822](https://leetcode-cn.com/problems/sign-of-the-product-of-an-array)|Sign of the Product of an Array|easy|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SignOfTheProductOfAnArray.java)|
+|[1823](https://leetcode-cn.com/problems/find-the-winner-of-the-circular-game)|Find the Winner of the Circular Game|medium|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindTheWinnerOfTheCircularGame.java)|

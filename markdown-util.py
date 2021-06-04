@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 CODE_DIR = "src/main/java/com/oddcc/leetcode/editor/cn"
 QUESTION_FILE = "all.json"
 README_FILE = "README.md"
-RE = re.compile('^\/\/ ([0-9]+)\\n$')
+RE = re.compile('^// ([0-9]+)\\n$')
 COMMENT_LINE = "<!--question list generated below here, don't DELETE this line-->\n"
 HEADER = "|ID|标题|难度|CODE|\n"
 SEPARATOR = "| ---- | ---- | ---- | ---- |\n"
@@ -18,48 +18,51 @@ QUESTION_INFO = "|{0}|{1}|{2}|{3}|\n"
 
 
 def main():
-    codePath = os.path.join(BASE_DIR, CODE_DIR)
-    dataFilePath = os.path.join(BASE_DIR, CODE_DIR, QUESTION_FILE)
+    code_path = os.path.join(BASE_DIR, CODE_DIR)
+    data_file_path = os.path.join(BASE_DIR, CODE_DIR, QUESTION_FILE)
 
-    with open(dataFilePath) as dataFile:
-        questionData = json.load(dataFile)
-        dataDic = {questionData[i]["frontendQuestionId"]: questionData[i]
-                   for i in range(0, len(questionData))}
-    javaFileList = [j for j in os.listdir(codePath) if j.endswith(".java")]
+    with open(data_file_path) as dataFile:
+        question_data = json.load(dataFile)
+        data_dic = {question_data[i]["frontendQuestionId"]: question_data[i]
+                    for i in range(0, len(question_data))}
+    java_file_list = [j for j in os.listdir(code_path) if j.endswith(".java")]
 
-    fh, tmpPath = mkstemp()
-    readmePath = os.path.join(BASE_DIR, README_FILE)
+    fh, tmp_path = mkstemp()
+    readme_path = os.path.join(BASE_DIR, README_FILE)
     with os.fdopen(fh, 'w') as newFile:
-        with open(readmePath) as oldFile:
+        with open(readme_path) as oldFile:
             for line in oldFile:
                 newFile.write(line)
                 if line == COMMENT_LINE:
                     break
-            qList = []
-            for jFile in javaFileList:
+            q_list = []
+            for jFile in java_file_list:
                 with open(os.path.join(CODE_DIR, jFile)) as j:
-                    firstLine = j.readline()
-                    r = RE.match(firstLine)
+                    r = RE.match(j.readline())
                     if r is None:
                         print('need fix: ' + jFile)
                     else:
                         id = r.group(1)
-                        qList.append(dataDic[id])
-            newFile.write("目前已有{}道题，不断添加中…\n".format(len(qList)))
+                        question = data_dic[id]
+                        question["javaFile"] = jFile
+                        q_list.append(question)
+            newFile.write("### 目前已有{}道题，不断添加中…\n".format(len(q_list)))
             newFile.write(HEADER)
             newFile.write(SEPARATOR)
-            qList.sort(key=lambda q: int(q["frontendQuestionId"]))
-            for q in qList:
+            q_list.sort(key=lambda q: int(q["frontendQuestionId"]))
+            for q in q_list:
                 newFile.write(QUESTION_INFO.format(
-                    q["frontendQuestionId"],
+                    "[{}](https://leetcode-cn.com/problems/{})".format(q["frontendQuestionId"], q["titleSlug"]),
                     q["title"],
                     "easy" if q["level"] == 1 else "medium" if q["level"] == 2 else "hard",
-                    "[url](baidu.com)",
+                    "[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/{})".format(
+                        q["javaFile"]),
                 ))
 
-            copymode(readmePath, tmpPath)
-            os.remove(readmePath)
-            move(tmpPath, readmePath)
+            copymode(readme_path, tmp_path)
+            os.remove(readme_path)
+            move(tmp_path, readme_path)
+
 
 if __name__ == "__main__":
     main()
