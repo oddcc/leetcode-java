@@ -9,23 +9,20 @@ public class SubarrayProductLessThanK {
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
-    // 思路1，滑动窗口，超时
+    // 思路1，暴力法+滑动窗口，超时
+    // 思路2，滑动窗口，优化思路1
     class Solution {
         public int numSubarrayProductLessThanK(int[] nums, int k) {
             int ans = 0;
-            int len = nums.length;
+            if (k <= 1) return 0; // 因为nums中范围是o~1000所以乘积不会小于0
+            int prod = 1;
             int left = 0;
-            // 每一轮遍历,是计算以left为起点的所有符合条件的子串数量
-            while (left < len) {
-                int right = left;
-                int product = 1;
-                // 当product<k时，说明找到了一个答案，计数增加；当product>=k时，再扩展窗口没有意义，要进行下一轮遍历
-                while (right < len) {
-                    product *= nums[right++];
-                    if (product >= k) break;
-                    ans++;
-                }
-                left++;
+            // 每一轮遍历,是计算以right为终点的所有符合条件的子串数量
+            // 因为right确定时，left向右移动，并不会使乘积变大，所以一旦找到product<k时，之后的所有left位置都是答案，不用再进行计算
+            for (int right = 0; right < nums.length; right++) {
+                prod *= nums[right];
+                while (prod >= k) prod /= nums[left++];
+                ans += right - left + 1;
             }
             return ans;
         }
