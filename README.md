@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有329道题，不断添加中…
+### 目前已有330道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -236,6 +236,7 @@ PS：
 |[456](https://leetcode-cn.com/problems/132-pattern)|132 Pattern|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/One32Pattern.java)|
 |[461](https://leetcode-cn.com/problems/hamming-distance)|Hamming Distance|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/HammingDistance.java)|
 |[463](https://leetcode-cn.com/problems/island-perimeter)|Island Perimeter|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/IslandPerimeter.java)|
+|[474](https://leetcode-cn.com/problems/ones-and-zeroes)|Ones and Zeroes|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/OnesAndZeroes.java)|
 |[477](https://leetcode-cn.com/problems/total-hamming-distance)|Total Hamming Distance|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TotalHammingDistance.java)|
 |[480](https://leetcode-cn.com/problems/sliding-window-median)|Sliding Window Median|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SlidingWindowMedian.java)|
 |[485](https://leetcode-cn.com/problems/max-consecutive-ones)|Max Consecutive Ones|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaxConsecutiveOnes.java)|
