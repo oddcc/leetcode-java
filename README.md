@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有330道题，不断添加中…
+### 目前已有331道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -321,6 +321,7 @@ PS：
 |[1035](https://leetcode-cn.com/problems/uncrossed-lines)|Uncrossed Lines|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/UncrossedLines.java)|
 |[1046](https://leetcode-cn.com/problems/last-stone-weight)|Last Stone Weight|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LastStoneWeight.java)|
 |[1047](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string)|Remove All Adjacent Duplicates In String|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RemoveAllAdjacentDuplicatesInString.java)|
+|[1049](https://leetcode-cn.com/problems/last-stone-weight-ii)|Last Stone Weight II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LastStoneWeightIi.java)|
 |[1052](https://leetcode-cn.com/problems/grumpy-bookstore-owner)|Grumpy Bookstore Owner|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/GrumpyBookstoreOwner.java)|
 |[1074](https://leetcode-cn.com/problems/number-of-submatrices-that-sum-to-target)|Number of Submatrices That Sum to Target|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NumberOfSubmatricesThatSumToTarget.java)|
 |[1122](https://leetcode-cn.com/problems/relative-sort-array)|Relative Sort Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RelativeSortArray.java)|
