@@ -5,9 +5,9 @@ package com.oddcc.leetcode.editor.cn;
 public class TargetSum {
     public static void main(String[] args) {
         Solution solution = new TargetSum().new Solution();
-        // System.out.println(solution.findTargetSumWays(new int[]{1, 1, 1, 1, 1}, 3));
-        // System.out.println(solution.findTargetSumWays(new int[]{1}, 1));
-        // System.out.println(solution.findTargetSumWays(new int[]{1, 2, 7, 9, 981}, 1000000000));
+        System.out.println(solution.findTargetSumWays(new int[]{1, 1, 1, 1, 1}, 3));
+        System.out.println(solution.findTargetSumWays(new int[]{1}, 1));
+        System.out.println(solution.findTargetSumWays(new int[]{1, 2, 7, 9, 981}, 1000000000));
         System.out.println(solution.findTargetSumWays(new int[]{0, 0, 0, 0, 0, 0, 0, 0, 1}, 1));
     }
 
