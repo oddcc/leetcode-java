@@ -17,24 +17,17 @@ public class CoinChange2 {
     class Solution {
         public int change(int amount, int[] coins) {
             int len = coins.length;
-            // dp[i][j] 表示使用i个硬币,凑成j有多少种凑法
-            int[][] dp = new int[len + 1][amount + 1];
-            dp[0][0] = 1;
-            for (int i = 1; i <= len; i++) {
-                int coin = coins[i - 1];
-                for (int j = 0; j <= amount; j++) {
-                    // 当使用到第i个硬币时，有两种情况
-                    // dp[i-1][j]表示使用i-1的硬币就可以凑成j，不需要再选第i种硬币
-                    // dp[i][j-coin]表示要选这第i种硬币，因为硬币可以重复使用，所以这里第一维是i而不是i-1
-                    if (coin > j) {
-                        dp[i][j] = dp[i - 1][j];
-                    }
-                    else {
-                        dp[i][j] = dp[i - 1][j] + dp[i][j - coin];
-                    }
+            // dp[i]表示凑成i一共有多少种凑法
+            int[] dp = new int[amount + 1];
+            dp[0] = 1; // 只有一个都不选这一种凑法
+            for (int coin : coins) {
+                // 先选了硬币，然后使用该硬币后凑成的所有值
+                for (int j = coin; j < amount + 1; j++) {
+                    // 表示dp[j-coin]和coin凑成了j，共有几种凑法
+                    dp[j] += dp[j - coin];
                 }
             }
-            return dp[len][amount];
+            return dp[amount];
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
