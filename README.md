@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有334道题，不断添加中…
+### 目前已有335道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -192,6 +192,7 @@ PS：
 |[263](https://leetcode-cn.com/problems/ugly-number)|Ugly Number|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/UglyNumber.java)|
 |[264](https://leetcode-cn.com/problems/ugly-number-ii)|Ugly Number II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/UglyNumberIi.java)|
 |[268](https://leetcode-cn.com/problems/missing-number)|Missing Number|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MissingNumber.java)|
+|[278](https://leetcode-cn.com/problems/first-bad-version)|First Bad Version|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FirstBadVersion.java)|
 |[279](https://leetcode-cn.com/problems/perfect-squares)|Perfect Squares|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PerfectSquares.java)|
 |[283](https://leetcode-cn.com/problems/move-zeroes)|Move Zeroes|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MoveZeroes.java)|
 |[287](https://leetcode-cn.com/problems/find-the-duplicate-number)|Find the Duplicate Number|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindTheDuplicateNumber.java)|
