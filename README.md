@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有333道题，不断添加中…
+### 目前已有334道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -295,6 +295,7 @@ PS：
 |[832](https://leetcode-cn.com/problems/flipping-an-image)|Flipping an Image|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FlippingAnImage.java)|
 |[844](https://leetcode-cn.com/problems/backspace-string-compare)|Backspace String Compare|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BackspaceStringCompare.java)|
 |[845](https://leetcode-cn.com/problems/longest-mountain-in-array)|Longest Mountain in Array|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LongestMountainInArray.java)|
+|[852](https://leetcode-cn.com/problems/peak-index-in-a-mountain-array)|Peak Index in a Mountain Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PeakIndexInAMountainArray.java)|
 |[860](https://leetcode-cn.com/problems/lemonade-change)|Lemonade Change|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LemonadeChange.java)|
 |[867](https://leetcode-cn.com/problems/transpose-matrix)|Transpose Matrix|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TransposeMatrix.java)|
 |[872](https://leetcode-cn.com/problems/leaf-similar-trees)|Leaf-Similar Trees|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LeafSimilarTrees.java)|
