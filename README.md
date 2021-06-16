@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有335道题，不断添加中…
+### 目前已有336道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -300,6 +300,7 @@ PS：
 |[860](https://leetcode-cn.com/problems/lemonade-change)|Lemonade Change|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LemonadeChange.java)|
 |[867](https://leetcode-cn.com/problems/transpose-matrix)|Transpose Matrix|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TransposeMatrix.java)|
 |[872](https://leetcode-cn.com/problems/leaf-similar-trees)|Leaf-Similar Trees|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LeafSimilarTrees.java)|
+|[877](https://leetcode-cn.com/problems/stone-game)|Stone Game|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/StoneGame.java)|
 |[888](https://leetcode-cn.com/problems/fair-candy-swap)|Fair Candy Swap|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FairCandySwap.java)|
 |[896](https://leetcode-cn.com/problems/monotonic-array)|Monotonic Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MonotonicArray.java)|
 |[897](https://leetcode-cn.com/problems/increasing-order-search-tree)|Increasing Order Search Tree|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/IncreasingOrderSearchTree.java)|
