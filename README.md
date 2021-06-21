@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有340道题，不断添加中…
+### 目前已有341道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -353,6 +353,7 @@ PS：
 |[1473](https://leetcode-cn.com/problems/paint-house-iii)|Paint House III|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PaintHouseIii.java)|
 |[1482](https://leetcode-cn.com/problems/minimum-number-of-days-to-make-m-bouquets)|Minimum Number of Days to Make m Bouquets|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MinimumNumberOfDaysToMakeMBouquets.java)|
 |[1486](https://leetcode-cn.com/problems/xor-operation-in-an-array)|XOR Operation in an Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/XorOperationInAnArray.java)|
+|[1600](https://leetcode-cn.com/problems/throne-inheritance)|Throne Inheritance|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ThroneInheritanceWrapper.java)|
 |[1603](https://leetcode-cn.com/problems/design-parking-system)|Design Parking System|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DesignParkingSystem.java)|
 |[1631](https://leetcode-cn.com/problems/path-with-minimum-effort)|Path With Minimum Effort|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PathWithMinimumEffort.java)|
 |[1707](https://leetcode-cn.com/problems/maximum-xor-with-an-element-from-array)|Maximum XOR With an Element From Array|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaximumXorWithAnElementFromArray.java)|
