@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有343道题，不断添加中…
+### 目前已有344道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -287,6 +287,7 @@ PS：
 |[739](https://leetcode-cn.com/problems/daily-temperatures)|Daily Temperatures|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DailyTemperatures.java)|
 |[740](https://leetcode-cn.com/problems/delete-and-earn)|Delete and Earn|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DeleteAndEarn.java)|
 |[746](https://leetcode-cn.com/problems/min-cost-climbing-stairs)|Min Cost Climbing Stairs|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MinCostClimbingStairs.java)|
+|[752](https://leetcode-cn.com/problems/open-the-lock)|Open the Lock|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/OpenTheLock.java)|
 |[763](https://leetcode-cn.com/problems/partition-labels)|Partition Labels|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PartitionLabels.java)|
 |[765](https://leetcode-cn.com/problems/couples-holding-hands)|Couples Holding Hands|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CouplesHoldingHands.java)|
 |[766](https://leetcode-cn.com/problems/toeplitz-matrix)|Toeplitz Matrix|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ToeplitzMatrix.java)|
