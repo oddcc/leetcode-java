@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有344道题，不断添加中…
+### 目前已有345道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -273,6 +273,7 @@ PS：
 |[684](https://leetcode-cn.com/problems/redundant-connection)|Redundant Connection|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RedundantConnection.java)|
 |[690](https://leetcode-cn.com/problems/employee-importance)|Employee Importance|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/EmployeeImportance.java)|
 |[692](https://leetcode-cn.com/problems/top-k-frequent-words)|Top K Frequent Words|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TopKFrequentWords.java)|
+|[695](https://leetcode-cn.com/problems/max-area-of-island)|Max Area of Island|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaxAreaOfIsland.java)|
 |[697](https://leetcode-cn.com/problems/degree-of-an-array)|Degree of an Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DegreeOfAnArray.java)|
 |[701](https://leetcode-cn.com/problems/insert-into-a-binary-search-tree)|Insert into a Binary Search Tree|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/InsertIntoABinarySearchTree.java)|
 |[703](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream)|Kth Largest Element in a Stream|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/KthLargestElementInAStream.java)|
