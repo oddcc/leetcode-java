@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有346道题，不断添加中…
+### 目前已有347道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -388,6 +388,7 @@ PS：
 |[剑指 Offer 21](https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof)|调整数组顺序使奇数位于偶数前面 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DiaoZhengShuZuShunXuShiQiShuWeiYuOuShuQianMianLcof.java)|
 |[剑指 Offer 22](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof)|链表中倒数第k个节点 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LianBiaoZhongDaoShuDiKgeJieDianLcof.java)|
 |[剑指 Offer 24](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof)|反转链表 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FanZhuanLianBiaoLcof.java)|
+|[剑指 Offer 37](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof)|序列化二叉树 LCOF|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/XuLieHuaErChaShuLcof.java)|
 |[剑指 Offer 38](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof)|字符串的排列 LCOF|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ZiFuChuanDePaiLieLcof.java)|
 |[剑指 Offer 42](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof)|连续子数组的最大和 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LianXuZiShuZuDeZuiDaHeLcof.java)|
 |[面试题 17.21](https://leetcode-cn.com/problems/volume-of-histogram-lcci)|Volume of Histogram LCCI|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/VolumeOfHistogramLcci.java)|
