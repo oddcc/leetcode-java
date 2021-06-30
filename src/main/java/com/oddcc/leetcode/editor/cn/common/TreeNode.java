@@ -1,8 +1,6 @@
 package com.oddcc.leetcode.editor.cn.common;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class TreeNode {
     public int val;
@@ -61,9 +59,36 @@ public class TreeNode {
         return root;
     }
 
-    // todo
     public static Integer[] toArr(TreeNode root) {
-        return null;
+        if (root == null) return new Integer[0];
+        Deque<TreeNode> queue = new LinkedList<>();
+        queue.addFirst(root);
+        List<String> nodes = new ArrayList<>();
+        while (!queue.isEmpty()) {
+            int len = queue.size();
+            for (int i = 0; i < len; i++) {
+                TreeNode n = queue.removeLast();
+                if (n == null) {
+                    nodes.add("null");
+                    continue;
+                }
+                nodes.add(Integer.toString(n.val));
+                queue.addFirst(n.left);
+                queue.addFirst(n.right);
+            }
+            if (queue.stream().allMatch(Objects::isNull)) break;
+        }
+        Integer[] ans = new Integer[nodes.size()];
+        for (int i = 0; i < ans.length; i++) {
+            String s = nodes.get(i);
+            if (s.equals("null")) {
+                ans[i] = null;
+            }
+            else {
+                ans[i] = Integer.valueOf(s);
+            }
+        }
+        return ans;
     }
 
     public static void inorderTraversal(TreeNode root) {
