@@ -16,22 +16,22 @@ public class MaximumIceCreamBars {
     // 背包问题
     // 思路1，动态规划
     // 思路2，优化空间占用，递推时，只用到二维数组的上一行的结果
+    // 思路3，贪心，反证法，从最便宜的开始买，买了i个雪糕，用了j个硬币。如果替换任意雪糕，花的钱都会更多，所以在只花j个硬币的情况下，i个雪糕就是最优解
     class Solution {
         public int maxIceCream(int[] costs, int coins) {
-            // dp[i][j]表示截至到前i个雪糕，能购买的最大数量
-            // 针对此题，costs就是要拿的东西，costs[i]就是每样东西的成本，coins可以理解为背包的容量，每拿一样东西的收益都是1
-            // dp[0][j]拿0样物品，dp[i][0]拿i样物品放进容量为0的背包，这两种情况收益都是0，不用额外初始化
-            // int[][] dp = new int[costs.length + 1][coins + 1];
-            int[] dp = new int[coins + 1];
-            for (int i = 1; i < costs.length + 1; i++) {
-                int[] last = Arrays.copyOf(dp, coins + 1);
-                for (int j = 1; j < coins + 1; j++) {
-                    // 对对于第i样物品，对比拿或不拿两种情况
-                    dp[j] = Math.max(last[j], j - costs[i - 1] >= 0 ? last[j - costs[i - 1]] + 1 : 0);
+            Arrays.sort(costs);
+            int ans = 0;
+            for (int i = 0; i < costs.length; i++) {
+                int t = coins - costs[i];
+                if (t >= 0) {
+                    ans++;
+                    coins = t;
+                }
+                else {
+                    break;
                 }
             }
-
-            return dp[coins];
+            return ans;
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
