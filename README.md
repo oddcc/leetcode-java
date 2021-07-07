@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有352道题，不断添加中…
+### 目前已有353道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -364,6 +364,7 @@ PS：
 |[1603](https://leetcode-cn.com/problems/design-parking-system)|Design Parking System|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DesignParkingSystem.java)|
 |[1631](https://leetcode-cn.com/problems/path-with-minimum-effort)|Path With Minimum Effort|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PathWithMinimumEffort.java)|
 |[1707](https://leetcode-cn.com/problems/maximum-xor-with-an-element-from-array)|Maximum XOR With an Element From Array|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaximumXorWithAnElementFromArray.java)|
+|[1711](https://leetcode-cn.com/problems/count-good-meals)|Count Good Meals|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CountGoodMeals.java)|
 |[1720](https://leetcode-cn.com/problems/decode-xored-array)|Decode XORed Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DecodeXoredArray.java)|
 |[1723](https://leetcode-cn.com/problems/find-minimum-time-to-finish-all-jobs)|Find Minimum Time to Finish All Jobs|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindMinimumTimeToFinishAllJobs.java)|
 |[1734](https://leetcode-cn.com/problems/decode-xored-permutation)|Decode XORed Permutation|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DecodeXoredPermutation.java)|
