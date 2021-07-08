@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有353道题，不断添加中…
+### 目前已有354道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -314,6 +314,7 @@ PS：
 |[922](https://leetcode-cn.com/problems/sort-array-by-parity-ii)|Sort Array By Parity II|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SortArrayByParityIi.java)|
 |[923](https://leetcode-cn.com/problems/3sum-with-multiplicity)|3Sum With Multiplicity|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ThreeSumWithMultiplicity.java)|
 |[925](https://leetcode-cn.com/problems/long-pressed-name)|Long Pressed Name|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LongPressedName.java)|
+|[930](https://leetcode-cn.com/problems/binary-subarrays-with-sum)|Binary Subarrays With Sum|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BinarySubarraysWithSum.java)|
 |[938](https://leetcode-cn.com/problems/range-sum-of-bst)|Range Sum of BST|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RangeSumOfBst.java)|
 |[941](https://leetcode-cn.com/problems/valid-mountain-array)|Valid Mountain Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ValidMountainArray.java)|
 |[951](https://leetcode-cn.com/problems/flip-equivalent-binary-trees)|Flip Equivalent Binary Trees|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FlipEquivalentBinaryTrees.java)|
