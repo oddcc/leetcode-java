@@ -12,20 +12,16 @@ public class LianXuZiShuZuDeZuiDaHeLcof {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 思路1，贪心+分治
+        // 思路2，动态规划
         public int maxSubArray(int[] nums) {
-            int ans, tmpMax;
-            ans = nums[0];
-            tmpMax = nums[0];
+            // dp[i]表示以i结尾的子数组的最大加和
+            int[] dp = new int[nums.length];
+            dp[0] = nums[0];
+            int ans = dp[0];
             for (int i = 1; i < nums.length; i++) {
-                // 要求是连续数组，tmpMax < 0，对当前的nums[i]来说，就是没用的，所以要抛弃
-                if (tmpMax < 0) {
-                    tmpMax = Math.max(tmpMax, nums[i]);
-                }
-                // 如果tmpMax >= 0，则还可以跟当前的nums[i]组成结果
-                else {
-                    tmpMax += nums[i];
-                }
-                ans = Math.max(ans, tmpMax);
+                // 要求以第i个数结尾，要么跟前面组成子数组，要么自己单独计算，我们要求最大值，所以选大的
+                dp[i] = Math.max(nums[i], dp[i-1] + nums[i]);
+                ans = Math.max(ans, dp[i]);
             }
             return ans;
         }
