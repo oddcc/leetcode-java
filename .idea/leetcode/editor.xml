@@ -1659,6 +1659,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/MinimizeMaximumPairSumInArray.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/MinimizeMaximumPairSumInArray.java" />
+              <option name="questionId" value="1988" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/MinimumAbsoluteDifferenceInBst.java">
           <value>
             <LeetcodeEditor>
