@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有360道题，不断添加中…
+### 目前已有361道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -135,6 +135,7 @@ PS：
 |[135](https://leetcode-cn.com/problems/candy)|Candy|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/Candy.java)|
 |[136](https://leetcode-cn.com/problems/single-number)|Single Number|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SingleNumber.java)|
 |[137](https://leetcode-cn.com/problems/single-number-ii)|Single Number II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SingleNumberIi.java)|
+|[138](https://leetcode-cn.com/problems/copy-list-with-random-pointer)|Copy List with Random Pointer|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CopyListWithRandomPointer.java)|
 |[139](https://leetcode-cn.com/problems/word-break)|Word Break|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/WordBreak.java)|
 |[141](https://leetcode-cn.com/problems/linked-list-cycle)|Linked List Cycle|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LinkedListCycle.java)|
 |[142](https://leetcode-cn.com/problems/linked-list-cycle-ii)|Linked List Cycle II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LinkedListCycleIi.java)|
