@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有361道题，不断添加中…
+### 目前已有362道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -379,6 +379,7 @@ PS：
 |[1823](https://leetcode-cn.com/problems/find-the-winner-of-the-circular-game)|Find the Winner of the Circular Game|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindTheWinnerOfTheCircularGame.java)|
 |[1833](https://leetcode-cn.com/problems/maximum-ice-cream-bars)|Maximum Ice Cream Bars|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaximumIceCreamBars.java)|
 |[1877](https://leetcode-cn.com/problems/minimize-maximum-pair-sum-in-array)|Minimize Maximum Pair Sum in Array|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MinimizeMaximumPairSumInArray.java)|
+|[1893](https://leetcode-cn.com/problems/check-if-all-the-integers-in-a-range-are-covered)|Check if All the Integers in a Range Are Covered|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CheckIfAllTheIntegersInARangeAreCovered.java)|
 |[LCP 07](https://leetcode-cn.com/problems/chuan-di-xin-xi)|传递信息|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ChuanDiXinXi.java)|
 |[剑指 Offer 03](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof)|数组中重复的数字 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ShuZuZhongZhongFuDeShuZiLcof.java)|
 |[剑指 Offer 04](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof)|二维数组中的查找 LCOF|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ErWeiShuZuZhongDeChaZhaoLcof.java)|
