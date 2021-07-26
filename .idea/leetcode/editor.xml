@@ -1291,6 +1291,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/LatestTimeByReplacingHiddenDigits.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/LatestTimeByReplacingHiddenDigits.java" />
+              <option name="questionId" value="1858" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/LeafSimilarTrees.java">
           <value>
             <LeetcodeEditor>
