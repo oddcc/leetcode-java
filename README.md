@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有362道题，不断添加中…
+### 目前已有363道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -263,6 +263,7 @@ PS：
 |[567](https://leetcode-cn.com/problems/permutation-in-string)|Permutation in String|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PermutationInString.java)|
 |[581](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray)|Shortest Unsorted Continuous Subarray|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ShortestUnsortedContinuousSubarray.java)|
 |[605](https://leetcode-cn.com/problems/can-place-flowers)|Can Place Flowers|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CanPlaceFlowers.java)|
+|[611](https://leetcode-cn.com/problems/valid-triangle-number)|Valid Triangle Number|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ValidTriangleNumber.java)|
 |[617](https://leetcode-cn.com/problems/merge-two-binary-trees)|Merge Two Binary Trees|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MergeTwoBinaryTrees.java)|
 |[621](https://leetcode-cn.com/problems/task-scheduler)|Task Scheduler|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TaskScheduler.java)|
 |[628](https://leetcode-cn.com/problems/maximum-product-of-three-numbers)|Maximum Product of Three Numbers|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaximumProductOfThreeNumbers.java)|
@@ -387,12 +388,12 @@ PS：
 |[剑指 Offer 06](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof)|从尾到头打印链表 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CongWeiDaoTouDaYinLianBiaoLcof.java)|
 |[剑指 Offer 07](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof)|重建二叉树 LCOF|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ZhongJianErChaShuLcof.java)|
 |[剑指 Offer 09](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof)|用两个栈实现队列 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/YongLiangGeZhanShiXianDuiLieLcof.java)|
-|[剑指 Offer 10- I](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof)|斐波那契数列 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FeiBoNaQiShuLieLcof.java)|
-|[剑指 Offer 10- II](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof)|青蛙跳台阶问题 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/QingWaTiaoTaiJieWenTiLcof.java)|
-|[剑指 Offer 11](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof)|旋转数组的最小数字 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/XuanZhuanShuZuDeZuiXiaoShuZiLcof.java)|
-|[剑指 Offer 12](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof)|矩阵中的路径 LCOF|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/JuZhenZhongDeLuJingLcof.java)|
-|[剑指 Offer 13](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof)|机器人的运动范围 LCOF|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/JiQiRenDeYunDongFanWeiLcof.java)|
-|[剑指 Offer 14- I](https://leetcode-cn.com/problems/jian-sheng-zi-lcof)|剪绳子 LCOF|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/JianShengZiLcof.java)|
+|[剑指 Offer 10- I](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof)|斐波那契数列  LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FeiBoNaQiShuLieLcof.java)|
+|[剑指 Offer 10- II](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof)|青蛙跳台阶问题  LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/QingWaTiaoTaiJieWenTiLcof.java)|
+|[剑指 Offer 11](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof)|旋转数组的最小数字  LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/XuanZhuanShuZuDeZuiXiaoShuZiLcof.java)|
+|[剑指 Offer 12](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof)|矩阵中的路径  LCOF|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/JuZhenZhongDeLuJingLcof.java)|
+|[剑指 Offer 13](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof)|机器人的运动范围  LCOF|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/JiQiRenDeYunDongFanWeiLcof.java)|
+|[剑指 Offer 14- I](https://leetcode-cn.com/problems/jian-sheng-zi-lcof)|剪绳子  LCOF|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/JianShengZiLcof.java)|
 |[剑指 Offer 14- II](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof)|剪绳子 II LCOF|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/JianShengZiIiLcof.java)|
 |[剑指 Offer 15](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof)|二进制中1的个数 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ErJinZhiZhong1deGeShuLcof.java)|
 |[剑指 Offer 17](https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof)|打印从1到最大的n位数 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DaYinCong1daoZuiDaDeNweiShuLcof.java)|
@@ -400,10 +401,10 @@ PS：
 |[剑指 Offer 21](https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof)|调整数组顺序使奇数位于偶数前面 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DiaoZhengShuZuShunXuShiQiShuWeiYuOuShuQianMianLcof.java)|
 |[剑指 Offer 22](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof)|链表中倒数第k个节点 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LianBiaoZhongDaoShuDiKgeJieDianLcof.java)|
 |[剑指 Offer 24](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof)|反转链表 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FanZhuanLianBiaoLcof.java)|
-|[剑指 Offer 37](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof)|序列化二叉树 LCOF|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/XuLieHuaErChaShuLcof.java)|
-|[剑指 Offer 38](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof)|字符串的排列 LCOF|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ZiFuChuanDePaiLieLcof.java)|
-|[剑指 Offer 42](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof)|连续子数组的最大和 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LianXuZiShuZuDeZuiDaHeLcof.java)|
-|[剑指 Offer 52](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof)|两个链表的第一个公共节点 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LiangGeLianBiaoDeDiYiGeGongGongJieDianLcof.java)|
-|[剑指 Offer 53 - I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof)|在排序数组中查找数字 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ZaiPaiXuShuZuZhongChaZhaoShuZiLcof.java)|
+|[剑指 Offer 37](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof)|序列化二叉树  LCOF|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/XuLieHuaErChaShuLcof.java)|
+|[剑指 Offer 38](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof)|字符串的排列  LCOF|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ZiFuChuanDePaiLieLcof.java)|
+|[剑指 Offer 42](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof)|连续子数组的最大和  LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LianXuZiShuZuDeZuiDaHeLcof.java)|
+|[剑指 Offer 52](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof)|两个链表的第一个公共节点  LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LiangGeLianBiaoDeDiYiGeGongGongJieDianLcof.java)|
+|[剑指 Offer 53 - I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof)|在排序数组中查找数字  LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ZaiPaiXuShuZuZhongChaZhaoShuZiLcof.java)|
 |[面试题 17.10](https://leetcode-cn.com/problems/find-majority-element-lcci)|Find Majority Element LCCI|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindMajorityElementLcci.java)|
 |[面试题 17.21](https://leetcode-cn.com/problems/volume-of-histogram-lcci)|Volume of Histogram LCCI|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/VolumeOfHistogramLcci.java)|
