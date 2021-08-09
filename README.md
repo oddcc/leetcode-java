@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有363道题，不断添加中…
+### 目前已有364道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -373,6 +373,7 @@ PS：
 |[1720](https://leetcode-cn.com/problems/decode-xored-array)|Decode XORed Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DecodeXoredArray.java)|
 |[1723](https://leetcode-cn.com/problems/find-minimum-time-to-finish-all-jobs)|Find Minimum Time to Finish All Jobs|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindMinimumTimeToFinishAllJobs.java)|
 |[1734](https://leetcode-cn.com/problems/decode-xored-permutation)|Decode XORed Permutation|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DecodeXoredPermutation.java)|
+|[1736](https://leetcode-cn.com/problems/latest-time-by-replacing-hidden-digits)|Latest Time by Replacing Hidden Digits|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LatestTimeByReplacingHiddenDigits.java)|
 |[1738](https://leetcode-cn.com/problems/find-kth-largest-xor-coordinate-value)|Find Kth Largest XOR Coordinate Value|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindKthLargestXorCoordinateValue.java)|
 |[1744](https://leetcode-cn.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day)|Can You Eat Your Favorite Candy on Your Favorite Day?|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CanYouEatYourFavoriteCandyOnYourFavoriteDay.java)|
 |[1758](https://leetcode-cn.com/problems/minimum-changes-to-make-alternating-binary-string)|Minimum Changes To Make Alternating Binary String|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MinimumChangesToMakeAlternatingBinaryString.java)|
