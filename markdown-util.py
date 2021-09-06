@@ -9,7 +9,7 @@ from functools import cmp_to_key
 
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 CODE_DIR = "src/main/java/com/oddcc/leetcode/editor/cn"
-QUESTION_FILE = "all.json"
+QUESTION_FILE = "doc/all.json"
 README_FILE = "README.md"
 RE = re.compile('^// (.+)\\n$')
 COMMENT_LINE = "<!--question list generated below here, don't DELETE this line-->\n"
