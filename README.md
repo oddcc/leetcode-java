@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有365道题，不断添加中…
+### 目前已有366道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -351,6 +351,7 @@ PS：
 |[1202](https://leetcode-cn.com/problems/smallest-string-with-swaps)|Smallest String With Swaps|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SmallestStringWithSwaps.java)|
 |[1207](https://leetcode-cn.com/problems/unique-number-of-occurrences)|Unique Number of Occurrences|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/UniqueNumberOfOccurrences.java)|
 |[1208](https://leetcode-cn.com/problems/get-equal-substrings-within-budget)|Get Equal Substrings Within Budget|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/GetEqualSubstringsWithinBudget.java)|
+|[1221](https://leetcode-cn.com/problems/split-a-string-in-balanced-strings)|Split a String in Balanced Strings|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SplitAStringInBalancedStrings.java)|
 |[1232](https://leetcode-cn.com/problems/check-if-it-is-a-straight-line)|Check If It Is a Straight Line|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CheckIfItIsAStraightLine.java)|
 |[1239](https://leetcode-cn.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters)|Maximum Length of a Concatenated String with Unique Characters|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaximumLengthOfAConcatenatedStringWithUniqueCharacters.java)|
 |[1269](https://leetcode-cn.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps)|Number of Ways to Stay in the Same Place After Some Steps|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NumberOfWaysToStayInTheSamePlaceAfterSomeSteps.java)|
