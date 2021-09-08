@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有366道题，不断添加中…
+### 目前已有367道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -247,6 +247,7 @@ PS：
 |[480](https://leetcode-cn.com/problems/sliding-window-median)|Sliding Window Median|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SlidingWindowMedian.java)|
 |[485](https://leetcode-cn.com/problems/max-consecutive-ones)|Max Consecutive Ones|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaxConsecutiveOnes.java)|
 |[494](https://leetcode-cn.com/problems/target-sum)|Target Sum|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TargetSum.java)|
+|[502](https://leetcode-cn.com/problems/ipo)|IPO|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/Ipo.java)|
 |[503](https://leetcode-cn.com/problems/next-greater-element-ii)|Next Greater Element II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NextGreaterElementIi.java)|
 |[509](https://leetcode-cn.com/problems/fibonacci-number)|Fibonacci Number|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FibonacciNumber.java)|
 |[518](https://leetcode-cn.com/problems/coin-change-2)|Coin Change 2|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CoinChange2.java)|
