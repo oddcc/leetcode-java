@@ -1172,6 +1172,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/Ipo.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/Ipo.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/Ipo.java" />
+              <option name="questionId" value="502" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/IslandPerimeter.java">
           <value>
             <LeetcodeEditor>
@@ -2920,6 +2929,7 @@
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/TwoSum.java">
           <value>
             <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/TwoSum.md" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/TwoSum.java" />
               <option name="questionId" value="1" />
             </LeetcodeEditor>
@@ -3194,6 +3204,15 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/leetcode/editor/cn/[399]EvaluateDivision.java" />
               <option name="questionId" value="399" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/Ipo.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/Ipo.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/Ipo.java" />
+              <option name="questionId" value="502" />
             </LeetcodeEditor>
           </value>
         </entry>
