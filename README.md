@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有367道题，不断添加中…
+### 目前已有368道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -88,6 +88,7 @@ PS：
 |[65](https://leetcode-cn.com/problems/valid-number)|Valid Number|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ValidNumber.java)|
 |[66](https://leetcode-cn.com/problems/plus-one)|Plus One|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PlusOne.java)|
 |[67](https://leetcode-cn.com/problems/add-binary)|Add Binary|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddBinary.java)|
+|[68](https://leetcode-cn.com/problems/text-justification)|Text Justification|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TextJustification.java)|
 |[69](https://leetcode-cn.com/problems/sqrtx)|Sqrt(x)|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/Sqrtx.java)|
 |[70](https://leetcode-cn.com/problems/climbing-stairs)|Climbing Stairs|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ClimbingStairs.java)|
 |[73](https://leetcode-cn.com/problems/set-matrix-zeroes)|Set Matrix Zeroes|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SetMatrixZeroes.java)|
