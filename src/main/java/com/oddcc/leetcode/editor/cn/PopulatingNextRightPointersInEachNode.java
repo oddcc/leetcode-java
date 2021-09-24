@@ -10,6 +10,33 @@ public class PopulatingNextRightPointersInEachNode {
         System.out.println(n1);
     }
 
+    private static class Node {
+        public int val;
+        public Node left;
+        public Node right;
+        public Node next;
+
+        public Node() {
+        }
+
+        public Node(int _val) {
+            val = _val;
+        }
+
+        public Node(int _val, Node _left, Node _right, Node _next) {
+            val = _val;
+            left = _left;
+            right = _right;
+            next = _next;
+        }
+
+        public Node(int val, Node left, Node right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // 使用层次遍历\BFS会有O(n)的空间复杂度，与题目要求的O(1)的空间复杂度不符
@@ -38,29 +65,3 @@ public class PopulatingNextRightPointersInEachNode {
 //leetcode submit region end(Prohibit modification and deletion)
 }
 
-class Node {
-    public int val;
-    public Node left;
-    public Node right;
-    public Node next;
-
-    public Node() {
-    }
-
-    public Node(int _val) {
-        val = _val;
-    }
-
-    public Node(int _val, Node _left, Node _right, Node _next) {
-        val = _val;
-        left = _left;
-        right = _right;
-        next = _next;
-    }
-
-    public Node(int val, Node left, Node right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-};

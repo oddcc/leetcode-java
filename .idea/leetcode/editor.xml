@@ -918,6 +918,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/FlattenAMultilevelDoublyLinkedList.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/FlattenAMultilevelDoublyLinkedList.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/FlattenAMultilevelDoublyLinkedList.java" />
+              <option name="questionId" value="430" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/FlattenBinaryTreeToLinkedList.java">
           <value>
             <LeetcodeEditor>
@@ -3063,6 +3072,15 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/ValidPalindrome_125.java" />
               <option name="questionId" value="125" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/ValidParenthesisString.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/ValidParenthesisString.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/ValidParenthesisString.java" />
+              <option name="questionId" value="678" />
             </LeetcodeEditor>
           </value>
         </entry>
