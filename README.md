@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有370道题，不断添加中…
+### 目前已有371道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -125,8 +125,8 @@ PS：
 |[116](https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node)|Populating Next Right Pointers in Each Node|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PopulatingNextRightPointersInEachNode.java)|
 |[118](https://leetcode-cn.com/problems/pascals-triangle)|Pascal's Triangle|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PascalsTriangle.java)|
 |[119](https://leetcode-cn.com/problems/pascals-triangle-ii)|Pascal's Triangle II|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PascalsTriangleIi.java)|
-|[121](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStock.java)|
-|[121](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStock.java)|
+|[121](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java)|
+|[121](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java)|
 |[125](https://leetcode-cn.com/problems/valid-palindrome)|Valid Palindrome|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ValidPalindrome.java)|
 |[127](https://leetcode-cn.com/problems/word-ladder)|Word Ladder|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/WordLadder.java)|
 |[129](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers)|Sum Root to Leaf Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SumRootToLeafNumbers.java)|
@@ -156,7 +156,7 @@ PS：
 |[168](https://leetcode-cn.com/problems/excel-sheet-column-title)|Excel Sheet Column Title|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ExcelSheetColumnTitle.java)|
 |[169](https://leetcode-cn.com/problems/majority-element)|Majority Element|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MajorityElement.java)|
 |[171](https://leetcode-cn.com/problems/excel-sheet-column-number)|Excel Sheet Column Number|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ExcelSheetColumnNumber.java)|
-|[172](https://leetcode-cn.com/problems/factorial-trailing-zeroes)|Factorial Trailing Zeroes|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FactorialTrailingZeroes.java)|
+|[172](https://leetcode-cn.com/problems/factorial-trailing-zeroes)|Factorial Trailing Zeroes|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FactorialTrailingZeroes.java)|
 |[173](https://leetcode-cn.com/problems/binary-search-tree-iterator)|Binary Search Tree Iterator|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/BinarySearchTreeIterator.java)|
 |[179](https://leetcode-cn.com/problems/largest-number)|Largest Number|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LargestNumber.java)|
 |[189](https://leetcode-cn.com/problems/rotate-array)|Rotate Array|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RotateArray.java)|
@@ -249,6 +249,7 @@ PS：
 |[480](https://leetcode-cn.com/problems/sliding-window-median)|Sliding Window Median|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SlidingWindowMedian.java)|
 |[485](https://leetcode-cn.com/problems/max-consecutive-ones)|Max Consecutive Ones|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaxConsecutiveOnes.java)|
 |[494](https://leetcode-cn.com/problems/target-sum)|Target Sum|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TargetSum.java)|
+|[496](https://leetcode-cn.com/problems/next-greater-element-i)|Next Greater Element I|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NextGreaterElementI.java)|
 |[502](https://leetcode-cn.com/problems/ipo)|IPO|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/Ipo.java)|
 |[503](https://leetcode-cn.com/problems/next-greater-element-ii)|Next Greater Element II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NextGreaterElementIi.java)|
 |[509](https://leetcode-cn.com/problems/fibonacci-number)|Fibonacci Number|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FibonacciNumber.java)|
