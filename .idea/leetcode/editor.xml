@@ -687,6 +687,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DistributeCandies.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/DistributeCandies.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DistributeCandies.java" />
+              <option name="questionId" value="575" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DivideTwoIntegers.java">
           <value>
             <LeetcodeEditor>
@@ -1525,6 +1534,7 @@
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/LruCache.java">
           <value>
             <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/LruCache.md" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/LruCache.java" />
               <option name="questionId" value="146" />
             </LeetcodeEditor>
@@ -2304,6 +2314,15 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/RemoveElement.java" />
               <option name="questionId" value="27" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/RemoveInvalidParentheses.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/RemoveInvalidParentheses.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/RemoveInvalidParentheses.java" />
+              <option name="questionId" value="301" />
             </LeetcodeEditor>
           </value>
         </entry>
