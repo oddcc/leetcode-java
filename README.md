@@ -42,7 +42,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有371道题，不断添加中…
+### 目前已有372道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -152,7 +152,7 @@ PS：
 |[154](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii)|Find Minimum in Rotated Sorted Array II|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FindMinimumInRotatedSortedArrayIi.java)|
 |[160](https://leetcode-cn.com/problems/intersection-of-two-linked-lists)|Intersection of Two Linked Lists|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/IntersectionOfTwoLinkedLists.java)|
 |[164](https://leetcode-cn.com/problems/maximum-gap)|Maximum Gap|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaximumGap.java)|
-|[167](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted)|Two Sum II - Input array is sorted|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TwoSumIiInputArrayIsSorted.java)|
+|[167](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted)|Two Sum II - Input Array Is Sorted|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TwoSumIiInputArrayIsSorted.java)|
 |[168](https://leetcode-cn.com/problems/excel-sheet-column-title)|Excel Sheet Column Title|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ExcelSheetColumnTitle.java)|
 |[169](https://leetcode-cn.com/problems/majority-element)|Majority Element|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MajorityElement.java)|
 |[171](https://leetcode-cn.com/problems/excel-sheet-column-number)|Excel Sheet Column Number|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ExcelSheetColumnNumber.java)|
@@ -265,6 +265,7 @@ PS：
 |[561](https://leetcode-cn.com/problems/array-partition-i)|Array Partition I|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ArrayPartitionI.java)|
 |[566](https://leetcode-cn.com/problems/reshape-the-matrix)|Reshape the Matrix|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ReshapeTheMatrix.java)|
 |[567](https://leetcode-cn.com/problems/permutation-in-string)|Permutation in String|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/PermutationInString.java)|
+|[575](https://leetcode-cn.com/problems/distribute-candies)|Distribute Candies|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DistributeCandies.java)|
 |[581](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray)|Shortest Unsorted Continuous Subarray|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ShortestUnsortedContinuousSubarray.java)|
 |[605](https://leetcode-cn.com/problems/can-place-flowers)|Can Place Flowers|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CanPlaceFlowers.java)|
 |[611](https://leetcode-cn.com/problems/valid-triangle-number)|Valid Triangle Number|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ValidTriangleNumber.java)|
