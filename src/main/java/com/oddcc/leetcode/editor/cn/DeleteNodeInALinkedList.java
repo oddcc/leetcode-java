@@ -12,15 +12,15 @@ public class DeleteNodeInALinkedList {
         System.out.println(n1);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
+    // can't access head node, that means we can't get the pre of the node which need to be deleted
+    // so we have to change the node value to implement node delete
     class Solution {
-        // 题目不给访问头节点，那只能重新赋值了吧，否则没法实现
         public void deleteNode(ListNode node) {
-            while (node.next.next != null) {
-                node.val = node.next.val;
-                node = node.next;
-            }
-            node.val = node.next.val;
-            node.next = null;
+            // guarantee node.next != null
+            ListNode next = node.next;
+            node.val = next.val;
+            node.next = next.next;
+            next.next = null;
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)

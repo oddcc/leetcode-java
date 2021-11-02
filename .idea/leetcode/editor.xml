@@ -626,6 +626,7 @@
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DeleteNodeInALinkedList.java">
           <value>
             <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/DeleteNodeInALinkedList.md" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/DeleteNodeInALinkedList.java" />
               <option name="questionId" value="237" />
             </LeetcodeEditor>
