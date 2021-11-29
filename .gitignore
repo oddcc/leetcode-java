@@ -132,3 +132,5 @@ src/**/*.md
 
 src/main/java/test/*
 *.hprof
+
+*.iml
