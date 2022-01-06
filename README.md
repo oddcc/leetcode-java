@@ -44,14 +44,14 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有372道题，不断添加中…
+### 目前已有374道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
 |[3](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters)|Longest Substring Without Repeating Characters|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LongestSubstringWithoutRepeatingCharacters.java)|
 |[5](https://leetcode-cn.com/problems/longest-palindromic-substring)|Longest Palindromic Substring|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LongestPalindromicSubstring.java)|
 |[6](https://leetcode-cn.com/problems/zigzag-conversion)|ZigZag Conversion|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ZigzagConversion.java)|
-|[7](https://leetcode-cn.com/problems/reverse-integer)|Reverse Integer|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ReverseInteger.java)|
+|[7](https://leetcode-cn.com/problems/reverse-integer)|Reverse Integer|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ReverseInteger.java)|
 |[8](https://leetcode-cn.com/problems/string-to-integer-atoi)|String to Integer (atoi)|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/StringToIntegerAtoi.java)|
 |[12](https://leetcode-cn.com/problems/integer-to-roman)|Integer to Roman|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/IntegerToRoman.java)|
 |[13](https://leetcode-cn.com/problems/roman-to-integer)|Roman to Integer|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RomanToInteger.java)|
@@ -75,6 +75,7 @@ PS：
 |[39](https://leetcode-cn.com/problems/combination-sum)|Combination Sum|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/CombinationSum.java)|
 |[41](https://leetcode-cn.com/problems/first-missing-positive)|First Missing Positive|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/FirstMissingPositive.java)|
 |[42](https://leetcode-cn.com/problems/trapping-rain-water)|Trapping Rain Water|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TrappingRainWater.java)|
+|[45](https://leetcode-cn.com/problems/jump-game-ii)|Jump Game II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/JumpGameIi.java)|
 |[46](https://leetcode-cn.com/problems/permutations)|Permutations|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/Permutations.java)|
 |[48](https://leetcode-cn.com/problems/rotate-image)|Rotate Image|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RotateImage.java)|
 |[49](https://leetcode-cn.com/problems/group-anagrams)|Group Anagrams|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/GroupAnagrams.java)|
@@ -93,6 +94,7 @@ PS：
 |[68](https://leetcode-cn.com/problems/text-justification)|Text Justification|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TextJustification.java)|
 |[69](https://leetcode-cn.com/problems/sqrtx)|Sqrt(x)|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/Sqrtx.java)|
 |[70](https://leetcode-cn.com/problems/climbing-stairs)|Climbing Stairs|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/ClimbingStairs.java)|
+|[71](https://leetcode-cn.com/problems/simplify-path)|Simplify Path|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SimplifyPath.java)|
 |[73](https://leetcode-cn.com/problems/set-matrix-zeroes)|Set Matrix Zeroes|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SetMatrixZeroes.java)|
 |[74](https://leetcode-cn.com/problems/search-a-2d-matrix)|Search a 2D Matrix|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SearchA2dMatrix.java)|
 |[75](https://leetcode-cn.com/problems/sort-colors)|Sort Colors|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/SortColors.java)|
@@ -283,7 +285,7 @@ PS：
 |[665](https://leetcode-cn.com/problems/non-decreasing-array)|Non-decreasing Array|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/NonDecreasingArray.java)|
 |[674](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence)|Longest Continuous Increasing Subsequence|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/LongestContinuousIncreasingSubsequence.java)|
 |[684](https://leetcode-cn.com/problems/redundant-connection)|Redundant Connection|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/RedundantConnection.java)|
-|[690](https://leetcode-cn.com/problems/employee-importance)|Employee Importance|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/EmployeeImportance.java)|
+|[690](https://leetcode-cn.com/problems/employee-importance)|Employee Importance|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/EmployeeImportance.java)|
 |[692](https://leetcode-cn.com/problems/top-k-frequent-words)|Top K Frequent Words|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/TopKFrequentWords.java)|
 |[695](https://leetcode-cn.com/problems/max-area-of-island)|Max Area of Island|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/MaxAreaOfIsland.java)|
 |[697](https://leetcode-cn.com/problems/degree-of-an-array)|Degree of an Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/DegreeOfAnArray.java)|
