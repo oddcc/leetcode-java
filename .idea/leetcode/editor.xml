@@ -900,6 +900,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/GrayCode.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/GrayCode.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com89" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/GrayCode.java" />
+              <option name="titleSlug" value="gray-code" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/GroupAnagrams.java">
           <value>
             <LeetcodeEditor>
@@ -2321,6 +2332,17 @@
           <value>
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/SlidingWindowMedian.java" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/SlowestKey.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/SlowestKey.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com1629" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/SlowestKey.java" />
+              <option name="titleSlug" value="slowest-key" />
             </LeetcodeEditor>
           </value>
         </entry>
