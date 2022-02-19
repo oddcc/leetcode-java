@@ -13,7 +13,7 @@ LeetCode练习记录，JDK版本是11
 
 PS：插件查看题目会连tag一起展示出来，这其实是个不小的提示，可以考虑不用这个插件功能
 
-关于`TempFilePath`，对于我的包`com.oddcc.leetcode.editor.cn`来说，路径应该是`C:\Users\oddcc\leetcode-java\src\main\java\com\oddcc\`，即从`leetcode`开始，后面是插件默认的包结构。这里应该根据个人需要进行修改
+关于`TempFilePath`，对于我的包`com.oddcc.leetcode.editor.cn`来说，路径应该是`/Users/oddcc/Documents/Study/LeetCode/leetcode-practice/src/main/java/com/oddcc`，即从`leetcode`开始，后面是插件默认的包结构。这里应该根据个人需要进行修改
 
 CodeFileName： `$!velocityTool.camelCaseName(${question.titleSlug})`
 
