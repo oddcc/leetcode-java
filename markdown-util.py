@@ -25,7 +25,7 @@ def main():
         copy_from_old(newFile, readme_path)
 
         java_file_list = [j for j in os.listdir(os.path.join(BASE_DIR, CODE_DIR)) if j.endswith(".java")]
-        data_dic = get_data_dic(os.path.join(BASE_DIR, CODE_DIR, QUESTION_FILE))
+        data_dic = get_data_dic(os.path.join(BASE_DIR, QUESTION_FILE))
         q_list = get_question_list(java_file_list, data_dic)
 
         newFile.write("### 目前已有{}道题，不断添加中…\n".format(len(q_list)))
