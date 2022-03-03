@@ -102,6 +102,7 @@ public class Application implements CommandLineRunner {
                     .execute()
                     .handleResponse(responseHandler);
 
+            log.info("fetching questions, skip: {}", skip);
             ObjectMapper objectMapper = new ObjectMapper();
             Map<String, Object> dataMap = objectMapper.readValue(json, Map.class);
             Map<String, Object> data = (Map<String, Object>) dataMap.get("data");
@@ -133,6 +134,10 @@ public class Application implements CommandLineRunner {
     // TODO from leetcode account and password get cookie
     private String getCookie() {
         String cookie = System.getenv("COOKIE");
-        return cookie == null || cookie.isEmpty() ? "" : cookie;
+        if (cookie == null || cookie.isEmpty()) {
+            cookie = "";
+            log.info("Cookie is empty, please set COOKIE environment variable");
+        }
+        return cookie;
     }
 }
