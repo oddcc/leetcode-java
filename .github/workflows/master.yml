@@ -36,8 +36,7 @@ jobs:
       # fetch questions info from leetcode
       - name: fetch questions info
         run: |
-          export COOKIE=${{secrets.COOKIE}}
-          
+          echo "COOKIE=${{secrets.COOKIE}}" >> $GITHUB_ENV
           cd update-lc-questions-jar
           mvn clean package spring-boot:repackage
           java -jar target/update-lc-questions-jar-1.0-SNAPSHOT.jar ../all.json
