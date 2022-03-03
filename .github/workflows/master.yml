@@ -29,7 +29,8 @@ jobs:
         uses: actions/setup-java@v3.0.0
         with:
           # The Java version to set up. Takes a whole or semver Java version. See examples of supported syntax in README file
-          java-version: 1.8
+          java-version: 8
+          distribution: adopt
       - uses: stCarolas/setup-maven@v4.2
 
       # fetch questions info from leetcode
