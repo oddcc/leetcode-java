@@ -22,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="leetcode" options="-parameters" />
       <module name="leetcode-practice" options="-parameters" />
       <module name="update-lc-questions-jar" options="-parameters" />
     </option>

@@ -8,8 +8,8 @@ from shutil import move, copymode
 from functools import cmp_to_key
 
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
-CODE_DIR = "src/main/java/com/oddcc/leetcode/editor/cn"
-QUESTION_FILE = "doc/all.json"
+CODE_DIR = "leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn"
+QUESTION_FILE = "all.json"
 README_FILE = "README.md"
 RE = re.compile('^// (.+)\\n$')
 COMMENT_LINE = "<!--question list generated below here, don't DELETE this line-->\n"
@@ -73,7 +73,7 @@ def cons_line(q):
     return QUESTION_INFO.format(
         "[{}](https://leetcode-cn.com/problems/{})".format(q["frontendQuestionId"], q["titleSlug"]),
         q["title"],
-        "⭐" if q["level"] == 1 else "⭐⭐" if q["level"] == 2 else "⭐⭐⭐",
+        "⭐" if q["level"] == "EASY" else "⭐⭐" if q["level"] == "MEDIUM" else "⭐⭐⭐",
         "[click](https://github.com/oddcc/leetcode-java/blob/master/src/main/java/com/oddcc/leetcode/editor/cn/{})".format(
             q["javaFile"]),
     )
@@ -97,7 +97,7 @@ def get_question_list(java_file_list, data_dic):
             else:
                 question_id = r.group(1)
                 question = data_dic[question_id]
-                if question["status"] == "ac":
+                if question["status"] == "AC":
                     question["javaFile"] = jFile
                     q_list.append(question)
                 else:
