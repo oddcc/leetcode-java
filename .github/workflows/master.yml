@@ -37,6 +37,7 @@ jobs:
       - name: fetch questions info
         run: |
           export COOKIE=${{secrets.COOKIE}}
+          
           cd update-lc-questions-jar
           mvn clean package spring-boot:repackage
           java -jar target/update-lc-questions-jar-1.0-SNAPSHOT.jar ../all.json
