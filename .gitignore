@@ -136,3 +136,5 @@ src/main/java/test/*
 *.iml
 
 *.http
+
+*/target/*

@@ -31,13 +31,23 @@ public class Application implements CommandLineRunner {
     @Autowired
     private Config config;
 
+    private String outputFile;
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
     @Override
     public void run(String... args) throws Exception {
+        log.info(args.length + " args: " + String.join(",", args));
+        prepare(args);
         updateQuestionsInfo();
+    }
+
+    private void prepare(String[] args) {
+        if (args.length > 0) {
+            outputFile = args[0];
+        }
     }
 
     private void updateQuestionsInfo() throws IOException, InterruptedException {
@@ -54,7 +64,14 @@ public class Application implements CommandLineRunner {
             tarQuestions.add(tarQuestion);
         }
         ObjectMapper mapper = new ObjectMapper();
-        mapper.writeValue(new File("all.json"), tarQuestions);
+        mapper.writeValue(new File(getOutputFile()), tarQuestions);
+    }
+
+    private String getOutputFile() {
+        if (outputFile == null || outputFile.isEmpty()) {
+            return "all.json";
+        }
+        return outputFile;
     }
 
     private List<Map<String, Object>> queryQuestions() throws IOException, InterruptedException {
