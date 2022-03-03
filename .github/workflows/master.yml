@@ -33,10 +33,12 @@ jobs:
           distribution: adopt
       - uses: stCarolas/setup-maven@v4.2
 
+      - name: Set env
+        run: echo "COOKIE=${{secrets.COOKIE}}" >> $GITHUB_ENV
       # fetch questions info from leetcode
       - name: fetch questions info
         run: |
-          echo "COOKIE=${{secrets.COOKIE}}" >> $GITHUB_ENV
+          run: echo $COOKIE
           cd update-lc-questions-jar
           mvn clean package spring-boot:repackage
           java -jar target/update-lc-questions-jar-1.0-SNAPSHOT.jar ../all.json
