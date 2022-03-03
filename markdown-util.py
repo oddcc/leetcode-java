@@ -49,9 +49,9 @@ def write_question_record(q_list):
         for q in q_list:
             total += 1
             level = q["level"]
-            if level == 1:
+            if level == "EASY":
                 easy_count += 1
-            elif level == 2:
+            elif level == "MEDIUM":
                 medium_count += 1
             else:
                 hard_count += 1

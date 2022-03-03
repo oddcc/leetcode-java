@@ -131,12 +131,13 @@ public class Application implements CommandLineRunner {
         return queryTemplate;
     }
 
+    private String cookie;
+
     // TODO from leetcode account and password get cookie
     private String getCookie() {
-        String cookie = System.getenv("COOKIE");
         if (cookie == null || cookie.isEmpty()) {
-            cookie = "";
             log.info("Cookie is empty, please set COOKIE environment variable");
+            cookie = System.getenv("COOKIE");
         }
         return cookie;
     }
