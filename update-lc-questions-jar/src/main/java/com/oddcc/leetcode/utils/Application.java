@@ -3,14 +3,15 @@ package com.oddcc.leetcode.utils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.hc.client5.http.ClientProtocolException;
-import org.apache.hc.client5.http.fluent.Request;
-import org.apache.hc.core5.http.HttpEntity;
-import org.apache.hc.core5.http.HttpHeaders;
-import org.apache.hc.core5.http.HttpStatus;
-import org.apache.hc.core5.http.ParseException;
+import org.apache.hc.client5.http.classic.HttpClient;
+import org.apache.hc.client5.http.impl.DefaultHttpRequestRetryStrategy;
+import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
+import org.apache.hc.core5.http.*;
 import org.apache.hc.core5.http.io.HttpClientResponseHandler;
 import org.apache.hc.core5.http.io.entity.EntityUtils;
 import org.apache.hc.core5.http.io.entity.HttpEntities;
+import org.apache.hc.core5.http.io.support.ClassicRequestBuilder;
+import org.apache.hc.core5.util.TimeValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -33,6 +34,8 @@ public class Application implements CommandLineRunner {
 
     private String outputFile;
 
+    private HttpClient client;
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
@@ -48,6 +51,10 @@ public class Application implements CommandLineRunner {
         if (args.length > 0) {
             outputFile = args[0];
         }
+        client = HttpClientBuilder
+                .create()
+                .setRetryStrategy(new DefaultHttpRequestRetryStrategy(3, TimeValue.ofSeconds(3)))
+                .build();
     }
 
     private void updateQuestionsInfo() throws IOException, InterruptedException {
@@ -64,6 +71,10 @@ public class Application implements CommandLineRunner {
             tarQuestions.add(tarQuestion);
         }
         ObjectMapper mapper = new ObjectMapper();
+        File file = new ClassPathResource(getOutputFile()).getFile();
+        if (file.exists()) {
+            file.delete();
+        }
         mapper.writeValue(new File(getOutputFile()), tarQuestions);
     }
 
@@ -94,13 +105,15 @@ public class Application implements CommandLineRunner {
         Boolean hasMore = true;
 
         while (hasMore) {
-            String json = Request.post("https://leetcode-cn.com/graphql/")
+            ClassicHttpRequest request = ClassicRequestBuilder
+                    .post("https://leetcode-cn.com/graphql/")
                     .addHeader(HttpHeaders.CONTENT_TYPE, "application/json")
                     .addHeader(HttpHeaders.COOKIE, getCookie())
                     .addHeader(HttpHeaders.USER_AGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36")
-                    .body(HttpEntities.create(getQueryTemplate().replace("${skip}", String.valueOf(skip))))
-                    .execute()
-                    .handleResponse(responseHandler);
+                    .setEntity(HttpEntities.create(getQueryTemplate().replace("${skip}", String.valueOf(skip))))
+                    .build();
+
+            String json = client.execute(request, responseHandler);
 
             log.info("fetching questions, skip: {}", skip);
             ObjectMapper objectMapper = new ObjectMapper();
@@ -136,8 +149,11 @@ public class Application implements CommandLineRunner {
     // TODO from leetcode account and password get cookie
     private String getCookie() {
         if (cookie == null || cookie.isEmpty()) {
-            log.info("Cookie is empty, please set COOKIE environment variable");
             cookie = System.getenv("COOKIE");
+            if (cookie == null || cookie.isEmpty()) {
+                log.info("Cookie is empty, please set COOKIE environment variable");
+                throw new RuntimeException("Cookie is empty");
+            }
         }
         return cookie;
     }
