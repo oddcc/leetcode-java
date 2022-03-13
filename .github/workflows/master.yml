@@ -34,11 +34,10 @@ jobs:
       - uses: stCarolas/setup-maven@v4.2
 
       - name: Set env
-        run: echo "COOKIE=${{secrets.COOKIE}}" >> $GITHUB_ENV
-        
-      - name: Test env
-        run: echo $COOKIE
-        
+        run: |
+          echo "LEETCODE_ACCOUNT=${{secrets.LEETCODE_ACCOUNT}}" >> $GITHUB_ENV
+          echo "LEETCODE_PASSWORD=${{secrets.LEETCODE_PASSWORD}}" >> $GITHUB_ENV
+
       # fetch questions info from leetcode
       - name: fetch questions info
         run: |
