@@ -127,7 +127,7 @@ public class Application implements CommandLineRunner {
                 }
             });
 
-            log.info("fetching questions, from: {}, to: {}", skip + 1, skip + 50);
+            log.info("fetching questions, from: {}, to: {}", skip + 1, skip + 100);
             ObjectMapper objectMapper = new ObjectMapper();
             Map<String, Object> dataMap = objectMapper.readValue(resJson, Map.class);
             Map<String, Object> data = (Map<String, Object>) dataMap.get("data");
@@ -136,7 +136,7 @@ public class Application implements CommandLineRunner {
             List<Map<String, Object>> questions = (List<Map<String, Object>>) problemsetQuestionList.get("questions");
             questionList.addAll(questions);
             log.info("{} AC questions fetched", questions.stream().filter(q -> Objects.equals(q.get("status"), "AC")).count());
-            skip += 50;
+            skip += 100;
             Thread.sleep(10000);
         }
 

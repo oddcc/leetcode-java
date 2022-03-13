@@ -3,7 +3,7 @@
   "variables": {
     "categorySlug": "",
     "skip": ${{skip}},
-    "limit": 50,
+    "limit": 100,
     "filters": {}
   }
 }

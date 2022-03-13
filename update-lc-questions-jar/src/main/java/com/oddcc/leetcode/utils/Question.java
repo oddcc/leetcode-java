@@ -17,11 +17,10 @@ public class Question {
     private String level;
 
     public Question(Map<String, Object> question) {
-        Question tarQuestion = new Question();
-        tarQuestion.setFrontendQuestionId((String) question.get("frontendQuestionId"));
-        tarQuestion.setLevel((String) question.get("difficulty"));
-        tarQuestion.setStatus((String) question.get("status"));
-        tarQuestion.setTitle((String) question.get("title"));
-        tarQuestion.setTitleSlug((String) question.get("titleSlug"));
+        setFrontendQuestionId((String) question.get("frontendQuestionId"));
+        setLevel((String) question.get("difficulty"));
+        setStatus((String) question.get("status"));
+        setTitle((String) question.get("title"));
+        setTitleSlug((String) question.get("titleSlug"));
     }
 }
