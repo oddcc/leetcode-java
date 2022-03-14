@@ -10,17 +10,20 @@ public class NThTribonacciNumber {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int tribonacci(int n) {
-            int[] nums = new int[n+1];
             if (n == 0) return 0;
             if (n == 1) return 1;
             if (n == 2) return 1;
-            nums[0] = 0;
-            nums[1] = 1;
-            nums[2] = 1;
+            int n1 = 0;
+            int n2 = 1;
+            int n3 = 1;
+            int ans = 0;
             for (int i = 3; i <= n; i++) {
-                nums[i] = nums[i-3] + nums[i-2] + nums[i-1];
+                ans = n1 + n2 + n3;
+                n1 = n2;
+                n2 = n3;
+                n3 = ans;
             }
-            return nums[n];
+            return ans;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
