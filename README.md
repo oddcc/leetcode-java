@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有378道题，不断添加中…
+### 目前已有379道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -356,6 +356,7 @@ PS：
 |[1074](https://leetcode-cn.com/problems/number-of-submatrices-that-sum-to-target)|Number of Submatrices That Sum to Target|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/NumberOfSubmatricesThatSumToTarget.java)|
 |[1122](https://leetcode-cn.com/problems/relative-sort-array)|Relative Sort Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RelativeSortArray.java)|
 |[1128](https://leetcode-cn.com/problems/number-of-equivalent-domino-pairs)|Number of Equivalent Domino Pairs|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/NumberOfEquivalentDominoPairs.java)|
+|[1137](https://leetcode-cn.com/problems/n-th-tribonacci-number)|N-th Tribonacci Number|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/NThTribonacciNumber.java)|
 |[1143](https://leetcode-cn.com/problems/longest-common-subsequence)|Longest Common Subsequence|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LongestCommonSubsequence.java)|
 |[1178](https://leetcode-cn.com/problems/number-of-valid-words-for-each-puzzle)|Number of Valid Words for Each Puzzle|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/NumberOfValidWordsForEachPuzzle.java)|
 |[1190](https://leetcode-cn.com/problems/reverse-substrings-between-each-pair-of-parentheses)|Reverse Substrings Between Each Pair of Parentheses|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ReverseSubstringsBetweenEachPairOfParentheses.java)|
