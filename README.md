@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有377道题，不断添加中…
+### 目前已有378道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -272,6 +272,7 @@ PS：
 |[567](https://leetcode-cn.com/problems/permutation-in-string)|Permutation in String|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PermutationInString.java)|
 |[575](https://leetcode-cn.com/problems/distribute-candies)|Distribute Candies|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/DistributeCandies.java)|
 |[581](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray)|Shortest Unsorted Continuous Subarray|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ShortestUnsortedContinuousSubarray.java)|
+|[599](https://leetcode-cn.com/problems/minimum-index-sum-of-two-lists)|Minimum Index Sum of Two Lists|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumIndexSumOfTwoLists.java)|
 |[605](https://leetcode-cn.com/problems/can-place-flowers)|Can Place Flowers|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CanPlaceFlowers.java)|
 |[611](https://leetcode-cn.com/problems/valid-triangle-number)|Valid Triangle Number|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ValidTriangleNumber.java)|
 |[617](https://leetcode-cn.com/problems/merge-two-binary-trees)|Merge Two Binary Trees|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MergeTwoBinaryTrees.java)|
