@@ -9,36 +9,42 @@ public class MaximumSumCircularSubarray {
         System.out.println(solution.maxSubarraySumCircular(new int[]{5, -3, 5}));
         System.out.println(solution.maxSubarraySumCircular(new int[]{-3, -2, -3}));
         System.out.println(solution.maxSubarraySumCircular(new int[]{-2}));
+        System.out.println(solution.maxSubarraySumCircular(new int[]{9,-4,-7,9}));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         // #1 make i is the start of a circular array, this gives us numbs.length arrays
+        // #2 if subarray is divided into 2 parts, then maxSum == total - minSum
         public int maxSubarraySumCircular(int[] nums) {
             int l = nums.length;
-            int[][] sum = new int[l][l];
-            Integer ans = null;
+            if (l == 1) return nums[0];
+            int[] maxSum = new int[l];
+            int[] minSum = new int[l];
+            int total = 0;
+            Integer max = null;
+            Integer min = null;
             for (int i = 0; i < l; i++) {
-                for (int j = 0; j < l; j++) {
-                    if (j == 0) {
-                        sum[i][j] = getNum(nums, i, j);
-                    } else {
-                        sum[i][j] = Math.max(getNum(nums, i, j), sum[i][j - 1] + getNum(nums, i, j));
-                    }
-
-                    if (ans == null) {
-                        ans = sum[i][j];
-                    } else {
-                        ans = Math.max(ans, sum[i][j]);
-                    }
+                total += nums[i];
+                if (i == 0) {
+                    maxSum[i] = nums[i];
+                    minSum[i] = nums[i];
+                } else {
+                    maxSum[i] = Math.max(nums[i], maxSum[i - 1] + nums[i]);
+                    minSum[i] = Math.min(nums[i], minSum[i - 1] + nums[i]);
+                }
+                if (max == null) {
+                    max = nums[i];
+                } else {
+                    max = Math.max(max, maxSum[i]);
+                }
+                if (min == null) {
+                    min = nums[i];
+                } else {
+                    min = Math.min(min, minSum[i]);
                 }
             }
-            return ans;
-        }
-
-        private int getNum(int[] nums, int start, int i) {
-            int want = (start + i) % nums.length;
-            return nums[want];
+            return total == min ? max : Math.max(max, total - min);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
