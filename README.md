@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有380道题，不断添加中…
+### 目前已有381道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -326,6 +326,7 @@ PS：
 |[888](https://leetcode-cn.com/problems/fair-candy-swap)|Fair Candy Swap|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FairCandySwap.java)|
 |[896](https://leetcode-cn.com/problems/monotonic-array)|Monotonic Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MonotonicArray.java)|
 |[897](https://leetcode-cn.com/problems/increasing-order-search-tree)|Increasing Order Search Tree|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/IncreasingOrderSearchTree.java)|
+|[918](https://leetcode-cn.com/problems/maximum-sum-circular-subarray)|Maximum Sum Circular Subarray|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumSumCircularSubarray.java)|
 |[922](https://leetcode-cn.com/problems/sort-array-by-parity-ii)|Sort Array By Parity II|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SortArrayByParityIi.java)|
 |[923](https://leetcode-cn.com/problems/3sum-with-multiplicity)|3Sum With Multiplicity|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ThreeSumWithMultiplicity.java)|
 |[925](https://leetcode-cn.com/problems/long-pressed-name)|Long Pressed Name|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LongPressedName.java)|
