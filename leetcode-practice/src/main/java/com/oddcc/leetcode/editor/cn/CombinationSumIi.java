@@ -13,36 +13,32 @@ public class CombinationSumIi {
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
-    // #1 brute force, back track, will cause timeout
     class Solution {
-        private List<Integer> current = new ArrayList<>();
         public List<List<Integer>> combinationSum2(int[] candidates, int target) {
             List<List<Integer>> ans = new ArrayList<>();
-            Set<List<Integer>> used = new HashSet<>();
             Arrays.sort(candidates);
-            dfs(ans, candidates, used, 0, 0, target);
+            dfs(candidates, target, 0, new ArrayList<>(), ans);
             return ans;
         }
 
-        private void dfs(List<List<Integer>> ans, int[] candidates, Set<List<Integer>> used, int i, int total, int target) {
-            if (total > target) return;
-            if (total == target) {
-                current.sort(Integer::compareTo);
-                if (used.contains(current)) return;
-                ans.add(new ArrayList<>(current));
-                used.add(new ArrayList<>(current));
+        private void dfs(int[] candidates, int remain, int start, ArrayList<Integer> path, List<List<Integer>> ans) {
+            if (remain == 0) {
+                ans.add(new ArrayList<>(path));
                 return;
             }
-            if (i >= candidates.length) return;
-
-            int num = candidates[i];
-            total += num;
-            current.add(num);
-            dfs(ans, candidates, used, i + 1, total, target);
-
-            total -= num;
-            current.remove(current.size() - 1);
-            dfs(ans, candidates, used, i + 1, total, target);
+            if (start >= candidates.length) return;
+            for (int i = start; i < candidates.length; i++) {
+                int num = candidates[i];
+                if (num > remain) {
+                    return;
+                }
+                if (i > start && candidates[i] == candidates[i - 1]) {
+                    continue;
+                }
+                path.add(num);
+                dfs(candidates, remain - num, i + 1, path, ans);
+                path.remove(path.size() - 1);
+            }
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
