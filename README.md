@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有381道题，不断添加中…
+### 目前已有383道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -73,6 +73,7 @@ PS：
 |[36](https://leetcode-cn.com/problems/valid-sudoku)|Valid Sudoku|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ValidSudoku.java)|
 |[38](https://leetcode-cn.com/problems/count-and-say)|Count and Say|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CountAndSay.java)|
 |[39](https://leetcode-cn.com/problems/combination-sum)|Combination Sum|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CombinationSum.java)|
+|[40](https://leetcode-cn.com/problems/combination-sum-ii)|Combination Sum II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CombinationSumIi.java)|
 |[41](https://leetcode-cn.com/problems/first-missing-positive)|First Missing Positive|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FirstMissingPositive.java)|
 |[42](https://leetcode-cn.com/problems/trapping-rain-water)|Trapping Rain Water|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/TrappingRainWater.java)|
 |[45](https://leetcode-cn.com/problems/jump-game-ii)|Jump Game II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/JumpGameIi.java)|
@@ -274,6 +275,7 @@ PS：
 |[581](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray)|Shortest Unsorted Continuous Subarray|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ShortestUnsortedContinuousSubarray.java)|
 |[599](https://leetcode-cn.com/problems/minimum-index-sum-of-two-lists)|Minimum Index Sum of Two Lists|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumIndexSumOfTwoLists.java)|
 |[605](https://leetcode-cn.com/problems/can-place-flowers)|Can Place Flowers|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CanPlaceFlowers.java)|
+|[606](https://leetcode-cn.com/problems/construct-string-from-binary-tree)|Construct String from Binary Tree|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ConstructStringFromBinaryTree.java)|
 |[611](https://leetcode-cn.com/problems/valid-triangle-number)|Valid Triangle Number|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ValidTriangleNumber.java)|
 |[617](https://leetcode-cn.com/problems/merge-two-binary-trees)|Merge Two Binary Trees|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MergeTwoBinaryTrees.java)|
 |[621](https://leetcode-cn.com/problems/task-scheduler)|Task Scheduler|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/TaskScheduler.java)|
