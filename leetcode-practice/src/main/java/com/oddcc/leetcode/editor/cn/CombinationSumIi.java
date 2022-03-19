@@ -15,20 +15,21 @@ public class CombinationSumIi {
     //leetcode submit region begin(Prohibit modification and deletion)
     // #1 brute force, back track, will cause timeout
     class Solution {
+        private List<Integer> current = new ArrayList<>();
         public List<List<Integer>> combinationSum2(int[] candidates, int target) {
             List<List<Integer>> ans = new ArrayList<>();
             Set<List<Integer>> used = new HashSet<>();
             Arrays.sort(candidates);
-            dfs(ans, candidates, used, 0, 0, new ArrayList<>(), target);
+            dfs(ans, candidates, used, 0, 0, target);
             return ans;
         }
 
-        private void dfs(List<List<Integer>> ans, int[] candidates, Set<List<Integer>> used, int i, int total, List<Integer> current, int target) {
+        private void dfs(List<List<Integer>> ans, int[] candidates, Set<List<Integer>> used, int i, int total, int target) {
             if (total > target) return;
             if (total == target) {
                 current.sort(Integer::compareTo);
                 if (used.contains(current)) return;
-                ans.add(current);
+                ans.add(new ArrayList<>(current));
                 used.add(new ArrayList<>(current));
                 return;
             }
@@ -36,13 +37,12 @@ public class CombinationSumIi {
 
             int num = candidates[i];
             total += num;
-            List<Integer> arr = new ArrayList<>(current);
-            arr.add(num);
-            dfs(ans, candidates, used, i + 1, total, arr, target);
+            current.add(num);
+            dfs(ans, candidates, used, i + 1, total, target);
 
             total -= num;
-            arr = new ArrayList<>(current);
-            dfs(ans, candidates, used, i + 1, total, arr, target);
+            current.remove(current.size() - 1);
+            dfs(ans, candidates, used, i + 1, total, target);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
