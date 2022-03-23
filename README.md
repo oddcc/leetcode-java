@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有383道题，不断添加中…
+### 目前已有385道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -402,7 +402,9 @@ PS：
 |[1877](https://leetcode-cn.com/problems/minimize-maximum-pair-sum-in-array)|Minimize Maximum Pair Sum in Array|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimizeMaximumPairSumInArray.java)|
 |[1893](https://leetcode-cn.com/problems/check-if-all-the-integers-in-a-range-are-covered)|Check if All the Integers in a Range Are Covered|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckIfAllTheIntegersInARangeAreCovered.java)|
 |[1894](https://leetcode-cn.com/problems/find-the-student-that-will-replace-the-chalk)|Find the Student that Will Replace the Chalk|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FindTheStudentThatWillReplaceTheChalk.java)|
+|[2038](https://leetcode-cn.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color)|Remove Colored Pieces if Both Neighbors are the Same Color|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RemoveColoredPiecesIfBothNeighborsAreTheSameColor.java)|
 |[2043](https://leetcode-cn.com/problems/simple-bank-system)|Simple Bank System|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SimpleBankSystem.java)|
+|[2044](https://leetcode-cn.com/problems/count-number-of-maximum-bitwise-or-subsets)|Count Number of Maximum Bitwise-OR Subsets|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CountNumberOfMaximumBitwiseOrSubsets.java)|
 |[LCP 07](https://leetcode-cn.com/problems/chuan-di-xin-xi)|传递信息|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ChuanDiXinXi.java)|
 |[剑指 Offer 03](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof)|数组中重复的数字 LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ShuZuZhongZhongFuDeShuZiLcof.java)|
 |[剑指 Offer 04](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof)|二维数组中的查找 LCOF|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ErWeiShuZuZhongDeChaZhaoLcof.java)|
