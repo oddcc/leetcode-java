@@ -15,7 +15,7 @@ PS：插件查看题目会连tag一起展示出来，这其实是个不小的提
 
 关于`TempFilePath`，对于我的包`com.oddcc.leetcode.editor.cn`来说，路径应该是`/Users/oddcc/Documents/Study/LeetCode/leetcode-practice/src/main/java/com/oddcc`，即从`leetcode`开始，后面是插件默认的包结构。这里应该根据个人需要进行修改
 
-CodeFileName： `$!velocityTool.camelCaseName(${question.titleSlug})`
+CodeFileName： `$!velocityTool.camelCaseName(${question.title})`
 
 CodeTemplate：
 
@@ -23,12 +23,12 @@ CodeTemplate：
 // ${question.frontendQuestionId}
 
 package com.oddcc.leetcode.editor.cn;
-public class $!velocityTool.camelCaseName(${question.titleSlug}){
-  public static void main(String[] args) {
-       Solution solution = new $!velocityTool.camelCaseName(${question.titleSlug})().new Solution();
-  }
-  ${question.code}
-}
+public class $!velocityTool.camelCaseName(${question.title}){
+public static void main(String[] args) {
+        Solution solution = new $!velocityTool.camelCaseName(${question.title})().new Solution();
+        }
+        ${question.code}
+        }
 ```
 
 
