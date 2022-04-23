@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckPermutationLCCI.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/CheckPermutationLCCI.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com面试题 01.02" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckPermutationLCCI.java" />
+              <option name="titleSlug" value="check-permutation-lcci" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CountNumberOfMaximumBitwiseOrSubsets.java">
           <value>
             <LeetcodeEditor>
