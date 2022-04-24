@@ -23,7 +23,6 @@ public class BinaryGap {
                     indexOf1.add(i);
                 }
             }
-            indexOf1.sort(Integer::compareTo);
             int ans = 0;
             if (indexOf1.size() <= 1) {
                 return ans;
