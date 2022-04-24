@@ -17,18 +17,19 @@ public class BinaryGap {
     class Solution {
         public int binaryGap(int n) {
             char[] binaryStrChars = Integer.toBinaryString(n).toCharArray();
-            List<Integer> indexOf1 = new ArrayList<>();
+            Integer h = null;
+            Integer l = null;
+            int ans = 0;
             for (int i = 0; i < binaryStrChars.length; i++) {
                 if (binaryStrChars[i] == '1') {
-                    indexOf1.add(i);
+                    if (h == null) {
+                        h = i;
+                    } else {
+                        l = i;
+                        ans = Math.max(ans, l - h);
+                        h = l;
+                    }
                 }
-            }
-            int ans = 0;
-            if (indexOf1.size() <= 1) {
-                return ans;
-            }
-            for (int i = 1; i < indexOf1.size(); i++) {
-                ans = Math.max(ans, indexOf1.get(i) - indexOf1.get(i - 1));
             }
             return ans;
         }
