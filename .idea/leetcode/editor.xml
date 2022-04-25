@@ -25,6 +25,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CompressStringLcci.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/CompressStringLcci.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com面试题 01.06" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CompressStringLcci.java" />
+              <option name="titleSlug" value="compress-string-lcci" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CountNumberOfMaximumBitwiseOrSubsets.java">
           <value>
             <LeetcodeEditor>
@@ -110,6 +121,17 @@
               <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateFunction.java" />
               <option name="titleSlug" value="rotate-function" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateMatrixLcci.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/RotateMatrixLcci.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com面试题 01.07" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateMatrixLcci.java" />
+              <option name="titleSlug" value="rotate-matrix-lcci" />
             </LeetcodeEditor>
           </value>
         </entry>
