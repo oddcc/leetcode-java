@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有392道题，不断添加中…
+### 目前已有393道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -231,6 +231,7 @@ PS：
 |[394](https://leetcode-cn.com/problems/decode-string)|Decode String|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/DecodeString.java)|
 |[395](https://leetcode-cn.com/problems/longest-substring-with-at-least-k-repeating-characters)|Longest Substring with At Least K Repeating Characters|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LongestSubstringWithAtLeastKRepeatingCharacters.java)|
 |[396](https://leetcode-cn.com/problems/rotate-function)|Rotate Function|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateFunction.java)|
+|[398](https://leetcode-cn.com/problems/random-pick-index)|Random Pick Index|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RandomPickIndex.java)|
 |[399](https://leetcode-cn.com/problems/evaluate-division)|Evaluate Division|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/EvaluateDivision.java)|
 |[401](https://leetcode-cn.com/problems/binary-watch)|Binary Watch|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BinaryWatch.java)|
 |[403](https://leetcode-cn.com/problems/frog-jump)|Frog Jump|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FrogJump.java)|
