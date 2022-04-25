@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有393道题，不断添加中…
+### 目前已有394道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode-cn.com/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -438,5 +438,6 @@ PS：
 |[面试题 01.03](https://leetcode-cn.com/problems/string-to-url-lcci)|String to URL LCCI|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/StringToURLLCCI.java)|
 |[面试题 01.04](https://leetcode-cn.com/problems/palindrome-permutation-lcci)|Palindrome Permutation LCCI|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PalindromePermutationLCCI.java)|
 |[面试题 01.05](https://leetcode-cn.com/problems/one-away-lcci)|One Away LCCI|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/OneAwayLCCI.java)|
+|[面试题 01.06](https://leetcode-cn.com/problems/compress-string-lcci)|Compress String LCCI|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CompressStringLcci.java)|
 |[面试题 17.10](https://leetcode-cn.com/problems/find-majority-element-lcci)|Find Majority Element LCCI|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FindMajorityElementLcci.java)|
 |[面试题 17.21](https://leetcode-cn.com/problems/volume-of-histogram-lcci)|Volume of Histogram LCCI|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/VolumeOfHistogramLcci.java)|
