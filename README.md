@@ -23,12 +23,12 @@ CodeTemplate：
 // ${question.frontendQuestionId}
 
 package com.oddcc.leetcode.editor.cn;
-public class $!velocityTool.camelCaseName(${question.title}){
-public static void main(String[] args) {
+public class $!velocityTool.camelCaseName(${question.title}) {
+    public static void main(String[] args) {
         Solution solution = new $!velocityTool.camelCaseName(${question.title})().new Solution();
-        }
-        ${question.code}
-        }
+    }
+    ${question.code}
+}
 ```
 
 

@@ -102,13 +102,24 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ProjectionAreaOf3DShapes.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/ProjectionAreaOf3DShapes.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com883" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ProjectionAreaOf3DShapes.java" />
+              <option name="titleSlug" value="projection-area-of-3d-shapes" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ProjectionAreaOf3dShapes.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/ProjectionAreaOf3dShapes.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/ProjectionAreaOf3DShapes.md" />
               <option name="frontendQuestionId" value="leetcode-cn.com883" />
               <option name="host" value="leetcode-cn.com" />
-              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ProjectionAreaOf3dShapes.java" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ProjectionAreaOf3DShapes.java" />
               <option name="titleSlug" value="projection-area-of-3d-shapes" />
             </LeetcodeEditor>
           </value>
@@ -135,13 +146,35 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateImage.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/RotateImage.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com48" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateImage.java" />
+              <option name="titleSlug" value="rotate-image" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateMatrixLCCI.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/RotateMatrixLCCI.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com面试题 01.07" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateMatrixLCCI.java" />
+              <option name="titleSlug" value="rotate-matrix-lcci" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateMatrixLcci.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/RotateMatrixLcci.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/RotateMatrixLCCI.md" />
               <option name="frontendQuestionId" value="leetcode-cn.com面试题 01.07" />
               <option name="host" value="leetcode-cn.com" />
-              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateMatrixLcci.java" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateMatrixLCCI.java" />
               <option name="titleSlug" value="rotate-matrix-lcci" />
             </LeetcodeEditor>
           </value>

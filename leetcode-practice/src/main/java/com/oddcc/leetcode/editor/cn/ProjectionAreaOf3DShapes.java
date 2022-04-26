@@ -4,9 +4,9 @@ package com.oddcc.leetcode.editor.cn;
 
 import java.util.Arrays;
 
-public class ProjectionAreaOf3dShapes {
+public class ProjectionAreaOf3DShapes {
     public static void main(String[] args) {
-        Solution solution = new ProjectionAreaOf3dShapes().new Solution();
+        Solution solution = new ProjectionAreaOf3DShapes().new Solution();
         System.out.println(solution.projectionArea(new int[][]{{1, 2}, {3, 4}}));
         System.out.println(solution.projectionArea(new int[][]{{2}}));
         System.out.println(solution.projectionArea(new int[][]{{1, 0}, {0, 2}}));
