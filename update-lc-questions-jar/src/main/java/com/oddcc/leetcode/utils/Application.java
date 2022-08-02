@@ -159,7 +159,7 @@ public class Application implements CommandLineRunner {
 
     private void login() throws IOException {
         ClassicHttpRequest httpPost = ClassicRequestBuilder
-                .post("https://leetcode-cn.com/accounts/login/")
+                .post("https://leetcode.cn/accounts/login/")
                 .addHeader("Referer", "https://leetcode-cn.com/accounts/login/")
                 .addHeader("x-requested-with", "XMLHttpRequest")
                 .build();
