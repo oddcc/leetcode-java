@@ -7,8 +7,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/BinaryGap.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com868" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn868" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BinaryGap.java" />
               <option name="titleSlug" value="binary-gap" />
             </LeetcodeEditor>
@@ -18,8 +18,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/CheckPermutationLCCI.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com面试题 01.02" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.02" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckPermutationLCCI.java" />
               <option name="titleSlug" value="check-permutation-lcci" />
             </LeetcodeEditor>
@@ -29,8 +29,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/CompressStringLcci.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com面试题 01.06" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.06" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CompressStringLcci.java" />
               <option name="titleSlug" value="compress-string-lcci" />
             </LeetcodeEditor>
@@ -40,10 +40,21 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/CountNumberOfMaximumBitwiseOrSubsets.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com2044" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn2044" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CountNumberOfMaximumBitwiseOrSubsets.java" />
               <option name="titleSlug" value="count-number-of-maximum-bitwise-or-subsets" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/DesignCircularQueue.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/DesignCircularQueue.md" />
+              <option name="frontendQuestionId" value="leetcode.cn622" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/DesignCircularQueue.java" />
+              <option name="titleSlug" value="design-circular-queue" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -51,8 +62,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/MinimumIndexSumOfTwoLists.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com599" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn599" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumIndexSumOfTwoLists.java" />
               <option name="titleSlug" value="minimum-index-sum-of-two-lists" />
             </LeetcodeEditor>
@@ -62,8 +73,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/NThTribonacciNumber.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com1137" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn1137" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/NThTribonacciNumber.java" />
               <option name="titleSlug" value="n-th-tribonacci-number" />
             </LeetcodeEditor>
@@ -73,8 +84,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/OneAwayLCCI.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com面试题 01.05" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.05" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/OneAwayLCCI.java" />
               <option name="titleSlug" value="one-away-lcci" />
             </LeetcodeEditor>
@@ -84,8 +95,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/PalindromePermutationLCCI.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com面试题 01.04" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.04" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PalindromePermutationLCCI.java" />
               <option name="titleSlug" value="palindrome-permutation-lcci" />
             </LeetcodeEditor>
@@ -95,8 +106,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/PeakIndexInAMountainArray.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com852" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn852" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PeakIndexInAMountainArray.java" />
               <option name="titleSlug" value="peak-index-in-a-mountain-array" />
             </LeetcodeEditor>
@@ -106,8 +117,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/ProjectionAreaOf3DShapes.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com883" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn883" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ProjectionAreaOf3DShapes.java" />
               <option name="titleSlug" value="projection-area-of-3d-shapes" />
             </LeetcodeEditor>
@@ -117,8 +128,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/ProjectionAreaOf3DShapes.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com883" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn883" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ProjectionAreaOf3DShapes.java" />
               <option name="titleSlug" value="projection-area-of-3d-shapes" />
             </LeetcodeEditor>
@@ -128,8 +139,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/RandomPickIndex.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com398" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn398" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RandomPickIndex.java" />
               <option name="titleSlug" value="random-pick-index" />
             </LeetcodeEditor>
@@ -139,8 +150,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/RotateFunction.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com396" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn396" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateFunction.java" />
               <option name="titleSlug" value="rotate-function" />
             </LeetcodeEditor>
@@ -150,8 +161,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/RotateImage.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com48" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn48" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateImage.java" />
               <option name="titleSlug" value="rotate-image" />
             </LeetcodeEditor>
@@ -161,8 +172,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/RotateMatrixLCCI.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com面试题 01.07" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.07" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateMatrixLCCI.java" />
               <option name="titleSlug" value="rotate-matrix-lcci" />
             </LeetcodeEditor>
@@ -172,8 +183,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/RotateMatrixLCCI.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com面试题 01.07" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.07" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RotateMatrixLCCI.java" />
               <option name="titleSlug" value="rotate-matrix-lcci" />
             </LeetcodeEditor>
@@ -183,8 +194,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/StringToURLLCCI.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com面试题 01.03" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.03" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/StringToURLLCCI.java" />
               <option name="titleSlug" value="string-to-url-lcci" />
             </LeetcodeEditor>
@@ -194,8 +205,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/TwoSum.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com1" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn1" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/TwoSum.java" />
               <option name="titleSlug" value="two-sum" />
             </LeetcodeEditor>
@@ -205,8 +216,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/AddTwoNumbers.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com2" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn2" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java" />
               <option name="titleSlug" value="add-two-numbers" />
             </LeetcodeEditor>
@@ -216,8 +227,8 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/PancakeSorting.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com969" />
-              <option name="host" value="leetcode-cn.com" />
+              <option name="frontendQuestionId" value="leetcode.cn969" />
+              <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/oddcc/leetcode/editor/cn/PancakeSorting.java" />
               <option name="titleSlug" value="pancake-sorting" />
             </LeetcodeEditor>
