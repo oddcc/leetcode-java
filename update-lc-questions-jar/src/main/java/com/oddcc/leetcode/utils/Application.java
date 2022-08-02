@@ -107,7 +107,7 @@ public class Application implements CommandLineRunner {
 
         while (hasMore) {
             ClassicHttpRequest request = ClassicRequestBuilder
-                    .post("https://leetcode-cn.com/graphql/")
+                    .post("https://leetcode.cn/graphql/")
                     .addHeader(HttpHeaders.CONTENT_TYPE, "application/json")
                     .addHeader(HttpHeaders.USER_AGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36")
                     .setEntity(HttpEntities.create(getQueryTemplate().replace("${{skip}}", String.valueOf(skip))))
@@ -160,7 +160,7 @@ public class Application implements CommandLineRunner {
     private void login() throws IOException {
         ClassicHttpRequest httpPost = ClassicRequestBuilder
                 .post("https://leetcode.cn/accounts/login/")
-                .addHeader("Referer", "https://leetcode-cn.com/accounts/login/")
+                .addHeader("Referer", "https://leetcode.cn/accounts/login/")
                 .addHeader("x-requested-with", "XMLHttpRequest")
                 .build();
 
@@ -181,7 +181,7 @@ public class Application implements CommandLineRunner {
         }
 
         ClassicHttpRequest verify = ClassicRequestBuilder
-                .get("https://leetcode-cn.com/points/api/")
+                .get("https://leetcode.cn/points/api/")
                 .build();
         HttpResponse verifyRes = client.execute(verify, httpContext);
         if (verifyRes.getCode() != 200) {
