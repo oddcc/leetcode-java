@@ -71,7 +71,7 @@ def copy_from_old(newFile, readme_path):
 
 def cons_line(q):
     return QUESTION_INFO.format(
-        "[{}](https://leetcode-cn.com/problems/{})".format(q["frontendQuestionId"], q["titleSlug"]),
+        "[{}](https://leetcode.cn/problems/{})".format(q["frontendQuestionId"], q["titleSlug"]),
         q["title"],
         "⭐" if q["level"] == "EASY" else "⭐⭐" if q["level"] == "MEDIUM" else "⭐⭐⭐",
         "[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/{})".format(
