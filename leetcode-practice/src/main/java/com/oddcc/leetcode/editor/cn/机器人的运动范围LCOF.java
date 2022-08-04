@@ -1,13 +1,13 @@
-// 剑指 Offer 13
+// 面试题13
 
 package com.oddcc.leetcode.editor.cn;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class JiQiRenDeYunDongFanWeiLcof {
+public class 机器人的运动范围LCOF {
     public static void main(String[] args) {
-        Solution solution = new JiQiRenDeYunDongFanWeiLcof().new Solution();
+        Solution solution = new 机器人的运动范围LCOF().new Solution();
         System.out.println(solution.movingCount(2, 3, 1));
         System.out.println(solution.movingCount(3, 1, 0));
         System.out.println(solution.movingCount(11, 8, 16));
@@ -38,8 +38,7 @@ public class JiQiRenDeYunDongFanWeiLcof {
                         options.add(new int[]{x - 1, y});
                         options.add(new int[]{x, y + 1});
                         options.add(new int[]{x + 1, y});
-                    }
-                    else {
+                    } else {
                         matrix[x][y] = 2;
                     }
                 }
@@ -74,6 +73,6 @@ public class JiQiRenDeYunDongFanWeiLcof {
             return x >= 0 && x < matrix.length && y >= 0 && y < matrix[0].length;
         }
     }
-    //leetcode submit region end(Prohibit modification and deletion)
+//leetcode submit region end(Prohibit modification and deletion)
 
 }
