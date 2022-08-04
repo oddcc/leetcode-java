@@ -128,6 +128,7 @@ hs_err_pid*
 # leetcode plugin
 *.txt
 leetcode-practice/**/*.md
+leetcode-practice/**/*.lcv
 .idea/sonarlint
 
 src/main/java/test/*
