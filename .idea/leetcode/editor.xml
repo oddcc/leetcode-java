@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddOneRowToTree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/AddOneRowToTree.md" />
+              <option name="frontendQuestionId" value="leetcode.cn623" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddOneRowToTree.java" />
+              <option name="titleSlug" value="add-one-row-to-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BinaryGap.java">
           <value>
             <LeetcodeEditor>
