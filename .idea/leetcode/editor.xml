@@ -223,6 +223,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/StringMatchingInAnArray.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/StringMatchingInAnArray.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1408" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/StringMatchingInAnArray.java" />
+              <option name="titleSlug" value="string-matching-in-an-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/StringToURLLCCI.java">
           <value>
             <LeetcodeEditor>
