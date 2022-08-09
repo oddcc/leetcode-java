@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有399道题，不断添加中…
+### 目前已有402道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode.cn/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -285,6 +285,7 @@ PS：
 |[623](https://leetcode.cn/problems/add-one-row-to-tree)|Add One Row to Tree|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddOneRowToTree.java)|
 |[628](https://leetcode.cn/problems/maximum-product-of-three-numbers)|Maximum Product of Three Numbers|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumProductOfThreeNumbers.java)|
 |[633](https://leetcode.cn/problems/sum-of-square-numbers)|Sum of Square Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SumOfSquareNumbers.java)|
+|[636](https://leetcode.cn/problems/exclusive-time-of-functions)|Exclusive Time of Functions|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ExclusiveTimeOfFunctions.java)|
 |[639](https://leetcode.cn/problems/decode-ways-ii)|Decode Ways II|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/DecodeWaysIi.java)|
 |[643](https://leetcode.cn/problems/maximum-average-subarray-i)|Maximum Average Subarray I|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumAverageSubarrayI.java)|
 |[645](https://leetcode.cn/problems/set-mismatch)|Set Mismatch|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SetMismatch.java)|
@@ -383,6 +384,8 @@ PS：
 |[1365](https://leetcode.cn/problems/how-many-numbers-are-smaller-than-the-current-number)|How Many Numbers Are Smaller Than the Current Number|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/HowManyNumbersAreSmallerThanTheCurrentNumber.java)|
 |[1370](https://leetcode.cn/problems/increasing-decreasing-string)|Increasing Decreasing String|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/IncreasingDecreasingString.java)|
 |[1403](https://leetcode.cn/problems/minimum-subsequence-in-non-increasing-order)|Minimum Subsequence in Non-Increasing Order|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumSubsequenceInNonIncreasingOrder.java)|
+|[1408](https://leetcode.cn/problems/string-matching-in-an-array)|String Matching in an Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/StringMatchingInAnArray.java)|
+|[1413](https://leetcode.cn/problems/minimum-value-to-get-positive-step-by-step-sum)|Minimum Value to Get Positive Step by Step Sum|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumValueToGetPositiveStepByStepSum.java)|
 |[1418](https://leetcode.cn/problems/display-table-of-food-orders-in-a-restaurant)|Display Table of Food Orders in a Restaurant|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/DisplayTableOfFoodOrdersInARestaurant.java)|
 |[1423](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards)|Maximum Points You Can Obtain from Cards|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumPointsYouCanObtainFromCards.java)|
 |[1438](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit)|Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.java)|
