@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有402道题，不断添加中…
+### 目前已有403道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode.cn/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -287,6 +287,7 @@ PS：
 |[633](https://leetcode.cn/problems/sum-of-square-numbers)|Sum of Square Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SumOfSquareNumbers.java)|
 |[636](https://leetcode.cn/problems/exclusive-time-of-functions)|Exclusive Time of Functions|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ExclusiveTimeOfFunctions.java)|
 |[639](https://leetcode.cn/problems/decode-ways-ii)|Decode Ways II|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/DecodeWaysIi.java)|
+|[640](https://leetcode.cn/problems/solve-the-equation)|Solve the Equation|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SolveTheEquation.java)|
 |[643](https://leetcode.cn/problems/maximum-average-subarray-i)|Maximum Average Subarray I|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumAverageSubarrayI.java)|
 |[645](https://leetcode.cn/problems/set-mismatch)|Set Mismatch|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SetMismatch.java)|
 |[647](https://leetcode.cn/problems/palindromic-substrings)|Palindromic Substrings|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PalindromicSubstrings.java)|
