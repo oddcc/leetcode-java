@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有404道题，不断添加中…
+### 目前已有405道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode.cn/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -131,8 +131,8 @@ PS：
 |[116](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node)|Populating Next Right Pointers in Each Node|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PopulatingNextRightPointersInEachNode.java)|
 |[118](https://leetcode.cn/problems/pascals-triangle)|Pascal's Triangle|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PascalsTriangle.java)|
 |[119](https://leetcode.cn/problems/pascals-triangle-ii)|Pascal's Triangle II|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PascalsTriangleIi.java)|
-|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStock.java)|
-|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStock.java)|
+|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java)|
+|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java)|
 |[125](https://leetcode.cn/problems/valid-palindrome)|Valid Palindrome|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ValidPalindrome.java)|
 |[127](https://leetcode.cn/problems/word-ladder)|Word Ladder|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/WordLadder.java)|
 |[129](https://leetcode.cn/problems/sum-root-to-leaf-numbers)|Sum Root to Leaf Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SumRootToLeafNumbers.java)|
@@ -194,7 +194,7 @@ PS：
 |[234](https://leetcode.cn/problems/palindrome-linked-list)|Palindrome Linked List|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PalindromeLinkedList.java)|
 |[235](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree)|Lowest Common Ancestor of a Binary Search Tree|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LowestCommonAncestorOfABinarySearchTree.java)|
 |[236](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree)|Lowest Common Ancestor of a Binary Tree|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LowestCommonAncestorOfABinaryTree.java)|
-|[237](https://leetcode.cn/problems/delete-node-in-a-linked-list)|Delete Node in a Linked List|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/DeleteNodeInALinkedList.java)|
+|[237](https://leetcode.cn/problems/delete-node-in-a-linked-list)|Delete Node in a Linked List|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/DeleteNodeInALinkedList.java)|
 |[238](https://leetcode.cn/problems/product-of-array-except-self)|Product of Array Except Self|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ProductOfArrayExceptSelf.java)|
 |[240](https://leetcode.cn/problems/search-a-2d-matrix-ii)|Search a 2D Matrix II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SearchA2dMatrixIi.java)|
 |[242](https://leetcode.cn/problems/valid-anagram)|Valid Anagram|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ValidAnagram.java)|
@@ -393,6 +393,7 @@ PS：
 |[1438](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit)|Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.java)|
 |[1442](https://leetcode.cn/problems/count-triplets-that-can-form-two-arrays-of-equal-xor)|Count Triplets That Can Form Two Arrays of Equal XOR|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CountTripletsThatCanFormTwoArraysOfEqualXor.java)|
 |[1473](https://leetcode.cn/problems/paint-house-iii)|Paint House III|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PaintHouseIii.java)|
+|[1475](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop)|Final Prices With a Special Discount in a Shop|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FinalPricesWithASpecialDiscountInAShop.java)|
 |[1482](https://leetcode.cn/problems/minimum-number-of-days-to-make-m-bouquets)|Minimum Number of Days to Make m Bouquets|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumNumberOfDaysToMakeMBouquets.java)|
 |[1486](https://leetcode.cn/problems/xor-operation-in-an-array)|XOR Operation in an Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/XorOperationInAnArray.java)|
 |[1600](https://leetcode.cn/problems/throne-inheritance)|Throne Inheritance|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ThroneInheritanceWrapper.java)|
