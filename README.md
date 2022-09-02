@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有405道题，不断添加中…
+### 目前已有406道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode.cn/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -64,7 +64,7 @@ PS：
 |[24](https://leetcode.cn/problems/swap-nodes-in-pairs)|Swap Nodes in Pairs|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SwapNodesInPairs.java)|
 |[26](https://leetcode.cn/problems/remove-duplicates-from-sorted-array)|Remove Duplicates from Sorted Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RemoveDuplicatesFromSortedArray.java)|
 |[27](https://leetcode.cn/problems/remove-element)|Remove Element|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RemoveElement.java)|
-|[28](https://leetcode.cn/problems/implement-strstr)|Implement strStr()|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ImplementStrstr.java)|
+|[28](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string)|Find the Index of the First Occurrence in a String|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ImplementStrstr.java)|
 |[30](https://leetcode.cn/problems/substring-with-concatenation-of-all-words)|Substring with Concatenation of All Words|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SubstringWithConcatenationOfAllWords.java)|
 |[31](https://leetcode.cn/problems/next-permutation)|Next Permutation|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/NextPermutation.java)|
 |[33](https://leetcode.cn/problems/search-in-rotated-sorted-array)|Search in Rotated Sorted Array|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SearchInRotatedSortedArray.java)|
@@ -295,6 +295,7 @@ PS：
 |[665](https://leetcode.cn/problems/non-decreasing-array)|Non-decreasing Array|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/NonDecreasingArray.java)|
 |[674](https://leetcode.cn/problems/longest-continuous-increasing-subsequence)|Longest Continuous Increasing Subsequence|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LongestContinuousIncreasingSubsequence.java)|
 |[684](https://leetcode.cn/problems/redundant-connection)|Redundant Connection|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RedundantConnection.java)|
+|[687](https://leetcode.cn/problems/longest-univalue-path)|Longest Univalue Path|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LongestUnivaluePath.java)|
 |[690](https://leetcode.cn/problems/employee-importance)|Employee Importance|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/EmployeeImportance.java)|
 |[692](https://leetcode.cn/problems/top-k-frequent-words)|Top K Frequent Words|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/TopKFrequentWords.java)|
 |[695](https://leetcode.cn/problems/max-area-of-island)|Max Area of Island|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaxAreaOfIsland.java)|
