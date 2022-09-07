@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有409道题，不断添加中…
+### 目前已有410道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode.cn/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -400,6 +400,7 @@ PS：
 |[1482](https://leetcode.cn/problems/minimum-number-of-days-to-make-m-bouquets)|Minimum Number of Days to Make m Bouquets|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumNumberOfDaysToMakeMBouquets.java)|
 |[1486](https://leetcode.cn/problems/xor-operation-in-an-array)|XOR Operation in an Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/XorOperationInAnArray.java)|
 |[1582](https://leetcode.cn/problems/special-positions-in-a-binary-matrix)|Special Positions in a Binary Matrix|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SpecialPositionsInABinaryMatrix.java)|
+|[1592](https://leetcode.cn/problems/rearrange-spaces-between-words)|Rearrange Spaces Between Words|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/RearrangeSpacesBetweenWords.java)|
 |[1600](https://leetcode.cn/problems/throne-inheritance)|Throne Inheritance|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ThroneInheritanceWrapper.java)|
 |[1603](https://leetcode.cn/problems/design-parking-system)|Design Parking System|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/DesignParkingSystem.java)|
 |[1614](https://leetcode.cn/problems/maximum-nesting-depth-of-the-parentheses)|Maximum Nesting Depth of the Parentheses|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumNestingDepthOfTheParentheses.java)|
