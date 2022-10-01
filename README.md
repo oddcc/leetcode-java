@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有412道题，不断添加中…
+### 目前已有413道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode.cn/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -406,6 +406,7 @@ PS：
 |[1614](https://leetcode.cn/problems/maximum-nesting-depth-of-the-parentheses)|Maximum Nesting Depth of the Parentheses|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumNestingDepthOfTheParentheses.java)|
 |[1629](https://leetcode.cn/problems/slowest-key)|Slowest Key|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SlowestKey.java)|
 |[1631](https://leetcode.cn/problems/path-with-minimum-effort)|Path With Minimum Effort|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PathWithMinimumEffort.java)|
+|[1694](https://leetcode.cn/problems/reformat-phone-number)|Reformat Phone Number|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ReformatPhoneNumber.java)|
 |[1707](https://leetcode.cn/problems/maximum-xor-with-an-element-from-array)|Maximum XOR With an Element From Array|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumXorWithAnElementFromArray.java)|
 |[1711](https://leetcode.cn/problems/count-good-meals)|Count Good Meals|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CountGoodMeals.java)|
 |[1720](https://leetcode.cn/problems/decode-xored-array)|Decode XORed Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/DecodeXoredArray.java)|
