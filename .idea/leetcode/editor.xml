@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/MaximumAscendingSubarraySum.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/MaximumAscendingSubarraySum.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1800" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumAscendingSubarraySum.java" />
+              <option name="titleSlug" value="maximum-ascending-subarray-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddDigits.java">
           <value>
             <LeetcodeEditor>
@@ -121,6 +132,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LongestUnivaluePath.java" />
               <option name="titleSlug" value="longest-univalue-path" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumAscendingSubarraySum.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/MaximumAscendingSubarraySum.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1800" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumAscendingSubarraySum.java" />
+              <option name="titleSlug" value="maximum-ascending-subarray-sum" />
             </LeetcodeEditor>
           </value>
         </entry>
