@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有413道题，不断添加中…
+### 目前已有414道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode.cn/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -416,6 +416,7 @@ PS：
 |[1738](https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value)|Find Kth Largest XOR Coordinate Value|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FindKthLargestXorCoordinateValue.java)|
 |[1744](https://leetcode.cn/problems/can-you-eat-your-favorite-candy-on-your-favorite-day)|Can You Eat Your Favorite Candy on Your Favorite Day?|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CanYouEatYourFavoriteCandyOnYourFavoriteDay.java)|
 |[1758](https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string)|Minimum Changes To Make Alternating Binary String|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumChangesToMakeAlternatingBinaryString.java)|
+|[1800](https://leetcode.cn/problems/maximum-ascending-subarray-sum)|Maximum Ascending Subarray Sum|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumAscendingSubarraySum.java)|
 |[1822](https://leetcode.cn/problems/sign-of-the-product-of-an-array)|Sign of the Product of an Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SignOfTheProductOfAnArray.java)|
 |[1823](https://leetcode.cn/problems/find-the-winner-of-the-circular-game)|Find the Winner of the Circular Game|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FindTheWinnerOfTheCircularGame.java)|
 |[1833](https://leetcode.cn/problems/maximum-ice-cream-bars)|Maximum Ice Cream Bars|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumIceCreamBars.java)|
