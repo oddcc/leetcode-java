@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有414道题，不断添加中…
+### 目前已有415道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode.cn/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -330,6 +330,7 @@ PS：
 |[844](https://leetcode.cn/problems/backspace-string-compare)|Backspace String Compare|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BackspaceStringCompare.java)|
 |[845](https://leetcode.cn/problems/longest-mountain-in-array)|Longest Mountain in Array|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LongestMountainInArray.java)|
 |[852](https://leetcode.cn/problems/peak-index-in-a-mountain-array)|Peak Index in a Mountain Array|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PeakIndexInAMountainArray.java)|
+|[856](https://leetcode.cn/problems/score-of-parentheses)|Score of Parentheses|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ScoreOfParentheses.java)|
 |[860](https://leetcode.cn/problems/lemonade-change)|Lemonade Change|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LemonadeChange.java)|
 |[867](https://leetcode.cn/problems/transpose-matrix)|Transpose Matrix|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/TransposeMatrix.java)|
 |[868](https://leetcode.cn/problems/binary-gap)|Binary Gap|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BinaryGap.java)|
