@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有415道题，不断添加中…
+### 目前已有417道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode.cn/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -261,7 +261,7 @@ PS：
 |[502](https://leetcode.cn/problems/ipo)|IPO|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/Ipo.java)|
 |[503](https://leetcode.cn/problems/next-greater-element-ii)|Next Greater Element II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/NextGreaterElementIi.java)|
 |[509](https://leetcode.cn/problems/fibonacci-number)|Fibonacci Number|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FibonacciNumber.java)|
-|[518](https://leetcode.cn/problems/coin-change-2)|Coin Change 2|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CoinChange2.java)|
+|[518](https://leetcode.cn/problems/coin-change-ii)|Coin Change II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CoinChange2.java)|
 |[523](https://leetcode.cn/problems/continuous-subarray-sum)|Continuous Subarray Sum|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ContinuousSubarraySum.java)|
 |[525](https://leetcode.cn/problems/contiguous-array)|Contiguous Array|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ContiguousArray.java)|
 |[530](https://leetcode.cn/problems/minimum-absolute-difference-in-bst)|Minimum Absolute Difference in BST|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumAbsoluteDifferenceInBst.java)|
@@ -417,6 +417,7 @@ PS：
 |[1738](https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value)|Find Kth Largest XOR Coordinate Value|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FindKthLargestXorCoordinateValue.java)|
 |[1744](https://leetcode.cn/problems/can-you-eat-your-favorite-candy-on-your-favorite-day)|Can You Eat Your Favorite Candy on Your Favorite Day?|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CanYouEatYourFavoriteCandyOnYourFavoriteDay.java)|
 |[1758](https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string)|Minimum Changes To Make Alternating Binary String|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumChangesToMakeAlternatingBinaryString.java)|
+|[1790](https://leetcode.cn/problems/check-if-one-string-swap-can-make-strings-equal)|Check if One String Swap Can Make Strings Equal|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckIfOneStringSwapCanMakeStringsEqual.java)|
 |[1800](https://leetcode.cn/problems/maximum-ascending-subarray-sum)|Maximum Ascending Subarray Sum|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumAscendingSubarraySum.java)|
 |[1822](https://leetcode.cn/problems/sign-of-the-product-of-an-array)|Sign of the Product of an Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SignOfTheProductOfAnArray.java)|
 |[1823](https://leetcode.cn/problems/find-the-winner-of-the-circular-game)|Find the Winner of the Circular Game|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FindTheWinnerOfTheCircularGame.java)|
@@ -451,6 +452,7 @@ PS：
 |[剑指 Offer 42](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof)|连续子数组的最大和  LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LianXuZiShuZuDeZuiDaHeLcof.java)|
 |[剑指 Offer 52](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof)|两个链表的第一个公共节点  LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LiangGeLianBiaoDeDiYiGeGongGongJieDianLcof.java)|
 |[剑指 Offer 53 - I](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof)|在排序数组中查找数字  LCOF|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ZaiPaiXuShuZuZhongChaZhaoShuZiLcof.java)|
+|[剑指 Offer II 007](https://leetcode.cn/problems/1fGaJU)|数组中和为 0 的三个数|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/数组中和为0的三个数.java)|
 |[面试题 01.01](https://leetcode.cn/problems/is-unique-lcci)|Is Unique LCCI|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/IsUniqueLCCI.java)|
 |[面试题 01.02](https://leetcode.cn/problems/check-permutation-lcci)|Check Permutation LCCI|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckPermutationLCCI.java)|
 |[面试题 01.03](https://leetcode.cn/problems/string-to-url-lcci)|String to URL LCCI|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/StringToURLLCCI.java)|
