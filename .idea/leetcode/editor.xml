@@ -47,6 +47,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckIfNumberIsASumOfPowersOfThree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/CheckIfNumberIsASumOfPowersOfThree.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1780" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckIfNumberIsASumOfPowersOfThree.java" />
+              <option name="titleSlug" value="check-if-number-is-a-sum-of-powers-of-three" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckIfOneStringSwapCanMakeStringsEqual.java">
           <value>
             <LeetcodeEditor>
