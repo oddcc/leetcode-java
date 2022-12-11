@@ -223,6 +223,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumOperationsToMakeTheArrayIncreasing.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/MinimumOperationsToMakeTheArrayIncreasing.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1827" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumOperationsToMakeTheArrayIncreasing.java" />
+              <option name="titleSlug" value="minimum-operations-to-make-the-array-increasing" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumSubsequenceInNonIncreasingOrder.java">
           <value>
             <LeetcodeEditor>
