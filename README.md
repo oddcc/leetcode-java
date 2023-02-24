@@ -44,7 +44,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有425道题，不断添加中…
+### 目前已有427道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode.cn/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -134,8 +134,8 @@ PS：
 |[117](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii)|Populating Next Right Pointers in Each Node II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PopulatingNextRightPointersInEachNodeII.java)|
 |[118](https://leetcode.cn/problems/pascals-triangle)|Pascal's Triangle|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PascalsTriangle.java)|
 |[119](https://leetcode.cn/problems/pascals-triangle-ii)|Pascal's Triangle II|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PascalsTriangleIi.java)|
-|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStock.java)|
-|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStock.java)|
+|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java)|
+|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java)|
 |[125](https://leetcode.cn/problems/valid-palindrome)|Valid Palindrome|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ValidPalindrome.java)|
 |[127](https://leetcode.cn/problems/word-ladder)|Word Ladder|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/WordLadder.java)|
 |[129](https://leetcode.cn/problems/sum-root-to-leaf-numbers)|Sum Root to Leaf Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SumRootToLeafNumbers.java)|
@@ -424,11 +424,13 @@ PS：
 |[1744](https://leetcode.cn/problems/can-you-eat-your-favorite-candy-on-your-favorite-day)|Can You Eat Your Favorite Candy on Your Favorite Day?|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CanYouEatYourFavoriteCandyOnYourFavoriteDay.java)|
 |[1758](https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string)|Minimum Changes To Make Alternating Binary String|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumChangesToMakeAlternatingBinaryString.java)|
 |[1780](https://leetcode.cn/problems/check-if-number-is-a-sum-of-powers-of-three)|Check if Number is a Sum of Powers of Three|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckIfNumberIsASumOfPowersOfThree.java)|
+|[1781](https://leetcode.cn/problems/sum-of-beauty-of-all-substrings)|Sum of Beauty of All Substrings|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SumOfBeautyOfAllSubstrings.java)|
 |[1790](https://leetcode.cn/problems/check-if-one-string-swap-can-make-strings-equal)|Check if One String Swap Can Make Strings Equal|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckIfOneStringSwapCanMakeStringsEqual.java)|
 |[1800](https://leetcode.cn/problems/maximum-ascending-subarray-sum)|Maximum Ascending Subarray Sum|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumAscendingSubarraySum.java)|
 |[1822](https://leetcode.cn/problems/sign-of-the-product-of-an-array)|Sign of the Product of an Array|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SignOfTheProductOfAnArray.java)|
 |[1823](https://leetcode.cn/problems/find-the-winner-of-the-circular-game)|Find the Winner of the Circular Game|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FindTheWinnerOfTheCircularGame.java)|
 |[1827](https://leetcode.cn/problems/minimum-operations-to-make-the-array-increasing)|Minimum Operations to Make the Array Increasing|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimumOperationsToMakeTheArrayIncreasing.java)|
+|[1832](https://leetcode.cn/problems/check-if-the-sentence-is-pangram)|Check if the Sentence Is Pangram|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckIfTheSentenceIsPangram.java)|
 |[1833](https://leetcode.cn/problems/maximum-ice-cream-bars)|Maximum Ice Cream Bars|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MaximumIceCreamBars.java)|
 |[1877](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array)|Minimize Maximum Pair Sum in Array|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/MinimizeMaximumPairSumInArray.java)|
 |[1893](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered)|Check if All the Integers in a Range Are Covered|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckIfAllTheIntegersInARangeAreCovered.java)|
