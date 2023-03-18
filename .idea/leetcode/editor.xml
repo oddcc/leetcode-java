@@ -509,6 +509,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SplitTwoStringsToMakePalindrome.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/SplitTwoStringsToMakePalindrome.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1616" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SplitTwoStringsToMakePalindrome.java" />
+              <option name="titleSlug" value="split-two-strings-to-make-palindrome" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/StringMatchingInAnArray.java">
           <value>
             <LeetcodeEditor>
@@ -616,6 +627,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ZhongJianErChaShuLcof.java" />
               <option name="titleSlug" value="zhong-jian-er-cha-shu-lcof" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/[1616]Split Two Strings to Make Palindrome.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/SplitTwoStringsToMakePalindrome.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1616" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SplitTwoStringsToMakePalindrome.java" />
+              <option name="titleSlug" value="split-two-strings-to-make-palindrome" />
             </LeetcodeEditor>
           </value>
         </entry>
