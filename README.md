@@ -20,7 +20,7 @@ CodeFileName： `$!velocityTool.camelCaseName(${question.title})`
 CodeTemplate：
 
 ```java
-// ${question.frontendQuestionId}
+// ${question.frontendQuestionId}&&${question.titleSlug}
 
 package com.oddcc.leetcode.editor.cn;
 public class $!velocityTool.camelCaseName(${question.title}) {
@@ -29,6 +29,7 @@ public class $!velocityTool.camelCaseName(${question.title}) {
     }
     ${question.code}
 }
+
 
 ```
 
@@ -135,8 +136,8 @@ PS：
 |[117](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii)|Populating Next Right Pointers in Each Node II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PopulatingNextRightPointersInEachNodeII.java)|
 |[118](https://leetcode.cn/problems/pascals-triangle)|Pascal's Triangle|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PascalsTriangle.java)|
 |[119](https://leetcode.cn/problems/pascals-triangle-ii)|Pascal's Triangle II|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PascalsTriangleIi.java)|
-|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java)|
-|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java)|
+|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStock.java)|
+|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStock.java)|
 |[125](https://leetcode.cn/problems/valid-palindrome)|Valid Palindrome|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ValidPalindrome.java)|
 |[127](https://leetcode.cn/problems/word-ladder)|Word Ladder|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/WordLadder.java)|
 |[129](https://leetcode.cn/problems/sum-root-to-leaf-numbers)|Sum Root to Leaf Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SumRootToLeafNumbers.java)|

@@ -11,7 +11,8 @@ BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 CODE_DIR = "leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn"
 QUESTION_FILE = "all.json"
 README_FILE = "README.md"
-RE = re.compile('^// (.+)\\n$')
+RE_FRONT_ID = re.compile('^// (.+)\\n$')
+RE_SLUG = re.compile('^// .+&&(.+)\n$')
 COMMENT_LINE = "<!--question list generated below here, don't DELETE this line-->\n"
 HEADER = "|ID|标题|难度|CODE|\n"
 SEPARATOR = "| ---- | ---- | ---- | ---- |\n"
@@ -25,8 +26,9 @@ def main():
         copy_from_old(newFile, readme_path)
 
         java_file_list = [j for j in os.listdir(os.path.join(BASE_DIR, CODE_DIR)) if j.endswith(".java")]
-        data_dic = get_data_dic(os.path.join(BASE_DIR, QUESTION_FILE))
-        q_list = get_question_list(java_file_list, data_dic)
+        data_dic_on_front_id = get_data_dic_on_front_id(os.path.join(BASE_DIR, QUESTION_FILE))
+        data_dic_on_slug = get_data_dic_on_slug(os.path.join(BASE_DIR, QUESTION_FILE))
+        q_list = get_question_list(java_file_list, data_dic_on_front_id, data_dic_on_slug)
 
         newFile.write("### 目前已有{}道题，不断添加中…\n".format(len(q_list)))
         newFile.write(HEADER)
@@ -79,32 +81,47 @@ def cons_line(q):
     )
 
 
-def get_data_dic(data_file_path):
+def get_data_dic_on_front_id(data_file_path):
     with open(data_file_path) as dataFile:
         question_data = json.load(dataFile)
-        data_dic = {question_data[i]["frontendQuestionId"]: question_data[i]
+        ret_dic = {question_data[i]["frontendQuestionId"]: question_data[i]
                     for i in range(0, len(question_data))}
-    return data_dic
+    return ret_dic
 
 
-def get_question_list(java_file_list, data_dic):
+def get_data_dic_on_slug(data_file_path):
+    with open(data_file_path) as dataFile:
+        question_data = json.load(dataFile)
+        ret_dic = {question_data[i]["titleSlug"]: question_data[i]
+                   for i in range(0, len(question_data))}
+    return ret_dic
+
+
+def get_by_key(key, data_dic):
+    return data_dic[key]
+
+def get_question_list(java_file_list, data_dic_on_front_id, data_dic_on_slug):
     q_list = []
     for jFile in java_file_list:
         with open(os.path.join(CODE_DIR, jFile)) as j:
-            r = RE.match(j.readline())
-            if r is None:
-                print('need fix: ' + jFile)
+            line = j.readline()
+            front_id_match = RE_FRONT_ID.match(line)
+            slug_match = RE_SLUG.match(line)
+            if (front_id_match is None) and (slug_match is None):
+                print('need fix: {}, no leading comment line'.format(jFile))
+                continue
+
+            question = None
+            if slug_match is not None:
+                question = get_by_key(slug_match.group(1), data_dic_on_slug)
             else:
-                question_id = r.group(1)
-                if question_id in data_dic:
-                    question = data_dic[question_id]
-                    if question["status"] == "AC":
-                        question["javaFile"] = jFile
-                        q_list.append(question)
-                    else:
-                        print('[{}]{} is not ac yet: '.format(question_id, jFile))
-                else:
-                    print('[{}] is not in the data_dic', question_id)
+                question = get_by_key(front_id_match.group(1), data_dic_on_front_id)
+
+            if question["status"] == "AC":
+                question["javaFile"] = jFile
+                q_list.append(question)
+            else:
+                print('[{}]{} is not ac yet: '.format(question['frontendQuestionId'], jFile))
     return q_list
 
 
