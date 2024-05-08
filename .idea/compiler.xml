@@ -11,14 +11,6 @@
         <module name="leetcode-practice" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="leetcode" target="1.8" />
-      <module name="LeetCode" target="1.8" />
-      <module name="leetcode-parent" target="11" />
-      <module name="leetcode-practice" target="1.8" />
-      <module name="minimal-pom" target="11" />
-      <module name="update-lc-questions-jar" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

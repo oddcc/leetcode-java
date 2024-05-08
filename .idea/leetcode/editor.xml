@@ -267,6 +267,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/NimGame.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/NimGame.md" />
+              <option name="frontendQuestionId" value="leetcode.cn292" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/NimGame.java" />
+              <option name="titleSlug" value="nim-game" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/OneAwayLCCI.java">
           <value>
             <LeetcodeEditor>
@@ -564,6 +575,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/TenthLine.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/TenthLine.md" />
+              <option name="frontendQuestionId" value="leetcode.cn195" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/TenthLine.java" />
+              <option name="titleSlug" value="tenth-line" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/TwoSum.java">
           <value>
             <LeetcodeEditor>
@@ -671,6 +693,28 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/机器人的运动范围LCOF.java" />
               <option name="titleSlug" value="ji-qi-ren-de-yun-dong-fan-wei-lcof" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/leetcode/editor/cn/TenthLine.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/TenthLine.md" />
+              <option name="frontendQuestionId" value="leetcode.cn195" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/TenthLine.java" />
+              <option name="titleSlug" value="tenth-line" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/leetcode/editor/cn/[195]Tenth Line.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/doc/content/TenthLine.md" />
+              <option name="frontendQuestionId" value="leetcode.cn195" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/TenthLine.java" />
+              <option name="titleSlug" value="tenth-line" />
             </LeetcodeEditor>
           </value>
         </entry>

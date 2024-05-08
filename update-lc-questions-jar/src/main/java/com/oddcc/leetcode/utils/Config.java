@@ -12,4 +12,5 @@ import org.springframework.stereotype.Component;
 public class Config {
     private String account;
     private String password;
+    private String cookieString;
 }

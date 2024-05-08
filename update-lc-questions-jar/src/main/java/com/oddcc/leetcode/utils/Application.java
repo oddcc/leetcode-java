@@ -5,11 +5,13 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.hc.client5.http.ClientProtocolException;
 import org.apache.hc.client5.http.classic.HttpClient;
 import org.apache.hc.client5.http.cookie.BasicCookieStore;
+import org.apache.hc.client5.http.cookie.Cookie;
 import org.apache.hc.client5.http.cookie.CookieStore;
 import org.apache.hc.client5.http.entity.UrlEncodedFormEntity;
 import org.apache.hc.client5.http.impl.DefaultHttpRequestRetryStrategy;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpResponse;
 import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
+import org.apache.hc.client5.http.impl.cookie.BasicClientCookie;
 import org.apache.hc.client5.http.protocol.HttpClientContext;
 import org.apache.hc.core5.http.*;
 import org.apache.hc.core5.http.io.entity.EntityUtils;
@@ -40,6 +42,8 @@ public class Application implements CommandLineRunner {
     @Autowired
     private Config config;
 
+    private boolean useCookies;
+
     private String outputFile;
 
     private HttpClient client;
@@ -58,23 +62,60 @@ public class Application implements CommandLineRunner {
     }
 
     private void prepare(String[] args) throws IOException {
-        if (config.getAccount() == null || config.getAccount().isEmpty()) {
-            throw new RuntimeException("account is empty");
+        if (config.getCookieString() == null || config.getCookieString().isEmpty()) {
+            useCookies = false;
+            if (config.getAccount() == null || config.getAccount().isEmpty()) {
+                throw new RuntimeException("account is empty");
+            }
+            if (config.getPassword() == null || config.getPassword().isEmpty()) {
+                throw new RuntimeException("password is empty");
+            }
+        } else {
+            useCookies = true;
         }
-        if (config.getPassword() == null || config.getPassword().isEmpty()) {
-            throw new RuntimeException("password is empty");
-        }
+
         if (args.length > 0) {
             outputFile = args[0];
+        } else {
+            outputFile = "../all.json";
         }
-        CookieStore cookieStore = new BasicCookieStore();
-        httpContext = new BasicHttpContext();
-        httpContext.setAttribute(HttpClientContext.COOKIE_STORE, cookieStore);
+        setCookies();
         client = HttpClientBuilder
                 .create()
                 .setRetryStrategy(new DefaultHttpRequestRetryStrategy(3, TimeValue.ofSeconds(3)))
                 .build();
-        login();
+        if (useCookies) {
+            verify();
+        } else {
+            login();
+        }
+    }
+
+    private void setCookies() {
+        CookieStore cookieStore = new BasicCookieStore();
+        if (useCookies) {
+            List<Cookie> cookieList = new ArrayList<>();
+            String[] cookies = config.getCookieString().split(";");
+            for (String cookieString : cookies) {
+                String[] cookie = cookieString.trim().split("=");
+                if (cookie.length >= 2) {
+                    try {
+                        BasicClientCookie basicClientCookie = new BasicClientCookie(cookie[0], cookie[1]);
+                        basicClientCookie.setDomain(".leetcode.cn");
+                        basicClientCookie.setPath("/");
+                        cookieList.add(basicClientCookie);
+                    } catch (IllegalArgumentException ex) {
+                        log.error("Error when setting cookies", ex);
+                    }
+                }
+            }
+
+            for (Cookie cookie : cookieList) {
+                cookieStore.addCookie(cookie);
+            }
+        }
+        httpContext = new BasicHttpContext();
+        httpContext.setAttribute(HttpClientContext.COOKIE_STORE, cookieStore);
     }
 
     private void updateQuestionsInfo() throws IOException, InterruptedException {
@@ -180,6 +221,10 @@ public class Application implements CommandLineRunner {
             log.info("login success");
         }
 
+        verify();
+    }
+
+    private void verify() throws IOException {
         ClassicHttpRequest verify = ClassicRequestBuilder
                 .get("https://leetcode.cn/points/api/")
                 .build();

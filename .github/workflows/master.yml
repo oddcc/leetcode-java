@@ -37,6 +37,7 @@ jobs:
         run: |
           echo "LEETCODE_ACCOUNT=${{secrets.LEETCODE_ACCOUNT}}" >> $GITHUB_ENV
           echo "LEETCODE_PASSWORD=${{secrets.LEETCODE_PASSWORD}}" >> $GITHUB_ENV
+          echo "COOKIE_STRING=${{secrets.COOKIE_STRING}}" >> $GITHUB_ENV
 
       # fetch questions info from leetcode
       - name: fetch questions info

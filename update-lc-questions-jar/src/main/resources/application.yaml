@@ -1,3 +1,4 @@
 leetcode:
   account: ${LEETCODE_ACCOUNT}
   password: ${LEETCODE_PASSWORD}
+  cookieString: ${COOKIE_STRING}
