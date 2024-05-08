@@ -96,12 +96,15 @@ def get_question_list(java_file_list, data_dic):
                 print('need fix: ' + jFile)
             else:
                 question_id = r.group(1)
-                question = data_dic[question_id]
-                if question["status"] == "AC":
-                    question["javaFile"] = jFile
-                    q_list.append(question)
+                if question_id in data_dic:
+                    question = data_dic[question_id]
+                    if question["status"] == "AC":
+                        question["javaFile"] = jFile
+                        q_list.append(question)
+                    else:
+                        print('[{}]{} is not ac yet: '.format(question_id, jFile))
                 else:
-                    print('[{}]{} is not ac yet: '.format(question_id, jFile))
+                    print('[{}] is not in the data_dic', question_id)
     return q_list
 
 
