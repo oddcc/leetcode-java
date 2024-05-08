@@ -46,7 +46,7 @@ PS：
 
 
 <!--question list generated below here, don't DELETE this line-->
-### 目前已有402道题，不断添加中…
+### 目前已有427道题，不断添加中…
 |ID|标题|难度|CODE|
 | ---- | ---- | ---- | ---- |
 |[2](https://leetcode.cn/problems/add-two-numbers)|Add Two Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/AddTwoNumbers.java)|
@@ -136,8 +136,8 @@ PS：
 |[117](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii)|Populating Next Right Pointers in Each Node II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PopulatingNextRightPointersInEachNodeII.java)|
 |[118](https://leetcode.cn/problems/pascals-triangle)|Pascal's Triangle|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PascalsTriangle.java)|
 |[119](https://leetcode.cn/problems/pascals-triangle-ii)|Pascal's Triangle II|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/PascalsTriangleIi.java)|
-|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStock.java)|
-|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStock.java)|
+|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java)|
+|[121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Best Time to Buy and Sell Stock|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java)|
 |[125](https://leetcode.cn/problems/valid-palindrome)|Valid Palindrome|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ValidPalindrome.java)|
 |[127](https://leetcode.cn/problems/word-ladder)|Word Ladder|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/WordLadder.java)|
 |[129](https://leetcode.cn/problems/sum-root-to-leaf-numbers)|Sum Root to Leaf Numbers|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SumRootToLeafNumbers.java)|
@@ -441,6 +441,31 @@ PS：
 |[2043](https://leetcode.cn/problems/simple-bank-system)|Simple Bank System|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/SimpleBankSystem.java)|
 |[2044](https://leetcode.cn/problems/count-number-of-maximum-bitwise-or-subsets)|Count Number of Maximum Bitwise-OR Subsets|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CountNumberOfMaximumBitwiseOrSubsets.java)|
 |[LCP 07](https://leetcode.cn/problems/chuan-di-xin-xi)|传递信息|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ChuanDiXinXi.java)|
+|[LCR 007](https://leetcode.cn/problems/1fGaJU)|三数之和|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/数组中和为0的三个数.java)|
+|[LCR 120](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof)|寻找文件副本|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ShuZuZhongZhongFuDeShuZiLcof.java)|
+|[LCR 121](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof)|寻找目标值 - 二维数组|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ErWeiShuZuZhongDeChaZhaoLcof.java)|
+|[LCR 122](https://leetcode.cn/problems/ti-huan-kong-ge-lcof)|路径加密|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/TiHuanKongGeLcof.java)|
+|[LCR 123](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof)|图书整理 I|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CongWeiDaoTouDaYinLianBiaoLcof.java)|
+|[LCR 124](https://leetcode.cn/problems/zhong-jian-er-cha-shu-lcof)|推理二叉树|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ZhongJianErChaShuLcof.java)|
+|[LCR 125](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof)|图书整理 II|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/YongLiangGeZhanShiXianDuiLieLcof.java)|
+|[LCR 126](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof)|斐波那契数|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FeiBoNaQiShuLieLcof.java)|
+|[LCR 127](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof)|跳跃训练|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/QingWaTiaoTaiJieWenTiLcof.java)|
+|[LCR 128](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof)|库存管理 I|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/XuanZhuanShuZuDeZuiXiaoShuZiLcof.java)|
+|[LCR 129](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof)|字母迷宫|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/JuZhenZhongDeLuJingLcof.java)|
+|[LCR 130](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof)|衣橱整理|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/机器人的运动范围LCOF.java)|
+|[LCR 131](https://leetcode.cn/problems/jian-sheng-zi-lcof)|砍竹子 I|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/JianShengZiLcof.java)|
+|[LCR 132](https://leetcode.cn/problems/jian-sheng-zi-ii-lcof)|砍竹子 II|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/JianShengZiIiLcof.java)|
+|[LCR 133](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof)|位 1 的个数|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ErJinZhiZhong1deGeShuLcof.java)|
+|[LCR 135](https://leetcode.cn/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof)|报数|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/DaYinCong1daoZuiDaDeNweiShuLcof.java)|
+|[LCR 136](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof)|删除链表的节点|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ShanChuLianBiaoDeJieDianLcof.java)|
+|[LCR 139](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof)|训练计划 I|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/DiaoZhengShuZuShunXuShiQiShuWeiYuOuShuQianMianLcof.java)|
+|[LCR 140](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof)|训练计划 II|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LianBiaoZhongDaoShuDiKgeJieDianLcof.java)|
+|[LCR 141](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof)|训练计划 III|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/FanZhuanLianBiaoLcof.java)|
+|[LCR 156](https://leetcode.cn/problems/xu-lie-hua-er-cha-shu-lcof)|序列化与反序列化二叉树|⭐⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/XuLieHuaErChaShuLcof.java)|
+|[LCR 157](https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof)|套餐内商品的排列顺序|⭐⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ZiFuChuanDePaiLieLcof.java)|
+|[LCR 161](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof)|连续天数的最高销售额|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LianXuZiShuZuDeZuiDaHeLcof.java)|
+|[LCR 171](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof)|训练计划 V|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/LiangGeLianBiaoDeDiYiGeGongGongJieDianLcof.java)|
+|[LCR 172](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof)|统计目标成绩的出现次数|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/ZaiPaiXuShuZuZhongChaZhaoShuZiLcof.java)|
 |[面试题 01.01](https://leetcode.cn/problems/is-unique-lcci)|Is Unique LCCI|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/IsUniqueLCCI.java)|
 |[面试题 01.02](https://leetcode.cn/problems/check-permutation-lcci)|Check Permutation LCCI|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/CheckPermutationLCCI.java)|
 |[面试题 01.03](https://leetcode.cn/problems/string-to-url-lcci)|String to URL LCCI|⭐|[click](https://github.com/oddcc/leetcode-java/blob/master/leetcode-practice/src/main/java/com/oddcc/leetcode/editor/cn/StringToURLLCCI.java)|
